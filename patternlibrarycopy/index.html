@@ -35,7 +35,7 @@
       </nav>
     </header>
 
-    <div class="herocontainer">
+    <div class="hero-container">
       <div class="content">
         <h1>PATTERN LIBRARY</h1>
         <p>Pattern library and styleguide for CLIQ. Future section link buttons and in page links for categorized references.</p>
@@ -43,17 +43,16 @@
     </div>
 
     <div class="maincontentwrapper">
-      <!-- Pattern Library Nav Menu -->
-      <div class="subnav">
 
+      <!-- pattern library in page nav menu -->
+      <div class="subnav">
 
         <ul>
           <h2>BASIC STYLES</h2>
-          <li><a href="#colourpalette">Colour Palette</a></li>
+          <li><a href="#colour-palette">Colour Palette</a></li>
           <li><a href="#type">Typography</a></li>
           <li><a href="#grids">Grid System</a></li>
         </ul>
-
 
         <ul>
           <h2>COMPONENTS</h2>
@@ -67,11 +66,9 @@
           <li><a href="#footer">Footer</a></li>
         </ul>
 
-
         <ul>
           <h2><a href="wireframes.html">WIREFRAMES</a></h2>
         </ul>
-
 
         <ul>
           <h2><a href="mockups.html">MOCKUPS</a></h2>
@@ -81,11 +78,14 @@
       </div>
       <!-- - End of - Pattern Library Nav Menu -->
 
-
+    <!-- main content page wrap for everything on the right 2/3 of the page (aka wrapper for everything Except the subnav) -->
     <div class="maincontent">
+
     <div class="basicstyles">
-      <section id="colourpalette">
-        <h2 class="sectionheader">Colour Palette</h2>
+
+      <!-- colour palette section -->
+      <section id="colour-palette">
+        <h2 class="section-header">Colour Palette</h2>
         <div class="colourchips">
 
           <div>
@@ -116,7 +116,7 @@
             <p>light grey subheading accent colour</p>
           </div>
 
-          <div class="">
+          <div>
             <h3>#EFEFEF</h3>
             <h3>239, 239, 239</h3>
             <img class="color-swatches" src="img/Rectangle325.png" alt="light white grey background colour sample swatch" id="neucolourchip">
@@ -125,9 +125,9 @@
         </div>
       </section>
 
-
+      <!-- typography styles section -->
       <section id="type">
-        <h2 class="sectionheader">Typography</h2>
+        <h2 class="section-header">Typography</h2>
         <p>HEADINGS</p>
           <h1>Heading 1</h1>
           <p>Sample code:</p>
@@ -223,10 +223,12 @@
             &lt;ol&gt;
           </code>
         </pre>
-      </section>
+      </section> <!-- end of typography examples section -->
 
+      <!-- grid system sample -->
       <section id="grids">
-        <h2 class="sectionheader">Grid System</h2>
+        <h2 class="section-header">Grid System</h2>
+
         <p id="gridparagraph">Our grid system consists of 12 columns with a 20px gutter. Many of our layouts skip the first and last column, spanning the 10 inner columns of the grid. An example of the 12 column grid is below, along with our other grid layout sizes.</p>
         <div class="gridcolumnscontainer">
           <div class="column-container">
@@ -269,12 +271,12 @@
               </div>
           </div>
 
-
         </div>
+
+        </section> <!-- end of grid system section -->
 
         <!-- END OF DANIEL -->
         <!-- JASON -->
-
 
         <h3>Full Span</h3>
         <div class="fullspancontainer">
@@ -334,7 +336,6 @@
         </div>
 
       </section>
-      <!-- !Remove section -->
     </div>
 
 
@@ -342,9 +343,10 @@
 
       <!-- Button components -->
       <!-- TODO disable drag on buttons -->
-      <!-- !Remove section -->
+
       <section id="buttons">
-        <h2 class="sectionheader">Button UI components</h2>
+
+        <h2 class="section-header">Button UI components</h2>
         <p>Name: Primary call to action button</p>
         <p>Description: Main call to action button for 'learn more', 'see more', etc buttons. Interact to view button hover state.</p>
         <p>Responsive example (of the actual code being executed):</p>
@@ -412,9 +414,8 @@
 
       <!-- Input Field Componets -->
       <!-- TODO change color style for the placeholder css (input::placeholder {}) -->
-
       <section id="inputfields">
-        <h2 class="sectionheader">Input fields</h2>
+        <h2 class="section-header">Input fields</h2>
         <p>Name: Search and Email input.</p>
         <p>Description: User input fields for search fields and email entry.</p>
         <p>Responsive example (of the actual code being executed):</p>
@@ -439,9 +440,8 @@
       </section>
 
       <!-- Link (inline) Components -->
-
       <section id="inlinelinks">
-        <h2 class="sectionheader">Inline Links</h2>
+        <h2 class="section-header">Inline Links</h2>
         <p>Name: In text links.</p>
         <p>Description: Links in text for inline navigation to other pages.</p>
         <p>Responsive example:</p>
@@ -460,15 +460,14 @@
 
 
       <!-- Navigation Components -->
-      <!-- TODO make flexable, maybe use daniel or jason's nav -->
-
+      <!-- TODO make flexible, maybe use daniel or jason's nav -->
       <section id="navigation">
-        <h2 class="sectionheader">Navigation</h2>
+        <h2 class="section-header">Navigation</h2>
         <p>Name: Main nav.</p>
         <p>Description: Main navigation module for every page.</p>
         <p>Responsive example:</p>
 
-
+        <!-- live (condensed) nav bar example -->
         <nav class="mininav">
           <div class="mainnav">
             <a href="index.html" class="navlink" id="logo">cliq</a>
@@ -484,7 +483,6 @@
           </div>
 
         </nav>
-
 
         <p>Code sample:</p>
         <pre>
@@ -559,14 +557,14 @@
         </pre>
         <p>Author: Marina</p>
 
-      </section>
+      </section> <!-- end of nav bar example detail section -->
 
       <!-- END OF JASON -->
       <!-- MARINA -->
 
       <!-- product card component -->
       <section id="productcard">
-        <h2 class="sectionheader">Product card</h2>
+        <h2 class="section-header">Product card</h2>
         <p>Name: Product/item card module.</p>
         <p>Description: Product card module for product list pages.</p>
         <p>Responsive example:</p>
@@ -643,12 +641,12 @@
         </pre>
         <p>Author: Jason</p>
 
-      </section>
+      </section> <!-- end of product card component -->
 
 
       <!-- product detail sample component -->
       <section id="product-detail">
-        <h2 class="sectionheader">Product detail</h2>
+        <h2 class="section-header">Product detail</h2>
         <p>Name: Product detail component</p>
         <p>Description: Top part of product detail page that displays image of product, add to cart button, and description.</p>
         <p>Responsive example:</p>
@@ -716,7 +714,7 @@
 
       <!-- shopping cart checkout module -->
       <section id="checkout">
-        <h2 class="sectionheader">Shopping Cart</h2>
+        <h2 class="section-header">Shopping Cart</h2>
         <p>Name: Shopping cart checkout module</p>
         <p>Description: Checkout module overlay that appears when user adds item to cart and continues to checkout with secondary orange CTA button for proceeding to checkout.</p>
         <p>Responsive example:</p>
@@ -794,8 +792,8 @@
       <!-- footer example component -->
       <section id="footer">
 
-        <!-- ! update this 'sectionheader' class name -->
-        <h2 class="sectionheader">Footer</h2>
+        <!-- ! update this 'section-header' class name -->
+        <h2 class="section-header">Footer</h2>
         <p>Name: Footer component.</p>
         <p>Description: Main footer module included on every page.</p>
         <p>Responsive example:</p>
@@ -882,12 +880,12 @@
 
       </section> <!-- end of footer example -->
 
-    <!-- end of all ui components -->
-    </div>
 
-    </div>
+      </div> <!-- end of all ui components -->
 
-    </div>
+    </div> <!-- end of main content tag -->
+
+  </div> <!-- end of maincontentwrapper tag -->
 
 
     <footer>
@@ -927,9 +925,6 @@
       </div>
 
     </footer>
-  <!-- -End of- maincontentwrapper -->
-  </div>
-
 
     <!-- link to the js file -->
     <script src="js/tabhighlighting.js"></script>

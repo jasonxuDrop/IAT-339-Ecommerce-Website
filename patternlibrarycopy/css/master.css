@@ -178,6 +178,10 @@ nav .searchcart a{
   grid-column: 2 / 4;
 }
 
+.subnav ul {
+  padding: 2em 0 2em 0;
+}
+
 .subnav li {
   padding: 0.5em 0 0.5em 0;
   list-style: none;
@@ -210,11 +214,11 @@ nav .searchcart a{
   box-shadow: 10px 10px 30px #CBCBCB, -10px -10px 30px #FFFFFF;
 }
 
-/*#colourpalette {
+/*#colour-palette {
 
 }*/
 
-#colourpalette .colourchips{
+#colour-palette .colourchips{
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
@@ -225,7 +229,7 @@ nav .searchcart a{
 
 
 
-.herocontainer {
+.hero-container {
   display: grid;
   /*grid-template-columns: 20% 20% 20% 20% 20%;*/
   grid-template-columns: repeat(8, 1fr);
@@ -237,14 +241,14 @@ nav .searchcart a{
   /*padding: 2.5rem 5%;*/
 }
 
-.herocontainer .content {
+.hero-container .content {
   grid-column: 2 / span 6;
 
   grid-row: 3 / span 4;
 }
 
 
-.herocontainer h1{
+.hero-container h1{
   /*font-family: "Moon", "Mulish", sans-serif;*/
   font-family: moonFont;
   font-size: 3rem;
@@ -802,7 +806,7 @@ footer .dark-logo a {
   text-align: center;
 }
 
-.sectionheader {
+.section-header {
   padding-bottom: 1em;
   margin-bottom: 2em;
   border-bottom: 1.5px solid #F56F54;
