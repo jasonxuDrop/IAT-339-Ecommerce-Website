@@ -43,14 +43,19 @@
     </div>
 
     <div class="maincontentwrapper">
-      <ul class="subnav">
-        <section>
+      <!-- Pattern Library Nav Menu -->
+      <div class="subnav">
+
+
+        <ul>
           <h2>BASIC STYLES</h2>
           <li><a href="#colourpalette">Colour Palette</a></li>
           <li><a href="#type">Typography</a></li>
           <li><a href="#grids">Grid System</a></li>
-        </section>
-        <section>
+        </ul>
+
+
+        <ul>
           <h2>COMPONENTS</h2>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#inputfields">Input Fields</a></li>
@@ -60,14 +65,22 @@
           <li><a href="#productdetail">Product detail</a></li>
           <li><a href="#checkout">Shopping Cart</a></li>
           <li><a href="#footer">Footer</a></li>
-        </section>
-        <section>
+        </ul>
+
+
+        <ul>
           <h2><a href="wireframes.html">WIREFRAMES</a></h2>
-        </section>
-        <section>
+        </ul>
+
+
+        <ul>
           <h2><a href="mockups.html">MOCKUPS</a></h2>
-        </section>
-      </ul>
+        </ul>
+
+
+      </div>
+      <!-- - End of - Pattern Library Nav Menu -->
+    
 
     <div class="maincontent">
     <div class="basicstyles">
@@ -78,39 +91,35 @@
           <div>
             <h3>#312E37</h3>
             <h3>49, 46, 55</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch1.png" alt="dark grey colour swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch1.png" alt="dark grey colour swatch">
             <p>primary text and footer colour</p>
           </div>
 
           <div>
             <h3>#F56F54</h3>
             <h3>245, 111, 84</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch4.png" alt="orange/coral swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch4.png" alt="orange/coral swatch">
             <p>main accent colour used for cta button text or cta primary button background</p>
           </div>
 
           <div>
             <h3>#FAFFFD</h3>
             <h3>250, 255, 253</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch2.png" alt="pale white toned swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch2.png" alt="pale white toned swatch">
             <p>used for cta button backgrounds</p>
           </div>
 
           <div>
             <h3>#C6D1D3</h3>
             <h3>198, 209, 211</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch3.png" alt="light grey colour swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch3.png" alt="light grey colour swatch">
             <p>light grey subheading accent colour</p>
           </div>
 
           <div class="">
             <h3>#EFEFEF</h3>
             <h3>239, 239, 239</h3>
-            <img src="img/Rectangle325.png" alt="light white grey background colour sample swatch" width="100" height="100" id="neucolourchip">
+            <img class="color-swatches" src="img/Rectangle325.png" alt="light white grey background colour sample swatch" id="neucolourchip">
             <p>page background colour</p>
           </div>
         </div>
@@ -121,8 +130,6 @@
         <h2 class="sectionheader">Typography</h2>
         <p>HEADINGS</p>
           <h1>Heading 1</h1>
-          <!-- !IMPORTANT Remove -->
-          <h1>INTRO TITLE H1 EXAMPLE</h1>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -137,8 +144,6 @@
           </pre>
 
           <h2>Heading 2</h2>
-          <!-- !IMPORTANT Remove -->
-          <h2>PRODUCT NAME H2</h2>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -152,8 +157,6 @@
             </code>
           </pre>
           <h3>Heading 3</h3>
-          <!-- !IMPORTANT Remove -->
-          <h3>BESTSELLERS SECTION TITLES</h3>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -167,8 +170,6 @@
             </code>
           </pre>
           <p>PARAGRAPH TAGS</p>
-          <!-- !IMPORTANT Remove -->
-          <p>Product description body text</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>Sample code:</p>
           <pre>
@@ -229,7 +230,6 @@
         <p id="gridparagraph">Our grid system consists of 12 columns with a 20px gutter. Many of our layouts skip the first and last column, spanning the 10 inner columns of the grid. An example of the 12 column grid is below, along with our other grid layout sizes.</p>
         <div class="gridcolumnscontainer">
           <div class="column-container">
-            <!-- !IMPORTANT CHANGE section > div -->
               <div>
                 <p>col - 1</p>
               </div>
@@ -266,7 +266,6 @@
               <div>
                 <p>col - 12</p>
               </div>
-              <!-- !END OF IMPORTANT CHANGE -->
           </div>
 
 
@@ -277,7 +276,8 @@
 
 
 
-        <!-- ! Issue: All the "col" classes requires to be in <section> 
+        <!-- 
+          ! Issue: All the "col" classes requires to be in <section> 
           ! changed <section> to div (inside fullspancontainer) -->
         <h3>Full Span</h3>
         <div class="fullspancontainer">
@@ -674,12 +674,13 @@
             </div>
 
             <div class="blackbox">
-              <section>
+              <!-- !changed section > div -->
+              <div>
                 <h3>Clear Resin Keycap Set</h3>
                 <h4>$35</h4>
                 <p>Product info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-              </section>
+              </div>
             </div>
           </div>
         </div>
@@ -938,6 +939,9 @@
       </div>
 
     </footer>
+  <!-- -End of- maincontentwrapper -->
+  </div>
+
 
     <!-- link to the js file -->
     <script src="js/tabhighlighting.js"></script>

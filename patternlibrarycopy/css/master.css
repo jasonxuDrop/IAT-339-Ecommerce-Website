@@ -82,6 +82,10 @@ h3 {
     letter-spacing: 3px;
 }
 
+.color-swatches{
+  height: 8em;
+  width: 8em;
+}
 
 nav {
   /*background-color: aqua;*/
@@ -176,6 +180,7 @@ nav .searchcart a{
 
 .subnav li {
   padding: 0.5em 0 0.5em 0;
+  list-style: none;
 }
 
 .subnav a{
@@ -693,7 +698,7 @@ footer .darklogo {
 }
 
 
-#grids .gridcolumnscontainer section {
+#grids .gridcolumnscontainer div {
   border: 3px solid #B8DAE4;
   background-color: white;
   padding: 0;
@@ -902,9 +907,8 @@ footer .darklogo {
 
     grid-column: 2 / 8;
     background-color: yellow;
-
-
   }
+
 
   .maincontentwrapper {
     display: grid;
