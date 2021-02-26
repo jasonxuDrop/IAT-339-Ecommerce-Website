@@ -277,8 +277,8 @@
 
 
 
-        <!-- ! Issue: All the "col" classes requires to be in <section> 
-          ! changed <section> to div (inside fullspancontainer) -->
+        <!-- ! IMPORTANT All the "col" classes requires to be in <section> 
+          changed <section> to div (inside fullspancontainer) -->
         <h3>Full Span</h3>
         <div class="fullspancontainer">
           <div>
@@ -296,7 +296,6 @@
           </div>
         </div>
 
-
         <h3>1/3 2/3 Span</h3>
         <div class="fullspancontainer">
           <div class="col3">
@@ -309,7 +308,6 @@
               <p>col - 6</p>
             </div>
           </div>
-
         </div>
 
         <h3>2/3 1/3 Span</h3>
@@ -324,9 +322,7 @@
               <p>col - 3</p>
             </div>
           </div>
-
         </div>
-
 
         <h3>Half & Half Bleed</h3>
         <div class="fullspancontainer">
@@ -348,13 +344,14 @@
           </div>
         </div>
 
-
       </section>
     </div>
 
 
     <div class="components">
 
+      <!-- Button components -->
+      <!-- ! IMPORTANT disable drag on buttons -->
       <section id="buttons">
         <h2 class="sectionheader">Button UI components</h2>
         <p>Name: Primary call to action button</p>
@@ -422,7 +419,9 @@
 
       </section>
 
-
+      <!-- Input Field Componets -->
+      <!-- * changed value="search" to placeholder="search" -->
+      <!-- ! IMPORTANT change color style for the placeholder css (input::placeholder {}) -->
 
       <section id="inputfields">
         <h2 class="sectionheader">Input fields</h2>
@@ -447,8 +446,9 @@
           </code>
         </pre>
         <p>Author: Jason</p>
-
       </section>
+
+      <!-- Link (inline) Components -->
 
       <section id="inlinelinks">
         <h2 class="sectionheader">Inline Links</h2>
@@ -469,6 +469,9 @@
       </section>
 
 
+      <!-- Navigation Components -->
+      <!-- ! IMPORTANT make flexable, maybe use daniel or jason's nav -->
+
       <section id="navigation">
         <h2 class="sectionheader">Navigation</h2>
         <p>Name: Main nav.</p>
@@ -483,7 +486,6 @@
             <a href="#" class="guidehighlight">guides</a>
             <a href="citations.html" class="citehighlight">citations</a>
             <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
-
           </div>
 
           <div class="searchcart">
