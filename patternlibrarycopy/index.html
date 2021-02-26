@@ -43,14 +43,19 @@
     </div>
 
     <div class="maincontentwrapper">
-      <ul class="subnav">
-        <section>
+      <!-- Pattern Library Nav Menu -->
+      <div class="subnav">
+
+
+        <ul>
           <h2>BASIC STYLES</h2>
           <li><a href="#colourpalette">Colour Palette</a></li>
           <li><a href="#type">Typography</a></li>
           <li><a href="#grids">Grid System</a></li>
-        </section>
-        <section>
+        </ul>
+
+
+        <ul>
           <h2>COMPONENTS</h2>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#inputfields">Input Fields</a></li>
@@ -60,14 +65,22 @@
           <li><a href="#product-detail">Product detail</a></li>
           <li><a href="#checkout">Shopping Cart</a></li>
           <li><a href="#footer">Footer</a></li>
-        </section>
-        <section>
+        </ul>
+
+
+        <ul>
           <h2><a href="wireframes.html">WIREFRAMES</a></h2>
-        </section>
-        <section>
+        </ul>
+
+
+        <ul>
           <h2><a href="mockups.html">MOCKUPS</a></h2>
-        </section>
-      </ul>
+        </ul>
+
+
+      </div>
+      <!-- - End of - Pattern Library Nav Menu -->
+
 
     <div class="maincontent">
     <div class="basicstyles">
@@ -78,39 +91,35 @@
           <div>
             <h3>#312E37</h3>
             <h3>49, 46, 55</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch1.png" alt="dark grey colour swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch1.png" alt="dark grey colour swatch">
             <p>primary text and footer colour</p>
           </div>
 
           <div>
             <h3>#F56F54</h3>
             <h3>245, 111, 84</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch4.png" alt="orange/coral swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch4.png" alt="orange/coral swatch">
             <p>main accent colour used for cta button text or cta primary button background</p>
           </div>
 
           <div>
             <h3>#FAFFFD</h3>
             <h3>250, 255, 253</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch2.png" alt="pale white toned swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch2.png" alt="pale white toned swatch">
             <p>used for cta button backgrounds</p>
           </div>
 
           <div>
             <h3>#C6D1D3</h3>
             <h3>198, 209, 211</h3>
-            <!-- !IMPORTANT color swatches size define it in CSS -->
-            <img src="img/keyboardSwatch3.png" alt="light grey colour swatch" width="100" height="100">
+            <img class="color-swatches" src="img/keyboardSwatch3.png" alt="light grey colour swatch">
             <p>light grey subheading accent colour</p>
           </div>
 
           <div class="">
             <h3>#EFEFEF</h3>
             <h3>239, 239, 239</h3>
-            <img src="img/Rectangle325.png" alt="light white grey background colour sample swatch" width="100" height="100" id="neucolourchip">
+            <img class="color-swatches" src="img/Rectangle325.png" alt="light white grey background colour sample swatch" id="neucolourchip">
             <p>page background colour</p>
           </div>
         </div>
@@ -121,8 +130,6 @@
         <h2 class="sectionheader">Typography</h2>
         <p>HEADINGS</p>
           <h1>Heading 1</h1>
-          <!-- !IMPORTANT Remove -->
-          <h1>INTRO TITLE H1 EXAMPLE</h1>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -137,8 +144,6 @@
           </pre>
 
           <h2>Heading 2</h2>
-          <!-- !IMPORTANT Remove -->
-          <h2>PRODUCT NAME H2</h2>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -152,8 +157,6 @@
             </code>
           </pre>
           <h3>Heading 3</h3>
-          <!-- !IMPORTANT Remove -->
-          <h3>BESTSELLERS SECTION TITLES</h3>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -167,8 +170,6 @@
             </code>
           </pre>
           <p>PARAGRAPH TAGS</p>
-          <!-- !IMPORTANT Remove -->
-          <p>Product description body text</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>Sample code:</p>
           <pre>
@@ -230,43 +231,42 @@
         <div class="gridcolumnscontainer">
           <div class="column-container">
             <!-- !IMPORTANT CHANGE section > div -->
-              <div>
+              <div class="grid-example">
                 <p>col - 1</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 2</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 3</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 4</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 5</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 6</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 7</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 8</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 9</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 10</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 11</p>
               </div>
-              <div>
+              <div class="grid-example">
                 <p>col - 12</p>
               </div>
-              <!-- !END OF IMPORTANT CHANGE -->
           </div>
 
 
@@ -276,78 +276,62 @@
         <!-- JASON -->
 
 
-
-        <!-- ! Issue: All the "col" classes requires to be in <section>
-          ! changed <section> to div (inside fullspancontainer) -->
         <h3>Full Span</h3>
         <div class="fullspancontainer">
-          <div>
+          <div class="grid-example">
             <p>col - 10</p>
           </div>
         </div>
 
         <h3>Half & Half Span</h3>
         <div class="fullspancontainer" id="halfandhalf">
-          <div class="col5-1">
+          <section class="col5-1 grid-example">
             <p>col - 5</p>
-          </div>
-          <div class="col5-2">
+          </section>
+          <div class="col5-2 grid-example">
             <p>col - 5</p>
           </div>
         </div>
 
-
         <h3>1/3 2/3 Span</h3>
         <div class="fullspancontainer">
-          <div class="col3">
-            <div>
-              <p>col - 3</p>
-            </div>
+          <div class="col3 grid-example">
+            <p>col - 3</p>
           </div>
-          <div class="col6">
-            <div>
-              <p>col - 6</p>
-            </div>
+          <div class="col6 grid-example">
+            <p>col - 6</p>
           </div>
-
         </div>
 
         <h3>2/3 1/3 Span</h3>
         <div class="fullspancontainer">
-          <div class="col6-2">
-            <div>
-              <p>col - 6</p>
-            </div>
+          <div class="col6-2 grid-example">
+            <p>col - 6</p>
           </div>
-          <div class="col3-2">
-            <div>
-              <p>col - 3</p>
-            </div>
+          <div class="col3-2 grid-example">
+            <p>col - 3</p>
           </div>
-
         </div>
-
 
         <h3>Half & Half Bleed</h3>
         <div class="fullspancontainer">
-          <div class="col6-left">
+          <div class="col6-left grid-example">
             <p>col - 6</p>
           </div>
-          <div class="col6-right">
+          <div class="col6-right grid-example">
             <p>col - 6</p>
           </div>
         </div>
 
         <h3>1/3 2/3 Bleed</h3>
         <div class="fullspancontainer">
-          <div class="col4">
+          <div class="col4 grid-example">
             <p>col - 4</p>
           </div>
-          <div class="col8">
+          <div class="col8 grid-example">
             <p>col - 8</p>
           </div>
         </div>
-
 
       </section>
     </div>
@@ -355,6 +339,8 @@
 
     <div class="components">
 
+      <!-- Button components -->
+      <!-- TODO disable drag on buttons -->
       <section id="buttons">
         <h2 class="sectionheader">Button UI components</h2>
         <p>Name: Primary call to action button</p>
@@ -422,7 +408,8 @@
 
       </section>
 
-
+      <!-- Input Field Componets -->
+      <!-- TODO change color style for the placeholder css (input::placeholder {}) -->
 
       <section id="inputfields">
         <h2 class="sectionheader">Input fields</h2>
@@ -433,7 +420,7 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;input type="text" value="search" class="searchbar"&gt;
+            &lt;input type="text" placeholder="search" class="searchbar"&gt;
             .searchbar {
               margin-right: 2em;
               padding: 0.5em 0 0.5em 2em;
@@ -447,8 +434,9 @@
           </code>
         </pre>
         <p>Author: Jason</p>
-
       </section>
+
+      <!-- Link (inline) Components -->
 
       <section id="inlinelinks">
         <h2 class="sectionheader">Inline Links</h2>
@@ -469,6 +457,9 @@
       </section>
 
 
+      <!-- Navigation Components -->
+      <!-- TODO make flexable, maybe use daniel or jason's nav -->
+
       <section id="navigation">
         <h2 class="sectionheader">Navigation</h2>
         <p>Name: Main nav.</p>
@@ -483,11 +474,10 @@
             <a href="#" class="guidehighlight">guides</a>
             <a href="citations.html" class="citehighlight">citations</a>
             <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
-
           </div>
 
           <div class="searchcart">
-            <input type="text" name="" value="search" class="searchbar">
+            <input type="text" name="" placeholder="search" class="searchbar">
             <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
           </div>
 
@@ -506,7 +496,7 @@
                 &lt;a href="#page" class="navlink"&gt;patterns&lt;/a&gt;
               &lt;/div&gt;
               &lt;div class="searchcart"&gt;
-                &lt;input type="text" value="search" class="searchbar"&gt;
+                &lt;input type="text" placeholder="search" class="searchbar"&gt;
                 &lt;a href="#page"&lt;img src="img/bagicon.png"&gt;patterns&lt;/a&gt;
             &lt;/nav&gt;
 
@@ -674,12 +664,14 @@
             </div>
 
             <div class="black-box">
-              <section>
+              <!-- !changed section > div -->
+              <div>
+
                 <h3>Clear Resin Keycap Set</h3>
                 <h4>$35</h4>
                 <p>Product info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-              </section>
+              </div>
             </div>
           </div>
         </div>
@@ -939,6 +931,9 @@
       </div>
 
     </footer>
+  <!-- -End of- maincontentwrapper -->
+  </div>
+
 
     <!-- link to the js file -->
     <script src="js/tabhighlighting.js"></script>
