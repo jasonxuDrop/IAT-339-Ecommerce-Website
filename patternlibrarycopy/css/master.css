@@ -253,7 +253,7 @@ nav .searchcart a{
 
 
 
-.realbuttonexample a {
+.real-button-example a {
   font-family: "Muli", "Mulish", sans-serif;
   font-weight: 600;
   font-size: 0.9em;
@@ -267,15 +267,15 @@ nav .searchcart a{
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
 
-.realbuttonexample a:hover{
+.real-button-example a:hover{
   color: #F56F54;
 }
 
-.realbuttonexample a:focus{
+.real-button-example a:focus{
   box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
 }
 
-.realbuttonexample {
+.real-button-example {
   margin: 3em 0 3em 0;
 }
 
@@ -366,23 +366,23 @@ pre code {
 
 }
 
-.productinfo{
+.product-info{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.productinfo p{
+.product-info p{
   max-width: none;
   padding: 0;
   margin: 0.25em;
 }
 
-.productinfo div:first-child {
+.product-info div:first-child {
   width: 85%;
 }
 
-.orangepricetag {
+.orange-pricetag {
   color: #F56F54;
 }
 
@@ -394,7 +394,7 @@ pre code {
 
 
 
-.shoppingcart {
+.shopping-cart {
   width: 50%;
   border: 1px solid;
   border-color: #8E8E8E;
@@ -403,42 +403,42 @@ pre code {
   padding: 2em;
 }
 
-.shoppingcart h4{
+.shopping-cart h4{
   font-family: "Mulish", sans-serif;
   font-weight: 600;
   color: #312E37;
   letter-spacing: 0.75px;
 }
 
-.shoppingcart .orangepricetag{
+.shopping-cart .orange-pricetag{
   color: #F56F54;
 }
 
-.shoppingcart img {
+.shopping-cart img {
   width: 100%;
   height: auto;
 }
 
-.shoppingcart .productthumbnail {
+.shopping-cart .product-thumbnail {
   width: 125px;
   height: 150px;
 }
 
-.shoppingcart .product {
+.shopping-cart .product {
   display: flex;
   flex-direction: row;
 
   padding: 2em 0 8em 0;
 }
 
-.shoppingcart .subtotal {
+.shopping-cart .subtotal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
 }
 
-.shoppingcart .checkoutbutton {
+.shopping-cart .checkout-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -447,7 +447,7 @@ pre code {
 
 }
 
-.shoppingcart .checkoutbutton a{
+.shopping-cart .checkout-button a{
   border: none;
   border-radius: 25px;
   background-color: #F56F54;
@@ -476,18 +476,18 @@ pre code {
 }
 
 
-.productcontentcontainer {
+.product-content-container {
   display: grid;
 
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 4em);
 }
 
-.productcontentcontainer .realbuttonexample {
+.product-content-container .real-button-example {
   grid-column: 7/ span 8;
 }
 
-.blackbox {
+.black-box {
   grid-column: 1/5;
   grid-row: 1/7;
 }
@@ -496,41 +496,41 @@ pre code {
 
 
 
-#productdetail .sampleproductheader {
+#product-detail .sample-product-header {
   width: 100%;
   border: 1px solid;
   border-color: #8E8E8E;
 
 }
 
-#productdetail .sampleproductheader img{
+#product-detail .sample-product-header img{
   width: 100%;
   height: auto;
   z-index: 0;
 }
 
-#productdetail .sampleproductheader a{
+#product-detail .sample-product-header a{
   z-index: 2;
 
 }
 
-.sampleproductheader .blackbox {
+.sample-product-header .black-box {
   background-color: #312E37;
   padding: 0 2em 2em 2em;
 
   /*width: 50%;*/
 }
 
-.sampleproductheader .blackbox h3{
+.sample-product-header .black-box h3{
   color: white;
   font-size: 1.75em;
 
 }
-.sampleproductheader .blackbox h4{
+.sample-product-header .black-box h4{
   font-family: moonFont;
   color: white;
 }
-.sampleproductheader .blackbox p{
+.sample-product-header .black-box p{
   color: white;
   font-size: 0.8em;
   max-width: 80%;
@@ -607,7 +607,7 @@ footer {
 
 }
 
-footer .footerbottompart {
+footer .footer-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -616,18 +616,18 @@ footer .footerbottompart {
   margin: 5em 0 3em 0;
 }
 
-footer .footertoppart {
+footer .footer-toppart {
   display: flex;
   flex-direction: row;
 
 }
 
-footer .footertoppart div p a:hover{
+footer .footer-toppart div p a:hover{
   /*color: red;*/
   opacity: 75%;
 }
 
-footer .footertoppart div {
+footer .footer-toppart div {
   padding-right: 2em;
 }
 
@@ -657,7 +657,7 @@ footer input {
   padding: 0.75em 5em 0.75em 2em;
 }
 
-footer .darklogo a {
+footer .dark-logo a {
 
   /*border: 1px solid;*/
   /*border-color: pink;*/
@@ -674,11 +674,6 @@ footer .darklogo a {
 
   color: white;
 }
-
-footer .darklogo {
-
-}
-
 
 
 
@@ -937,12 +932,12 @@ footer .darklogo {
 
 
 
-  footer .footertoppart{
+  footer .footer-toppart{
     display: flex;
     flex-direction: column;
 
   }
-  footer .footerbottompart{
+  footer .footer-bottom{
     display: flex;
     flex-direction: column;
 

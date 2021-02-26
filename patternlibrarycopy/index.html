@@ -57,7 +57,7 @@
           <li><a href="#inlinelinks">Inline links</a></li>
           <li><a href="#navigation">Navigation</a></li>
           <li><a href="#productcard">Product card</a></li>
-          <li><a href="#productdetail">Product detail</a></li>
+          <li><a href="#product-detail">Product detail</a></li>
           <li><a href="#checkout">Shopping Cart</a></li>
           <li><a href="#footer">Footer</a></li>
         </section>
@@ -277,7 +277,7 @@
 
 
 
-        <!-- ! Issue: All the "col" classes requires to be in <section> 
+        <!-- ! Issue: All the "col" classes requires to be in <section>
           ! changed <section> to div (inside fullspancontainer) -->
         <h3>Full Span</h3>
         <div class="fullspancontainer">
@@ -360,7 +360,7 @@
         <p>Name: Primary call to action button</p>
         <p>Description: Main call to action button for 'learn more', 'see more', etc buttons. Interact to view button hover state.</p>
         <p>Responsive example (of the actual code being executed):</p>
-        <div class="realbuttonexample">
+        <div class="real-button-example">
           <a href="#buttons" class="ctabuttons">learn more</a>
         </div>
         <p>Code sample:</p>
@@ -394,7 +394,7 @@
       <p>Name: Seconday call to action button</p>
       <p>Description: Orange secondary button for other calls to action. Interact to view button hover state.</p>
       <p>Responsive example (of the actual code being executed):</p>
-      <div class="realbuttonexample">
+      <div class="real-button-example">
         <a href="#buttons" id="orangebutton">learn more</a>
       </div>
       <p>Code sample:</p>
@@ -582,13 +582,13 @@
         <div class="sampleproductcard">
           <a href="#"><img src="img/clearkeycaps2.png" alt="keycap banner image"></a>
 
-          <div class="productinfo">
+          <div class="product-info">
             <div class="">
               <p>CLEAR KEYCAPS</p>
               <p>In Stock</p>
             </div>
             <div class="">
-              <p class="orangepricetag">$35</p>
+              <p class="orange-pricetag">$35</p>
             </div>
           </div>
         </div> <!-- end of the live product sample card -->
@@ -596,10 +596,10 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;div class="productinfo"&gt;
+            &lt;div class="product-info"&gt;
               &lt;img src="img/source.png"&gt;
               &lt;p&gt;Clear Keycaps&lt;/p&gt;
-              &lt;p class="orangepricetag"&gt;$35&lt;/p&gt;
+              &lt;p class="orange-pricetag"&gt;$35&lt;/p&gt;
               &lt;p&gt;In Stock&lt;/p&gt;
             &lt;/div&gt;
 
@@ -628,23 +628,23 @@
               margin: 2rem 0 2rem 0;
             }
 
-            .productinfo{
+            .product-info{
               display: flex;
               flex-direction: row;
               justify-content: space-between;
             }
 
-            .productinfo p{
+            .product-info p{
               max-width: none;
               padding: 0;
               margin: 0.25em;
             }
 
-            .productinfo div:first-child {
+            .product-info div:first-child {
               width: 85%;
             }
 
-            .orangepricetag {
+            .orange-pricetag {
               color: #F56F54;
             }
           </code>
@@ -655,25 +655,25 @@
 
 
       <!-- product detail sample component -->
-      <section id="productdetail">
+      <section id="product-detail">
         <h2 class="sectionheader">Product detail</h2>
         <p>Name: Product detail component</p>
         <p>Description: Top part of product detail page that displays image of product, add to cart button, and description.</p>
         <p>Responsive example:</p>
 
         <!-- responsive example -->
-        <div class="sampleproductheader">
+        <div class="sample-product-header">
           <div>
             <img src="img/clearkeycaps3.png" alt="keycap banner image">
           </div>
 
-          <div class="productcontentcontainer">
+          <div class="product-content-container">
 
-            <div class="realbuttonexample">
-                <a href="#productdetail">add to cart</a>
+            <div class="real-button-example">
+                <a href="#product-detail">add to cart</a>
             </div>
 
-            <div class="blackbox">
+            <div class="black-box">
               <section>
                 <h3>Clear Resin Keycap Set</h3>
                 <h4>$35</h4>
@@ -689,28 +689,28 @@
           <code>
             &lt;img src="img/source.png"&gt;
             &lt;a href="#linktosection" class="ctabuttons"&gt;add to cart&lt;/a&gt;
-            &lt;div class="blackbox"&gt;
+            &lt;div class="black-box"&gt;
               &lt;section&gt;
                 &lt;p&gt;Product name - Clear Resin Keycap Set&lt;/p&gt;
                 &lt;p&gt;Product info lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
               &lt;/section&gt;
             &lt;/div&gt;
 
-            .sampleproductheader .blackbox {
+            .sample-product-header .black-box {
               background-color: #312E37;
               padding: 0 2em 2em 2em;
             }
 
-            .sampleproductheader .blackbox h3{
+            .sample-product-header .black-box h3{
               color: white;
               font-size: 1.75em;
 
             }
-            .sampleproductheader .blackbox h4{
+            .sample-product-header .black-box h4{
               font-family: moonFont;
               color: white;
             }
-            .sampleproductheader .blackbox p{
+            .sample-product-header .black-box p{
               color: white;
               font-size: 0.8em;
               max-width: 80%;
@@ -730,19 +730,19 @@
         <p>Responsive example:</p>
 
         <!-- live example -->
-        <div class="shoppingcart">
+        <div class="shopping-cart">
           <h3>Your Cart</h3>
           <img src="img/orangeline.svg" alt="">
 
           <div class="product">
-            <img src="img/cartkeycapthumbnail.png" alt="" class="productthumbnail">
+            <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
             <div class="description">
               <div class="">
                 <h4>Clear Resin Keycap Set</h4>
                 <p>Microchip style clear resin artisan keycaps.</p>
               </div>
 
-              <h4 class="orangepricetag">$35</h4>
+              <h4 class="orange-pricetag">$35</h4>
             </div>
           </div>
 
@@ -753,7 +753,7 @@
             <h4>Subtotal</h4>
             <h4>$35.00</h4>
           </div>
-          <div class="checkoutbutton">
+          <div class="checkout-button">
             <a href="#" class="ctabuttonorange">proceed to checkout</a>
           </div>
         </div> <!-- end of live sample -->
@@ -761,20 +761,20 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;div class="shoppingcart"&gt;
+            &lt;div class="shopping-cart"&gt;
               &lt;h3&gt;Your Cart&lt;/h3&gt;
               &lt;img&gt;orangeline.svg&lt;/img&gt;
-              &lt;img&gt;productthumbnail.png&lt;/img&gt;
+              &lt;img&gt;product-thumbnail.png&lt;/img&gt;
               &lt;h4&gt;Product Name Clear Resin Keycap Set&lt;/h4&gt;
               &lt;p&gt;Brief product description.&lt;/p&gt;
-              &lt;h4 class="orangepricetag"&gt;$35&lt;/h4&gt;
+              &lt;h4 class="orange-pricetag"&gt;$35&lt;/h4&gt;
               &lt;img&gt;greyline.svg&lt;&gt;
               &lt;h4&gt;Subtotal&lt;/h4&gt;
               &lt;h4&gt;$35.00&lt;/h4&gt;
               &lt;a href="#linktopage" class="ctabuttonorange"&gt;proceed to checkout&lt;/a&gt;
             &lt;/div&gt;
 
-            .shoppingcart{
+            .shopping-cart{
               background-color: #EFEFEF;
               border: 1px solid;
               border-color: #8E8E8E;
@@ -783,12 +783,12 @@
               padding: 2em;
             }
 
-            .shoppingcart .productthumbnail {
+            .shopping-cart .product-thumbnail {
               width: 125px;
               height: 150px;
             }
 
-            .shoppingcart .product {
+            .shopping-cart .product {
               display: flex;
               flex-direction: row;
 
@@ -801,6 +801,8 @@
 
       <!-- footer example component -->
       <section id="footer">
+
+        <!-- ! update this 'sectionheader' class name -->
         <h2 class="sectionheader">Footer</h2>
         <p>Name: Footer component.</p>
         <p>Description: Main footer module included on every page.</p>
@@ -808,7 +810,7 @@
 
         <!-- live footer sample -->
         <footer>
-          <div class="footertoppart">
+          <div class="footer-toppart">
 
             <div>
               <h3>JOIN OUR MAILING LIST</h3>
@@ -835,8 +837,8 @@
             </div>
           </div>
 
-          <div class="footerbottompart">
-          <div class="darklogo">
+          <div class="footer-bottom">
+          <div class="dark-logo">
             <a href="#">cliq</a>
           </div>
 
@@ -893,7 +895,6 @@
 
     </div>
 
-
     </div>
 
     <section>
@@ -902,7 +903,7 @@
 
 
     <footer>
-      <div class="footertoppart">
+      <div class="footer-toppart">
 
         <div>
           <h3>JOIN OUR MAILING LIST</h3>
@@ -929,8 +930,8 @@
         </div>
       </div>
 
-      <div class="footerbottompart">
-        <div class="darklogo">
+      <div class="footer-bottom">
+        <div class="dark-logo">
           <a href="index.html">cliq</a>
         </div>
 
