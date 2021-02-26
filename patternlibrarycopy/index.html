@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/master.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
+
+    <title>Pattern Library Assignment</title>
+
+  </head>
+
+  <body onload="patternpageFuntion()">
+
+
+    <header>
+
+    <!-- <h1>Iteration2 Pattern Library Activity</h1> -->
+    <!-- <p>(html only - excuse the ugly)</p> -->
+
+    <nav>
+      <div class="mainnav">
+        <a href="index.html" id="logo">cliq</a>
+
+        <a href="#" class="mobilenav">
+          <img src="img/shopping-bagCliq2.png" alt="" class="mobileicon">
+        </a>
+        <a href="#" class="mobilenav"><img src="img/mobilemenu.png" alt="" class="mobileicon"></a>
+
+
+        <a href="#" class="shophighlight">shop</a>
+        <a href="#" class="guidehighlight">guides</a>
+        <a href="citations.html" class="citehighlight">citations</a>
+        <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
+
+      </div>
+
+      <div class="searchcart">
+        <input type="text" name="" value="search" class="searchbar">
+        <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+      </div>
+
+    </nav>
+
+    </header>
+
+
+    <div class="herocontainer">
+      <div class="content">
+        <h1>PATTERN LIBRARY</h1>
+        <p>Pattern library and styleguide for CLIQ. Future section link buttons and in page links for categorized references.</p>
+      </div>
+    </div>
+
+
+    <div class="maincontentwrapper">
+
+      <ul class="subnav">
+        <section>
+          <h2>BASIC STYLES</h2>
+          <li><a href="#colourpalette">Colour Palette</a></li>
+          <li><a href="#type">Typography</a></li>
+          <li><a href="#grids">Grid System</a></li>
+        </section>
+        <section>
+          <h2>COMPONENTS</h2>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#inputfields">Input Fields</a></li>
+          <li><a href="#inlinelinks">Inline links</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#productcard">Product card</a></li>
+          <li><a href="#productdetail">Product detail</a></li>
+          <li><a href="#checkout">Shopping Cart</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </section>
+        <section>
+          <h2><a href="wireframes.html">WIREFRAMES</a></h2>
+        </section>
+        <section>
+          <h2><a href="mockups.html">MOCKUPS</a></h2>
+        </section>
+
+      </ul>
+
+    <div class="maincontent">
+
+    <div class="basicstyles">
+
+      <section id="colourpalette">
+        <h2 class="sectionheader">Colour Palette</h2>
+
+        <div class="colourchips">
+
+          <div>
+            <h3>#312E37</h3>
+            <h3>49, 46, 55</h3>
+            <img src="img/keyboardSwatch1.png" alt="dark grey colour swatch" width="100" height="100">
+            <p>primary text and footer colour</p>
+          </div>
+
+          <div>
+            <h3>#F56F54</h3>
+            <h3>245, 111, 84</h3>
+            <img src="img/keyboardSwatch4.png" alt="orange/coral swatch" width="100" height="100">
+            <p>main accent colour used for cta button text or cta primary button background</p>
+          </div>
+
+          <div>
+            <h3>#FAFFFD</h3>
+            <h3>250, 255, 253</h3>
+            <img src="img/keyboardSwatch2.png" alt="pale white toned swatch" width="100" height="100">
+            <p>used for cta button backgrounds</p>
+          </div>
+
+          <div>
+            <h3>#C6D1D3</h3>
+            <h3>198, 209, 211</h3>
+            <img src="img/keyboardSwatch3.png" alt="light grey colour swatch" width="100" height="100">
+            <p>light grey subheading accent colour</p>
+          </div>
+
+
+
+          <div class="">
+            <h3>#EFEFEF</h3>
+            <h3>239, 239, 239</h3>
+            <img src="img/Rectangle325.png" alt="light white grey background colour sample swatch" width="100" height="100" id="neucolourchip">
+            <p>page background colour</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section id="type">
+        <h2 class="sectionheader">Typography</h2>
+        <!-- <img src="img/orangeline.svg" alt="" id="line"> -->
+        <p>HEADINGS</p>
+          <h1>Heading 1</h1>
+          <h1>INTRO TITLE H1 EXAMPLE</h1>
+          <p>Sample code:</p>
+          <pre>
+            <code>
+              &lt;h1&gt;INTRO TITLE H1 EXAMPLE&lt;/h2&gt;
+              h1 {
+                font-family: "Moon", "Oxygen", sans-serif;
+                font-weight: 300;
+                color: #3E3E3E;
+                letter-spacing: 3px;
+              }
+            </code>
+          </pre>
+        <!-- </section> -->
+
+        <!-- <section> -->
+          <h2>Heading 2</h2>
+          <h2>PRODUCT NAME H2</h2>
+          <p>Sample code:</p>
+          <pre>
+            <code>
+              &lt;h2&gt;PRODUCT NAME H2&lt;/h2&gt;
+              h2 {
+                font-family: "Moon", "Oxygen", sans-serif;
+                font-weight: 300;
+                color: #3E3E3E;
+                letter-spacing: 3px;
+              }
+            </code>
+          </pre>
+        <!-- </section> -->
+
+        <!-- <section> -->
+          <h3>Heading 3</h3>
+          <h3>BESTSELLERS SECTION TITLES</h3>
+          <p>Sample code:</p>
+          <pre>
+            <code>
+              &lt;h3&gt;BESTSELLERS SECTION TITLES&lt;/h3&gt;
+              h3 {
+                font-family: "Moon", "Oxygen", sans-serif;
+                font-weight: 300;
+                color: #3E3E3E;
+                letter-spacing: 3px;
+              }
+            </code>
+          </pre>
+        <!-- </section> -->
+
+        <!-- <section> -->
+          <p>PARAGRAPH TAGS</p>
+          <p>Product description body text</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Sample code:</p>
+          <pre>
+            <code>
+              &lt;p&gt;Product Description body text&lt;/p&gt;
+              p {
+                font-family: "Muli", "Mulish", sans-serif;
+                font-weight: 400;
+                color: #3E3E3E;
+                line-height: 140%;
+                max-width: 75%;
+              }
+            </code>
+          </pre>
+
+
+        <p>BULLETED LISTS</p>
+        <p>Product specs:</p>
+        <ul>
+          <li>Lorem ipsum item 1</li>
+          <li>Lorem ipsum item 2</li>
+          <li>Lorem ipsum item 3</li>
+        </ul>
+        <p>Sample code:</p>
+        <pre>
+          <code>
+            &lt;p&gt;Product specs&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;p&gt;Item info 1&lt;/p&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;p&gt;Item info 2&lt;/p&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;p&gt;Item info spec 3&lt;/p&gt;&lt;/li&gt;
+            &lt;ul&gt;
+
+          </code>
+        </pre>
+
+
+        <p>NUMBERED LISTS</p>
+        <p>Product detail breakdown</p>
+        <ol>
+          <li>Lorem ipsum item 1</li>
+          <li>Lorem ipsum item 2</li>
+          <li>Lorem ipsum item 3</li>
+        </ol>
+        <p>Sample code:</p>
+        <pre>
+          <code>
+            &lt;p&gt;Product breakdown info&lt;/p&gt;
+            &lt;ol&gt;
+              &lt;li&gt;&lt;p&gt;Item list 1&lt;/p&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;p&gt;Item list 2&lt;/p&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;p&gt;Item list 3&lt;/p&gt;&lt;/li&gt;
+            &lt;ol&gt;
+
+          </code>
+        </pre>
+
+      </section>
+
+      <section id="grids">
+        <h2 class="sectionheader">Grid System</h2>
+        <p id="gridparagraph">Our grid system consists of 12 columns with a 20px gutter. Many of our layouts skip the first and last column, spanning the 10 inner columns of the grid. An example of the 12 column grid is below, along with our other grid layout sizes.</p>
+
+        <div class="gridcolumnscontainer">
+
+
+          <div class="column-container">
+
+              <section class="">
+                <!-- <p>yeet1</p> -->
+                <p>col - 1</p>
+              </section>
+              <section class="">
+                <p>col - 2</p>
+              </section>
+              <section class="">
+                <p>col - 3</p>
+              </section>
+              <section class="">
+                <p>col - 4</p>
+              </section>
+              <section class="">
+                <p>col - 5</p>
+              </section>
+              <section class="">
+                <p>col - 6</p>
+              </section>
+              <section class="">
+                <p>col - 7</p>
+              </section>
+              <section class="">
+                <p>col - 8</p>
+              </section>
+              <section class="">
+                <p>col - 9</p>
+              </section>
+              <section class="">
+                <p>col - 10</p>
+              </section>
+              <section class="">
+                <p>col - 11</p>
+              </section>
+              <section class="">
+                <p>col - 12</p>
+              </section>
+
+          </div>
+
+
+        </div>
+
+        <h3>Full Span</h3>
+        <div class="fullspancontainer">
+          <section>
+            <p>col - 10</p>
+          </section>
+
+        </div>
+
+        <h3>Half & Half Span</h3>
+        <div class="fullspancontainer" id="halfandhalf">
+          <section class="col5-1">
+            <p>col - 5</p>
+          </section>
+          <section class="col5-2">
+            <p>col - 5</p>
+          </section>
+
+        </div>
+
+
+        <h3>1/3 2/3 Span</h3>
+        <div class="fullspancontainer">
+          <div class="col3">
+            <section>
+              <p>col - 3</p>
+            </section>
+          </div>
+          <div class="col6">
+            <section>
+              <p>col - 6</p>
+            </section>
+          </div>
+
+        </div>
+
+        <h3>2/3 1/3 Span</h3>
+        <div class="fullspancontainer">
+          <div class="col6-2">
+            <section>
+              <p>col - 6</p>
+            </section>
+          </div>
+          <div class="col3-2">
+            <section>
+              <p>col - 3</p>
+            </section>
+          </div>
+
+        </div>
+
+
+        <h3>Half & Half Bleed</h3>
+        <div class="fullspancontainer">
+          <section class="col6-left">
+            <p>col - 6</p>
+          </section>
+          <section class="col6-right">
+            <p>col - 6</p>
+          </section>
+
+        </div>
+
+        <h3>1/3 2/3 Bleed</h3>
+        <div class="fullspancontainer">
+          <section class="col4">
+            <p>col - 4</p>
+          </section>
+          <section class="col8">
+            <p>col - 8</p>
+          </section>
+
+        </div>
+
+
+      </section>
+    </div>
+
+
+    <div class="components">
+
+      <section id="buttons">
+        <h2 class="sectionheader">Button UI components</h2>
+        <p>Name: Primary call to action button</p>
+        <p>Description: Main call to action button for 'learn more', 'see more', etc buttons. Interact to view button hover state.</p>
+        <p>Responsive example (of the actual code being executed):</p>
+        <div class="realbuttonexample">
+          <a href="#buttons" class="ctabuttons">learn more</a>
+        </div>
+        <p>Code sample:</p>
+        <pre>
+        <code>
+          &lt;a href="#linktosection" class="ctabuttons"&gt;learn more&lt;/a&gt;
+          .ctabuttons {
+            font-family: "Muli", "Mulish", sans-serif;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #3E3E3E;
+
+            background-color: #EFEFEF;
+            padding: 1em 3em 1em 3em;
+
+            transition: 0.3s;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+          }
+
+          .ctabuttons:hover {
+            color: #F56F54;
+          }
+
+          .ctabuttons:focus {
+            box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+          }
+        </code>
+      </pre>
+
+      <p>Name: Seconday call to action button</p>
+      <p>Description: Orange secondary button for other calls to action. Interact to view button hover state.</p>
+      <p>Responsive example (of the actual code being executed):</p>
+      <div class="realbuttonexample">
+        <a href="#buttons" id="orangebutton">learn more</a>
+      </div>
+      <p>Code sample:</p>
+      <pre>
+      <code>
+        &lt;a href="#linktosection" class="ctabuttonorange"&gt;learn more&lt;/a&gt;
+        .ctabuttonorange {
+          font-family: "Muli", "Mulish", sans-serif;
+          font-weight: 600;
+          color: #FFFFFF;
+          background-color: #F56F54;
+          transition: 0.3s;
+          border-radius: 25px;
+          box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+        }
+
+        .ctabuttons:hover {
+          box-shadow: inset 5px 5px 15px #BEBEBE, inset -5px -5px 15px #FFFFFF;
+        }
+      </code>
+
+      </pre>
+
+      <p>Author: Team</p>
+
+      </section>
+
+
+
+      <section id="inputfields">
+        <h2 class="sectionheader">Input fields</h2>
+        <p>Name: Search and Email input.</p>
+        <p>Description: User input fields for search fields and email entry.</p>
+        <p>Responsive example (of the actual code being executed):</p>
+        <input type="text" name="" value="search" class="searchbar">
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;input type="text" value="search" class="searchbar"&gt;
+            .searchbar {
+              margin-right: 2em;
+              padding: 0.5em 0 0.5em 2em;
+
+              color: #C6D1D3;
+
+              border: 0px;
+              box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+              border-radius: 18px;
+            }
+          </code>
+        </pre>
+        <p>Author: Jason</p>
+
+      </section>
+
+      <section id="inlinelinks">
+        <h2 class="sectionheader">Inline Links</h2>
+        <p>Name: In text links.</p>
+        <p>Description: Links in text for inline navigation to other pages.</p>
+        <p>Responsive example:</p>
+        <p>View our bestsellers <a href="#" class="inlinelink">below</a> or try <a href="#" class="inlinelink">building your own</a> ! </p>
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;a href="#pageorsection""&gt;building your own&lt;/a&gt;
+            p a {
+              color: #F56F54;
+            }
+          </code>
+        </pre>
+        <p>Author: Team</p>
+      </section>
+
+
+      <section id="navigation">
+        <h2 class="sectionheader">Navigation</h2>
+        <p>Name: Main nav.</p>
+        <p>Description: Main navigation module for every page.</p>
+        <p>Responsive example:</p>
+
+
+        <nav class="mininav">
+          <div class="mainnav">
+            <a href="index.html" class="navlink" id="logo">cliq</a>
+            <a href="#" class="shophighlight">shop</a>
+            <a href="#" class="guidehighlight">guides</a>
+            <a href="citations.html" class="citehighlight">citations</a>
+            <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
+
+          </div>
+
+          <div class="searchcart">
+            <input type="text" name="" value="search" class="searchbar">
+            <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+          </div>
+
+        </nav>
+
+
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;nav&gt;
+              &lt;div class="mainnav"&gt;
+                &lt;a href="index.html" class="navlink" id="logo"&gt;cliq&lt;/a&gt;
+                &lt;a href="#page" class="navlink"&gt;shop&lt;/a&gt;
+                &lt;a href="#page" class="navlink"&gt;guides&lt;/a&gt;
+                &lt;a href="#page" class="navlink"&gt;citations&lt;/a&gt;
+                &lt;a href="#page" class="navlink"&gt;patterns&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="searchcart"&gt;
+                &lt;input type="text" value="search" class="searchbar"&gt;
+                &lt;a href="#page"&lt;img src="img/bagicon.png"&gt;patterns&lt;/a&gt;
+            &lt;/nav&gt;
+
+            nav {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              margin: 0 1.5em 0 1.5em;
+              font-family: "Mulish", sans-serif;
+
+            }
+
+            nav .mainnav a{
+              padding: 0 1.5em 0 1.5em;
+              color: #3E3E3E;
+            }
+
+            nav .mainnav a:hover{
+              color: #F56F54;
+            }
+
+            nav #logo {
+              padding: 0.5em 1em 0.5em 1em;
+              margin-right: 1em;
+              font-size: 28px;
+
+              border-radius: 25px;
+              background: #EFEFEF;
+              box-shadow: 15px 15px 30px #CBCBCB, -15px -15px 30px #FFFFFF;
+
+              font-family: "Comfortaa";
+              font-weight: 400;
+              color: #3E3E3E;
+            }
+
+            nav #logo:focus {
+              box-shadow: inset 8px 8px 20px #CBCBCB, inset -15px -15px 30px #FFFFFF;
+              color: #F56F54;
+            }
+
+            .searchbar{
+              margin-right: 2em;
+              padding: 0.5em 0 0.5em 2em;
+
+              color: #C6D1D3;
+
+              border: 0px;
+              box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+              border-radius: 18px;
+            }
+
+            nav .searchcart a{
+              padding: 0.5em 1em 0.5em 1em;
+              box-shadow: 7px 7px 14px #BABABA, -8px -8px 9px #FFFFFF;
+              border-radius: 18px;
+            }
+          </code>
+        </pre>
+        <p>Author: Marina</p>
+
+      </section>
+
+      <section id="productcard">
+        <h2 class="sectionheader">Product card</h2>
+        <p>Name: Product/item card module.</p>
+        <p>Description: Product card module for product list pages.</p>
+        <p>Responsive example:</p>
+
+        <div class="sampleproductcard">
+          <a href="#"><img src="img/clearkeycaps2.png" alt="keycap banner image"></a>
+
+          <div class="productinfo">
+            <div class="">
+              <p>CLEAR KEYCAPS</p>
+              <p>In Stock</p>
+            </div>
+            <div class="">
+              <p class="orangepricetag">$35</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;div class="productinfo"&gt;
+              &lt;img src="img/source.png"&gt;
+              &lt;p&gt;Clear Keycaps&lt;/p&gt;
+              &lt;p class="orangepricetag"&gt;$35&lt;/p&gt;
+              &lt;p&gt;In Stock&lt;/p&gt;
+            &lt;/div&gt;
+
+            .sampleproductcard img{
+              width: 100%;
+              height: 225px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+
+              border: 2px solid white;
+              border-radius: 12px;
+            }
+
+            .sampleproductcard {
+              /*border: 2px solid red;*/
+              border: none;
+              border-radius: 25px;
+              background-color: #EFEFEF;
+              width: 300px;
+
+              display: flex;
+              flex-direction: column;
+              padding: 1em;
+              box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+              margin: 2rem 0 2rem 0;
+            }
+
+            .productinfo{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+
+            .productinfo p{
+              max-width: none;
+              padding: 0;
+              margin: 0.25em;
+            }
+
+            .productinfo div:first-child {
+              width: 85%;
+            }
+
+            .orangepricetag {
+              color: #F56F54;
+            }
+
+
+          </code>
+        </pre>
+        <p>Author: Jason</p>
+
+      </section>
+
+      <section id="productdetail">
+        <h2 class="sectionheader">Product detail</h2>
+        <p>Name: Product detail component</p>
+        <p>Description: Top part of product detail page that displays image of product, add to cart button, and description.</p>
+        <p>Responsive example:</p>
+
+        <div class="sampleproductheader">
+          <div class="">
+            <img src="img/clearkeycaps3.png" alt="keycap banner image">
+
+          </div>
+
+          <div class="productcontentcontainer">
+
+            <div class="realbuttonexample">
+                <a href="#productdetail">add to cart</a>
+            </div>
+
+
+            <div class="blackbox">
+              <section>
+                <h3>Clear Resin Keycap Set</h3>
+                <h4>$35</h4>
+                <p>Product info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+              </section>
+            </div>
+
+          </div>
+
+        </div>
+
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;img src="img/source.png"&gt;
+            &lt;a href="#linktosection" class="ctabuttons"&gt;add to cart&lt;/a&gt;
+            &lt;div class="blackbox"&gt;
+              &lt;section&gt;
+                &lt;p&gt;Product name - Clear Resin Keycap Set&lt;/p&gt;
+                &lt;p&gt;Product info lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
+              &lt;/section&gt;
+            &lt;/div&gt;
+
+            .sampleproductheader .blackbox {
+              background-color: #312E37;
+              padding: 0 2em 2em 2em;
+            }
+
+            .sampleproductheader .blackbox h3{
+              color: white;
+              font-size: 1.75em;
+
+            }
+            .sampleproductheader .blackbox h4{
+              font-family: moonFont;
+              color: white;
+            }
+            .sampleproductheader .blackbox p{
+              color: white;
+              font-size: 0.8em;
+              max-width: 80%;
+
+            }
+          </code>
+        </pre>
+        <p>Author: Daniel</p>
+
+      </section>
+
+
+      <section id="checkout">
+        <h2 class="sectionheader">Shopping Cart</h2>
+        <p>Name: Shopping cart checkout module</p>
+        <p>Description: Checkout module overlay that appears when user adds item to cart and continues to checkout with secondary orange CTA button for proceeding to checkout.</p>
+        <p>Responsive example:</p>
+
+        <div class="shoppingcart">
+          <h3>Your Cart</h3>
+          <img src="img/orangeline.svg" alt="">
+
+          <div class="product">
+            <img src="img/cartkeycapthumbnail.png" alt="" class="productthumbnail">
+            <div class="description">
+              <div class="">
+                <h4>Clear Resin Keycap Set</h4>
+                <p>Microchip style clear resin artisan keycaps.</p>
+              </div>
+
+              <h4 class="orangepricetag">$35</h4>
+            </div>
+          </div>
+
+
+          <img src="img/greyline.svg" alt="">
+
+          <div class="subtotal">
+            <h4>Subtotal</h4>
+            <h4>$35.00</h4>
+          </div>
+          <div class="checkoutbutton">
+            <a href="#" class="ctabuttonorange">proceed to checkout</a>
+          </div>
+
+        </div>
+
+
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;div class="shoppingcart"&gt;
+              &lt;h3&gt;Your Cart&lt;/h3&gt;
+              &lt;img&gt;orangeline.svg&lt;/img&gt;
+              &lt;img&gt;productthumbnail.png&lt;/img&gt;
+              &lt;h4&gt;Product Name Clear Resin Keycap Set&lt;/h4&gt;
+              &lt;p&gt;Brief product description.&lt;/p&gt;
+              &lt;h4 class="orangepricetag"&gt;$35&lt;/h4&gt;
+              &lt;img&gt;greyline.svg&lt;&gt;
+              &lt;h4&gt;Subtotal&lt;/h4&gt;
+              &lt;h4&gt;$35.00&lt;/h4&gt;
+              &lt;a href="#linktopage" class="ctabuttonorange"&gt;proceed to checkout&lt;/a&gt;
+            &lt;/div&gt;
+
+            .shoppingcart{
+              background-color: #EFEFEF;
+              border: 1px solid;
+              border-color: #8E8E8E;
+              border-radius: 35px;
+
+              padding: 2em;
+            }
+
+            .shoppingcart .productthumbnail {
+              width: 125px;
+              height: 150px;
+            }
+
+            .shoppingcart .product {
+              display: flex;
+              flex-direction: row;
+
+              padding: 2em 0 8em 0;
+            }
+          </code>
+        </pre>
+        <p>Author: Team</p>
+
+      </section>
+
+      <section id="footer">
+        <h2 class="sectionheader">Footer</h2>
+        <p>Name: Footer component.</p>
+        <p>Description: Main footer module included on every page.</p>
+        <p>Responsive example:</p>
+
+        <footer>
+          <div class="footertoppart">
+
+            <div class="">
+              <h3>JOIN OUR MAILING LIST</h3>
+              <p>Info about upcoming releases, new arrivals, etc</p>
+              <input type="text" name="" value="email address">
+            </div>
+
+            <div class="">
+              <h3>CLIQ</h3>
+              <p><a href="#">about us</a></p>
+              <p><a href="#">contact us</a></p>
+              <p><a href="#">styleguide</a></p>
+              <p><a href="#">citations</a></p>
+            </div>
+
+            <div class="">
+
+
+            <h3>HELP</h3>
+            <p><a href="#">shipping</a></p>
+            <p><a href="#">returns</a></p>
+            </div>
+
+            <div class="socials">
+
+            </div>
+          </div>
+
+          <div class="footerbottompart">
+          <div class="darklogo">
+            <a href="#">cliq</a>
+          </div>
+
+          <p>&#169; 2021 CLIQ</p>
+
+          </div>
+        </footer>
+
+
+
+
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &lt;footer&gt;
+
+              &lt;h3&gt;JOIN OUR MAILING LIST&lt;/h3&gt;
+              &lt;p&gt;Info about upcoming releases, new arrivals, etc.&lt;/p&gt;
+              &lt;input value="email address"&gt;
+
+              &lt;h3&gt;CLIQ&lt;/h3&gt;
+              &lt;a href="#"&gt;about us&lt;/a&gt;
+              &lt;a href="#"&gt;contact us&lt;/a&gt;
+              &lt;a href="#"&gt;styleguide&lt;/a&gt;
+              &lt;a href="#"&gt;citations&lt;/a&gt;
+
+
+              &lt;h3&gt;HELP&lt;/h3&gt;
+              &lt;a href="#"&gt;shipping&lt;/a&gt;
+              &lt;a href="#"&gt;returns&lt;/a&gt;
+              &lt;a href="#" id="logo"&gt;cliq&lt;/a&gt;
+              &lt;p&gt;Copyright etc&lt;/p&gt;
+            &lt;/footer&gt;
+
+
+            footer {
+              background-color: #312E37;
+              padding: 2.5rem 5%;
+              display: flex;
+              flex-direction: row;
+            }
+            footer h3{
+              color: #C6D1D3;
+            }
+            footer p a, footer p{
+              color: white;
+              max-width: none;
+            }
+          </code>
+        </pre>
+        <p>Author: Marina</p>
+
+      </section>
+
+    <!-- end of ui components -->
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <section>
+      <h5>end of page!</h5>
+    </section>
+
+
+    <footer>
+      <div class="footertoppart">
+
+        <div class="">
+          <h3>JOIN OUR MAILING LIST</h3>
+          <p>Info about upcoming releases, new arrivals, etc</p>
+          <input type="text" name="" value="email address">
+        </div>
+
+        <div class="">
+          <h3>CLIQ</h3>
+          <p><a href="#">about us</a></p>
+          <p><a href="#">contact us</a></p>
+          <p><a href="index.html">styleguide</a></p>
+          <p><a href="citations.html">citations</a></p>
+        </div>
+
+        <div class="">
+
+
+        <h3>HELP</h3>
+        <p><a href="#">shipping</a></p>
+        <p><a href="#">returns</a></p>
+        </div>
+
+        <div class="socials">
+
+        </div>
+      </div>
+
+      <div class="footerbottompart">
+      <div class="darklogo">
+        <a href="index.html">cliq</a>
+      </div>
+
+      <p>&#169; 2021 CLIQ</p>
+
+      </div>
+
+    </footer>
+
+    <!-- link to the js file -->
+    <script src="js/tabhighlighting.js"></script>
+
+
+  </body>
+  </html>
