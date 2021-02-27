@@ -26,3 +26,11 @@ function processpageFuntion() {
     elems[i].style.display = 'block';
   }
 }
+
+function patternPageFunctionTest() {
+  var elems = document.getElementsByClassName('patternhighlight');
+  for (var i=0;i<elems.length;i+=1){
+    elems[i].style.display = 'inline-block';
+    elems[i].style.color = '#F56F54';
+  }
+}
