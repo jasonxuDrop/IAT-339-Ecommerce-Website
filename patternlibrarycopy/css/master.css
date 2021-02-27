@@ -250,8 +250,23 @@ nav .searchcart a:focus{
   color: #3E3E3E;
 }
 
+.hero-product-container{
+  position: relative;
+}
 
+.hero-product-container .real-button-example{
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
 
+.real-button-example {
+  padding: 1.5em .75em;
+  background-color: #efefef;
+  border-radius: 20px;
+}
+
+/* TODO convert real button example to primary button class */
 
 
 
@@ -277,10 +292,6 @@ nav .searchcart a:focus{
   box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
 }
 
-.real-button-example {
-  margin: 3em 0 3em 0;
-}
-
 .real-button-example .orangebutton {
   color: #F56F54;
 }
@@ -293,6 +304,8 @@ nav .searchcart a:focus{
 .real-button-example .orangebutton:focus{
   box-shadow: inset 10px 10px 20px #D05E47, inset -10px -10px 20px #FFAB97;
 }
+
+/* End of TODO convert real button example to primary button class */
 
 .flat-button {
 	display: block;
@@ -1022,10 +1035,6 @@ footer p {
     flex-direction: column;
 
   }
-
-  /*footer{
-    grid-column: 1 / 9;
-  }*/
 
 
 }
