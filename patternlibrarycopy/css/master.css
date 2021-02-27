@@ -199,14 +199,14 @@ nav .searchcart a:focus{
 /* End of Nav */
 
 
-.maincontentwrapper {
+.main-content-wrapper {
   display: grid;
 
   grid-template-columns: repeat(8, 1fr);
 
 }
 
-.maincontent {
+.main-content {
   grid-column: 4 / span 8;
   padding-left: 2rem;
   padding-right: 2em;
@@ -583,12 +583,12 @@ a.sampleproductcard:hover{
 
 
 
-#mockupsmaincontent img{
+#mockupsmain-content img{
   width: 100%;
   height: auto;
 }
 
-#wireframemaincontent img{
+#wireframemain-content img{
   width: 100%;
   height: auto;
 }
@@ -894,6 +894,8 @@ footer p {
 
 
 
+
+
 /* 890 px / 16 = 59 em*/
 /* when smaller than or equal to this max width, apply this content*/
 @media screen and (max-width: 58em) {
@@ -989,7 +991,7 @@ footer p {
   }
 
 
-  .maincontentwrapper {
+  .main-content-wrapper {
     display: grid;
 
     grid-template-columns: repeat(8, 1fr);

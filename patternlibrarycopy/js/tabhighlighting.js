@@ -12,6 +12,7 @@ function patternpageFuntion() {
   }
 }
 
+
 function citationpageFuntion() {
   var elems = document.getElementsByClassName('citehighlight');
   for (var i = 0; i < elems.length; i++){
