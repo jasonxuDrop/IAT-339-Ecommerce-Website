@@ -223,6 +223,20 @@
             &lt;ol&gt;
           </code>
         </pre>
+
+        <p>TEXT WITH LIGHTER COLOR</p>
+        <p class="light-color-text">less important text</p>
+        
+        <p>Sample code:</p>
+        <pre>
+          <code>
+            &lt;p class=&#x22;light-color-text&#x22;&gt;less important text&lt;/p&gt;
+
+            .light-color-text{
+              color: #C6D1D3;
+            }
+          </code>
+        </pre>
       </section> <!-- end of typography examples section -->
 
       <!-- grid system sample -->
@@ -343,6 +357,7 @@
 
       <!-- Button components -->
       <!-- TODO disable drag on buttons -->
+      <!-- TODO button does not work outside of <div.real-button-example> -->
 
       <section id="buttons">
 
@@ -385,13 +400,13 @@
       <p>Description: Orange secondary button for other calls to action. Interact to view button hover state.</p>
       <p>Responsive example (of the actual code being executed):</p>
       <div class="real-button-example">
-        <a href="#buttons" id="orangebutton">learn more</a>
+        <a href="#buttons" class="orangebutton">learn more</a>
       </div>
       <p>Code sample:</p>
       <pre>
       <code>
-        &lt;a href="#linktosection" class="ctabuttonorange"&gt;learn more&lt;/a&gt;
-        .ctabuttonorange {
+        &lt;a href="#linktosection" class="orangebutton"&gt;learn more&lt;/a&gt;
+        .orangebutton {
           font-family: "Muli", "Mulish", sans-serif;
           font-weight: 600;
           color: #FFFFFF;
@@ -575,7 +590,7 @@
           <div class="product-info">
             <div class="">
               <p>CLEAR KEYCAPS</p>
-              <p>In Stock</p>
+              <p class="light-color-text">In Stock</p>
             </div>
             <div class="">
               <p class="orange-pricetag">$35</p>
@@ -722,18 +737,35 @@
 
         <!-- live example -->
         <div class="shopping-cart">
-          <h3>Your Cart</h3>
+          <div class="flex-row space-between">
+            <h3>Your Cart</h3>
+            <a class="flat-button" href="">
+              <img src="img/icons/x.svg" alt="">
+            </a>
+          </div>
           <img src="img/orangeline.svg" alt="">
 
           <div class="product">
             <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
             <div class="description">
               <div class="">
-                <h4>Clear Resin Keycap Set</h4>
+                <div class="flex-row space-between">
+                  <h4>Clear Resin Keycap Set</h4>
+                  <a class="flat-button" href="">
+                    <img src="img/icons/x.svg" alt="">
+                  </a>
+                </div>
+
                 <p>Microchip style clear resin artisan keycaps.</p>
               </div>
-
+              
               <h4 class="orange-pricetag">$35</h4>
+
+              <h4>
+                <a class="flat-button small">-</a>
+                1
+                <a class="flat-button small">+</a>
+              </h4>
             </div>
           </div>
 
@@ -744,8 +776,8 @@
             <h4>Subtotal</h4>
             <h4>$35.00</h4>
           </div>
-          <div class="checkout-button">
-            <a href="#" class="ctabuttonorange">proceed to checkout</a>
+          <div class="real-button-example flex-row justify-content-center">
+            <a href="#buttons" class="orangebutton">proceed to checkout</a>
           </div>
         </div> <!-- end of live sample -->
 

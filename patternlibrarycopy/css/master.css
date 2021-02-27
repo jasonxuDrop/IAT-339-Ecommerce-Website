@@ -82,6 +82,10 @@ h3 {
     letter-spacing: 3px;
 }
 
+.light-color-text{
+  color: #C6D1D3;
+}
+
 .color-swatches{
   height: 8em;
   width: 8em;
@@ -288,19 +292,45 @@ nav .searchcart a{
   margin: 3em 0 3em 0;
 }
 
-#orangebutton {
+.real-button-example .orangebutton {
   color: #F56F54;
 }
 
-#orangebutton:hover {
+.real-button-example .orangebutton:hover {
   background-color: #F56F54;
   color: white;
 }
 
-#orangebutton:focus{
+.real-button-example .orangebutton:focus{
   box-shadow: inset 10px 10px 20px #D05E47, inset -10px -10px 20px #FFAB97;
 }
 
+.flat-button {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	text-decoration: none;
+	font-weight: 400;
+	transition-duration: 0.3s;
+	transition-property: color, box-shadow;
+
+	padding: 6px;
+	border-radius: 15px;
+}
+.flat-button:hover{
+  cursor: pointer;
+  color: #F56F54;
+}
+.flat-button:active {
+  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+}
+.flat-button.small {
+  display: inline;
+  padding: 5px;
+  border-radius: 5px;
+}
 
 
 pre {
@@ -337,9 +367,10 @@ pre code {
 
 
 
-
+/* Product Card */
 
 a.sampleproductcard:hover{
+  /* TODO use a different hover state than opacity if it apply to the whole card */
   opacity: 40%;
 
   cursor: pointer;
@@ -406,7 +437,7 @@ a.sampleproductcard:hover{
 
 
 .shopping-cart {
-  width: 50%;
+  width: clamp(20em,50%,28em);
   border: 1px solid;
   border-color: #8E8E8E;
   border-radius: 35px;
@@ -431,8 +462,8 @@ a.sampleproductcard:hover{
 }
 
 .shopping-cart .product-thumbnail {
-  width: 125px;
-  height: 150px;
+  width: clamp(100px, 40%, 125px);
+  height: auto;
 }
 
 .shopping-cart .product {
@@ -958,4 +989,20 @@ footer .dark-logo a {
   }*/
 
 
+}
+
+
+
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-row.space-between{
+  justify-content: space-between;
+}
+.flex-row.justify-content-center {
+  justify-content: center;
 }
