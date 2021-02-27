@@ -1,23 +1,19 @@
+@font-face {
+  font-family: moonFont;
+  src: url(../fonts/MoonLight.otf);
+}
 
-
-/* dont funk with this stuff */
 *, *::after, *::before{
   box-sizing: border-box;
 }
 
 body {
-
   font-family: "Mulish", "Roboto", sans-serif;
   background-color: #EFEFEF;
-  /*font-weight: bold;*/
+  color: #3E3E3E;
 }
 
-/*font-weight: 400; //normal
-font-weight: 500; //medium
-font-weight: 700; //bold*/
-
 body, html {
-  /*height: 100%;*/
   margin: 0;
 
 }
@@ -28,10 +24,7 @@ a {
 }
 
 section {
-    /*padding: 2.5rem 5%;*/
     padding: 2.5rem 0 2.5rem 0;
-    /*padding-bottom: 2rem;*/
-    /*margin: 1rem 0;*/
 }
 
 header h1 {
@@ -44,20 +37,14 @@ header {
 
 
 p {
-  color: #3E3E3E;
   line-height: 140%;
-
-  max-width: 75%;
-
 }
 
-@font-face {
-  font-family: moonFont;
-  src: url(../fonts/MoonLight.otf);
+section p {
+  max-width: 75%;
 }
 
 h1 {
-    /*font-family: "Moon", "Mulish", sans-serif;*/
     font-family: moonFont;
     font-weight: 300;
     color: #3E3E3E;
@@ -66,7 +53,6 @@ h1 {
 }
 
 h2 {
-  /*font-family: "Moon", "Mulish", sans-serif;*/
   font-family: moonFont;
   font-weight: 300;
   color: #3E3E3E;
@@ -92,10 +78,6 @@ h3 {
 }
 
 nav {
-  /*background-color: aqua;*/
-  /*padding: 2rem;*/
-  /*margin: 2.5rem 10%;*/
-  /*text-align: right;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,6 +87,21 @@ nav {
 
 }
 
+/* Beginning of Nav */
+
+
+.logo-dark a{
+  width: 52pt;
+  height: auto;
+  color: #FAFBFF;
+  background-color: #312E37;
+  border-radius: 30pt;
+  box-shadow:  8px 8px 16px #242228,
+   -8px -8px 16px #3E3A46;
+  text-align: center;
+  padding: 18pt 30pt;
+  font-family: 'Comfortaa', cursive;
+}
 
 nav .mainnav a{
   padding: 0 1.5em 0 1.5em;
@@ -116,10 +113,6 @@ nav .mainnav a:hover{
 }
 
 nav #logo {
-
-
-  /*border: 1px solid;*/
-  /*border-color: pink;*/
   padding: 0.5em 1em 0.5em 1em;
   margin-right: 1em;
   font-size: 28px;
@@ -128,12 +121,9 @@ nav #logo {
   border-radius: 25px;
   background: #EFEFEF;
   box-shadow: 15px 15px 30px #CBCBCB, -15px -15px 30px #FFFFFF;
-  /*box-shadow: 30px 30px 25px #d4d4d4, -30px -30px 25px #ffffff;*/
 
   font-family: "Comfortaa";
   font-weight: 400;
-
-  /*color: red;*/
   color: #3E3E3E;
 }
 
@@ -141,15 +131,10 @@ nav #logo {
 
 
 nav #logo:focus {
-  box-shadow: inset 8px 8px 20px #CBCBCB, inset -15px -15px 30px #FFFFFF;
-  /*box-shadow: 30px 30px 25px #d4d4d4, -30px -30px 25px #ffffff;*/
+  box-shadow: inset 8px 8px 10px #CBCBCB, inset -15px -15px 20px #FFFFFF;
 
-
-  /*color: red;*/
   color: #F56F54;
 }
-/*
-nav .searchcart input {*/
 
 .searchbar{
   margin-right: 2em;
@@ -167,6 +152,17 @@ nav .searchcart a{
   box-shadow: 7px 7px 14px #BABABA, -8px -8px 9px #FFFFFF;
   border-radius: 18px;
 }
+nav .searchcart a:hover{
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: 12px 12px 16px #BABABA, -14px -14px 12px #FFFFFF;
+  border-radius: 18px;
+}
+nav .searchcart a:focus{
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: inset 5px 5px 8px #BABABA, inset -5px -5px 8px #FFFFFF;
+  border-radius: 18px;
+}
+
 #shoppingbagimg {
   width: 20px;
   height: auto;
@@ -183,7 +179,8 @@ nav .searchcart a{
 }
 
 .subnav ul {
-  padding: 2em 0 2em 0;
+  padding: 2.5em 0 2.5em 0;
+  margin: 0;
 }
 
 .subnav li {
@@ -199,28 +196,26 @@ nav .searchcart a{
   color: #F56F54;
 }
 
+/* End of Nav */
+
 
 .maincontentwrapper {
   display: grid;
 
   grid-template-columns: repeat(8, 1fr);
 
-  /*grid-template-rows: 5rem 2fr 1fr 5rem;*/
-
 }
 
 .maincontent {
   grid-column: 4 / span 8;
   padding-left: 2rem;
+  padding-right: 2em;
 }
 
 #neucolourchip {
   box-shadow: 10px 10px 30px #CBCBCB, -10px -10px 30px #FFFFFF;
 }
 
-/*#colour-palette {
-
-}*/
 
 #colour-palette .colourchips{
   display: grid;
@@ -235,14 +230,9 @@ nav .searchcart a{
 
 .hero-container {
   display: grid;
-  /*grid-template-columns: 20% 20% 20% 20% 20%;*/
   grid-template-columns: repeat(8, 1fr);
-  /*grid-template-rows:;*/
 
   grid-template-rows: repeat(8, 1fr);
-
-
-  /*padding: 2.5rem 5%;*/
 }
 
 .hero-container .content {
@@ -253,7 +243,6 @@ nav .searchcart a{
 
 
 .hero-container h1{
-  /*font-family: "Moon", "Mulish", sans-serif;*/
   font-family: moonFont;
   font-size: 3rem;
   font-weight: 300;
@@ -334,15 +323,10 @@ nav .searchcart a{
 
 
 pre {
-  /*background-color: aqua;*/
   background-color: #312E37;
   color: white;
   max-width: 100%;
-}
-
-pre code {
-  /*background-color: pink;*/
-
+  overflow-x: scroll;
 }
 
 
@@ -351,7 +335,6 @@ pre code {
 }
 
 .inlinelink:hover {
-  /*color: #312E37;*/
   opacity: 50%;
 
 }
@@ -390,10 +373,8 @@ a.sampleproductcard:hover{
 }
 
 .sampleproductcard {
-  /*border: 2px solid red;*/
   border: none;
   border-radius: 25px;
-  /*background-color: pink;*/
   background-color: #EFEFEF;
   width: 300px;
 
@@ -560,7 +541,6 @@ a.sampleproductcard:hover{
   background-color: #312E37;
   padding: 0 2em 2em 2em;
 
-  /*width: 50%;*/
 }
 
 .sample-product-header .black-box h3{
@@ -596,10 +576,6 @@ a.sampleproductcard:hover{
 
 .mininav .mainnav #logo {
   margin: 0;
-}
-
-.mininav .searchcart input {
-
 }
 
 
@@ -638,94 +614,157 @@ ol li {
 }
 
 
+/* TODO DANIEL */
 
 
+/* Beginning of Footer */
 
-
-footer {
+footer{
+  min-height: 45vh;
   background-color: #312E37;
-  padding: 2.5rem 5%;
-
-
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: column;
+  color:#FAFBFF;
+  padding: 1em;
 }
 
-footer .footer-bottom {
+footer .footer-row{
   display: flex;
-  flex-direction: row;
+  margin: auto 3em auto 3em;
   justify-content: space-between;
-  align-items: center;
-
-  margin: 5em 0 3em 0;
 }
 
-footer .footer-toppart {
+footer ul li{
+  margin: 0;
+  padding: 0;
+}
+
+footer ul{
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li a{
+  color: #FAFBFF;
+}
+
+footer p {
+  margin-top: 0;
+  max-width: 100%;
+}
+
+.company-info-wrapper{
   display: flex;
-  flex-direction: row;
-
 }
 
-footer .footer-toppart div p a:hover{
-  /*color: red;*/
-  opacity: 75%;
+.social-media-links ul li{
+  display: inline;
+  margin: auto .25em;
 }
 
-footer .footer-toppart div {
-  padding-right: 2em;
-}
-
-footer h3{
-  font-size: 1em;
-  font-weight: 300;
-  color: #C6D1D3;
-  letter-spacing: 0;
+.social-media-links {
+  display: inline;
+  margin: 0 2em 0 2em;
 }
 
 
-
-footer p a, footer p{
-  color: white;
-  max-width: none;
+.company-list-info{
+  margin: 0 2em 0 2em;
 }
 
-footer input {
-  font-family: "Mulish", sans-serif;
-  font-size: 0.9em;
-  color: #C6D1D3;
-  background-color: #312E37;
+
+.text-input-dark{
+  width: 200pt;
+  padding: 8pt 14pt 8pt 14pt;
+  border-radius: 20px;
+  text-decoration: none;
   border: none;
-
-  box-shadow: inset 15px 15px 20px #242228, inset -15px -15px 30px #3E3A46;
-  border-radius: 18px;
-  padding: 0.75em 5em 0.75em 2em;
+  font-size: 14pt;
+  box-shadow: inset 5px 5px 10px #242228,
+  inset -5px -5px 10px #3E3A46;
+  background-color: #312E37;
+  color: #C6D1D3;
 }
 
-footer .dark-logo a {
-
-  /*border: 1px solid;*/
-  /*border-color: pink;*/
-  padding: 0.5em 1em 0.5em 1em;
-  font-size: 28px;
+/* End of Footer */
 
 
-  border-radius: 25px;
-  box-shadow: 15px 15px 30px #242228, -15px -15px 30px #3E3A46;
-  /*box-shadow: 30px 30px 25px #d4d4d4, -30px -30px 25px #ffffff;*/
 
-  font-family: "Comfortaa";
-  font-weight: 400;
+/* Nav Media Queries */
+@media only screen and (max-width: 73em){
+  #dropbtn{
+      display: none;
+  }
 
-  color: white;
+  .logo-dark{
+      display: none;
+  }
+  .copyright{
+      text-align: center;
+      width: 100%;
+      margin: auto;
+  }
+
+  footer .footer-row{
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+  }
+  .company-info-wrapper{
+      margin-top: 2em;
+      justify-content: center;
+  }
+  footer .footer-row.mailing-list > *{
+      font-size: 14pt;
+      color: #efefef;
+  }
+  .social-media-links ul{
+      flex-direction: column;
+      display: flex;
+  }
+
 }
 
+
+@media only screen and (max-width: 50em){
+  #dropbtn{
+      display: contents;
+  }
+  .nav-menu > .nav-mobile > * {
+      margin: .5em 0;
+  }
+  .company-info-wrapper > *{
+      margin: auto;
+  }
+  .company-info-wrapper{
+      flex-wrap: wrap;
+  }
+  .social-media-links ul{
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 3em auto;
+  }
+  .company-list-info{
+      margin: 1em 2em;
+  }
+  footer{
+      min-height: 60vh;
+  }
+}
+
+/* End of Nav Media Queries */
+
+
+/* END OF TODO DANIEL */
 
 
 #grids .gridcolumnscontainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 3em);
-  /*grid-template-rows: 5rem 2fr 1fr 5rem;*/
 
-  /*background-color: yellow;*/
 
 }
 
@@ -743,16 +782,13 @@ footer .dark-logo a {
   display: grid;
 
 
-  /*grid-template-columns: 0.5rem 1fr 1fr 1fr 0.5rem;*/
   grid-template-columns: repeat(12, 1fr);
-  /*grid-column-gap: 20px;*/
 
 }
 
 .fullspancontainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /*background-color: aqua;*/
   background-color: #B8DAE4;
 }
 
@@ -761,6 +797,7 @@ footer .dark-logo a {
   grid-column: 2 / 12;
   margin: 20px 0 20px 0;
   padding: 0.5em 0 0.5em 0;
+  text-align: center;
 
 }
 
@@ -843,7 +880,6 @@ footer .dark-logo a {
   padding-bottom: 1em;
   margin-bottom: 2em;
   border-bottom: 1.5px solid #F56F54;
-  width: 80%;
 }
 
 
@@ -869,6 +905,22 @@ footer .dark-logo a {
 
 }
 
+
+@media screen and (max-width: 59em) {
+  nav {
+    /*background-color: pink;*/
+  }
+
+  nav .mainnav a {
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  nav #logo {
+    margin-right: 0.25em;
+  }
+
+}
+
 /* dealing with the product cards*/
 @media screen and (max-width: 43em) {
 
@@ -886,7 +938,7 @@ footer .dark-logo a {
   }
 
   nav {
-    /*background-color: pink;*/
+    /*background-color: aqua;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -910,10 +962,6 @@ footer .dark-logo a {
     padding: 0;
     margin: 0;
   }
-  /*nav .mainnav a{
-    padding: 0.5em 0.75em 0.5em 0.75em;
-    margin: 10px 0 10px 0;
-  }*/
 
   .mainnav {
     display: flex;
@@ -938,7 +986,6 @@ footer .dark-logo a {
     padding: 0;
 
     grid-column: 2 / 8;
-    /*background-color: yellow;*/
   }
 
 
@@ -947,15 +994,7 @@ footer .dark-logo a {
 
     grid-template-columns: repeat(8, 1fr);
 
-    /*grid-template-rows: 5rem 2fr 1fr 5rem;*/
 
-  }
-
-  .maincontent {
-    grid-column: 2 / 8;
-    /*padding-left: 2rem;*/
-    padding: 0;
-    /*background-color: aqua;*/
   }
 
   p {
