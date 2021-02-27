@@ -111,8 +111,7 @@ nav #logo {
 
 
 nav #logo:focus {
-  box-shadow: inset 8px 8px 20px #CBCBCB, inset -15px -15px 30px #FFFFFF;
-
+  box-shadow: inset 8px 8px 10px #CBCBCB, inset -15px -15px 20px #FFFFFF;
 
   color: #F56F54;
 }
@@ -133,6 +132,17 @@ nav .searchcart a{
   box-shadow: 7px 7px 14px #BABABA, -8px -8px 9px #FFFFFF;
   border-radius: 18px;
 }
+nav .searchcart a:hover{
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: 12px 12px 16px #BABABA, -14px -14px 12px #FFFFFF;
+  border-radius: 18px;
+}
+nav .searchcart a:focus{
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: inset 5px 5px 8px #BABABA, inset -5px -5px 8px #FFFFFF;
+  border-radius: 18px;
+}
+
 #shoppingbagimg {
   width: 20px;
   height: auto;
@@ -149,7 +159,8 @@ nav .searchcart a{
 }
 
 .subnav ul {
-  padding: 2em 0 2em 0;
+  padding: 2.5em 0 2.5em 0;
+  margin: 0;
 }
 
 .subnav li {
@@ -588,7 +599,7 @@ footer p {
 }
 
 .company-info-wrapper{
-  display: flex;   
+  display: flex;
 }
 
 .social-media-links ul li{
@@ -832,6 +843,22 @@ footer p {
 
 }
 
+
+@media screen and (max-width: 59em) {
+  nav {
+    /*background-color: pink;*/
+  }
+
+  nav .mainnav a {
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  nav #logo {
+    margin-right: 0.25em;
+  }
+
+}
+
 /* dealing with the product cards*/
 @media screen and (max-width: 43em) {
 
@@ -849,6 +876,7 @@ footer p {
   }
 
   nav {
+    /*background-color: aqua;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
