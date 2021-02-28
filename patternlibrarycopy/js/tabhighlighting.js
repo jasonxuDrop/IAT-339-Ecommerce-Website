@@ -12,6 +12,7 @@ function patternpageFuntion() {
   }
 }
 
+
 function citationpageFuntion() {
   var elems = document.getElementsByClassName('citehighlight');
   for (var i = 0; i < elems.length; i++){
@@ -23,5 +24,13 @@ function processpageFuntion() {
   var elems = document.getElementsByClassName('underline4');
   for (var i=0;i<elems.length;i+=1){
     elems[i].style.display = 'block';
+  }
+}
+
+function patternPageFunctionTest() {
+  var elems = document.getElementsByClassName('patternhighlight');
+  for (var i=0;i<elems.length;i+=1){
+    elems[i].style.display = 'inline-block';
+    elems[i].style.color = '#F56F54';
   }
 }
