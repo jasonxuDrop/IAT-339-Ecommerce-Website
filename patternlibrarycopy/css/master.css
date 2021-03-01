@@ -108,7 +108,7 @@ nav {
   font-family: 'Comfortaa', cursive;
 }
 
-nav .mainnav a{
+.mainnav a{
   /*padding: 0 1.5em 0 1.5em;*/
   padding: 0.5em 1.5em 0.5em 1.5em;
   color: #3E3E3E;
