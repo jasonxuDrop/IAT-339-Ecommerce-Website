@@ -314,6 +314,7 @@ a.ctabuttons:focus{
 }
 
 .secondary-button:focus{
+  background-color: #F56F54;
   box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 9px 9px 13px #D05E47, inset -9px -9px 12px #FF8061;
 }
 
@@ -378,8 +379,7 @@ pre {
 /* Product Card */
 
 a.sampleproductcard:hover{
-  /* TODO use a different hover state than opacity if it apply to the whole card */
-  opacity: 40%;
+  box-shadow: 10px 10px 20px #CBCBCB, -10px -10px 20px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
 
   cursor: pointer;
 }
@@ -408,7 +408,7 @@ a.sampleproductcard:hover{
 
   padding: 1em;
 
-  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+  box-shadow: 3px 3px 6px rgba(203, 203, 203, .65), -3px -3px 6px rgba(255, 255, 255, .65), inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
 
   margin: 2rem 0 2rem 0;
 
@@ -442,6 +442,7 @@ a.sampleproductcard:hover{
 
 
 
+/* START OF SHOPPING CART */
 .shopping-cart {
   width: clamp(20em,50%,28em);
   border: 1px solid;
@@ -483,6 +484,7 @@ a.sampleproductcard:hover{
 .shopping-cart .product {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .shopping-cart .subtotal {
@@ -528,6 +530,7 @@ a.sampleproductcard:hover{
 .product .description h4 {
   margin: 0;
 }
+/* END OF SHOPPING CART */
 
 
 .product-content-container {
@@ -545,7 +548,6 @@ a.sampleproductcard:hover{
   grid-column: 1/5;
   grid-row: 1/7;
 }
-
 
 
 

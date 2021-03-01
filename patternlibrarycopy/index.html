@@ -294,7 +294,8 @@
 
             transition: 0.3s;
             border-radius: 20px;
-            box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+            box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+            cursor: pointer;
           }
 
           .ctabuttons:hover {
@@ -302,7 +303,7 @@
           }
 
           .ctabuttons:focus {
-            box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+            box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
           }
         </code>
       </pre>
@@ -324,11 +325,12 @@
           background-color: #F56F54;
           transition: 0.3s;
           border-radius: 25px;
-          box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+          box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+          cursor: pointer;
         }
 
         .ctabuttons:hover {
-          box-shadow: inset 5px 5px 15px #BEBEBE, inset -5px -5px 15px #FFFFFF;
+          box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 9px 9px 13px #D05E47, inset -9px -9px 12px #FF8061;
         }
       </code>
 
@@ -512,36 +514,40 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;div class="product-info"&gt;
-              &lt;img src="img/source.png"&gt;
-              &lt;p&gt;Clear Keycaps&lt;/p&gt;
-              &lt;p class="orange-pricetag"&gt;$35&lt;/p&gt;
-              &lt;p&gt;In Stock&lt;/p&gt;
-            &lt;/div&gt;
+            &#x3C;a class=&#x22;sampleproductcard&#x22;&#x3E;
+              &#x3C;img src=&#x22;img/products/ IMAGE PATH&#x22; alt=&#x22;keycap image&#x22;&#x3E;
+              &#x3C;div class=&#x22;product-info&#x22;&#x3E;
+                &#x3C;div class=&#x22;&#x22;&#x3E;
+                  &#x3C;p&#x3E;CLEAR KEYCAPS&#x3C;/p&#x3E;
+                  &#x3C;p class=&#x22;light-color-text&#x22;&#x3E;In Stock&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;&#x22;&#x3E;
+                  &#x3C;p class=&#x22;orange-pricetag&#x22;&#x3E;$35&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+            &#x3C;/a&#x3E;
 
+            a.sampleproductcard {
+              border: none;
+              border-radius: 25px;
+              background-color: #EFEFEF;
+              width: 300px;
+              display: flex;
+              flex-direction: column;
+              padding: 1em;
+              box-shadow: 3px 3px 6px rgba(203, 203, 203, .65), -3px -3px 6px rgba(255, 255, 255, .65);
+              margin: 2rem 0 2rem 0;
+            }
+            a.sampleproductcard:hover{
+              box-shadow: 10px 10px 20px #CBCBCB, -10px -10px 20px #FFFFFF;
+              cursor: pointer;
+            }
             .sampleproductcard img{
               width: 100%;
               height: 225px;
               display: flex;
               flex-direction: row;
               justify-content: center;
-
-              border: 2px solid white;
-              border-radius: 12px;
-            }
-
-            .sampleproductcard {
-              /*border: 2px solid red;*/
-              border: none;
-              border-radius: 25px;
-              background-color: #EFEFEF;
-              width: 300px;
-
-              display: flex;
-              flex-direction: column;
-              padding: 1em;
-              box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
-              margin: 2rem 0 2rem 0;
             }
 
             .product-info{
@@ -549,7 +555,6 @@
               flex-direction: row;
               justify-content: space-between;
             }
-
             .product-info p{
               max-width: none;
               padding: 0;
@@ -559,7 +564,6 @@
             .product-info div:first-child {
               width: 85%;
             }
-
             .orange-pricetag {
               color: #F56F54;
             }
@@ -655,9 +659,7 @@
             </a>
           </div>
           <img src="img/orangeline.svg" alt="">
-
           <div class="cart-product-wrapper">
-            
             <div class="product">
               <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
               <div class="description">
@@ -700,39 +702,121 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;div class="shopping-cart"&gt;
-              &lt;h3&gt;Your Cart&lt;/h3&gt;
-              &lt;img&gt;orangeline.svg&lt;/img&gt;
-              &lt;img&gt;product-thumbnail.png&lt;/img&gt;
-              &lt;h4&gt;Product Name Clear Resin Keycap Set&lt;/h4&gt;
-              &lt;p&gt;Brief product description.&lt;/p&gt;
-              &lt;h4 class="orange-pricetag"&gt;$35&lt;/h4&gt;
-              &lt;img&gt;greyline.svg&lt;&gt;
-              &lt;h4&gt;Subtotal&lt;/h4&gt;
-              &lt;h4&gt;$35.00&lt;/h4&gt;
-              &lt;a href="#linktopage" class="ctabuttonorange"&gt;proceed to checkout&lt;/a&gt;
-            &lt;/div&gt;
+          &#x3C;div class=&#x22;shopping-cart&#x22;&#x3E;
+            &#x3C;div class=&#x22;flex-row space-between&#x22;&#x3E;
+                &#x3C;h3&#x3E;Your Cart&#x3C;/h3&#x3E;
+                &#x3C;a class=&#x22;flat-button&#x22;&#x3E;
+                &#x3C;img src=&#x22;img/icons/x.svg&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;img src=&#x22;img/orangeline.svg&#x22; alt=&#x22;&#x22;&#x3E;
+            &#x3C;div class=&#x22;cart-product-wrapper&#x22;&#x3E;
+                &#x3C;div class=&#x22;product&#x22;&#x3E;
+                    &#x3C;img src=&#x22;img/cartkeycapthumbnail.png&#x22; alt=&#x22;&#x22; class=&#x22;product-thumbnail&#x22;&#x3E;
+                    &#x3C;div class=&#x22;description&#x22;&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;div class=&#x22;flex-row space-between&#x22;&#x3E;
+                            &#x3C;h4&#x3E;Clear Resin Keycap Set&#x3C;/h4&#x3E;
+                            &#x3C;a class=&#x22;flat-button&#x22; href=&#x22;&#x22;&#x3E;
+                                &#x3C;img src=&#x22;img/icons/x.svg&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;/a&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;p&#x3E;Microchip style clear resin artisan keycaps.&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;h4 class=&#x22;orange-pricetag&#x22;&#x3E;$35&#x3C;/h4&#x3E;
+                        &#x3C;h4&#x3E;
+                            &#x3C;a class=&#x22;flat-button small&#x22;&#x3E;-&#x3C;/a&#x3E;
+                            1
+                            &#x3C;a class=&#x22;flat-button small&#x22;&#x3E;+&#x3C;/a&#x3E;
+                        &#x3C;/h4&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                ... repeat div.product as needed... 
+            &#x3C;/div&#x3E;
+            &#x3C;img src=&#x22;img/greyline.svg&#x22; alt=&#x22;&#x22;&#x3E;
+            &#x3C;div class=&#x22;subtotal&#x22;&#x3E;
+                &#x3C;h4&#x3E;Subtotal&#x3C;/h4&#x3E;
+                &#x3C;h4&#x3E;$35.00&#x3C;/h4&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;flex-row justify-content-center&#x22;&#x3E;
+                &#x3C;a href=&#x22;#checkout&#x22; class=&#x22;secondary-button&#x22;&#x3E;proceed to checkout&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+          &#x3C;/div&#x3E;
 
-            .shopping-cart{
-              background-color: #EFEFEF;
-              border: 1px solid;
-              border-color: #8E8E8E;
-              border-radius: 35px;
-
-              padding: 2em;
-            }
-
-            .shopping-cart .product-thumbnail {
-              width: 125px;
-              height: 150px;
-            }
-
-            .shopping-cart .product {
-              display: flex;
-              flex-direction: row;
-
-              padding: 2em 0 8em 0;
-            }
+          .shopping-cart {
+            width: clamp(20em,50%,28em);
+            border: 1px solid;
+            border-color: #8E8E8E;
+            border-radius: 35px;
+            padding: 2em;
+          }
+          
+          .shopping-cart h4{
+            font-family: &#x22;Mulish&#x22;, sans-serif;
+            font-weight: 600;
+            color: #312E37;
+            letter-spacing: 0.75px;
+          }
+          .shopping-cart .orange-pricetag{
+            color: #F56F54;
+          }
+          
+          .shopping-cart img {
+            width: 100%;
+            height: auto;
+          }
+          .shopping-cart .product-thumbnail {
+            width: clamp(100px, 40%, 125px);
+            height: auto;
+          }
+          .shopping-cart .cart-product-wrapper {
+            padding: 2em 0 2em 0;
+            min-height: 20em;
+            height: 100%;
+            flex-grow: 5;
+          }
+          .shopping-cart .product {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+          }
+          .shopping-cart .subtotal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .shopping-cart .checkout-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 2em 0 1em 0;
+          }
+          .shopping-cart .checkout-button a{
+            border: none;
+            border-radius: 25px;
+            background-color: #F56F54;
+            color: white;
+            padding: 1em 2em 1em 2em;
+          
+            box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+          }
+          
+          .product .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 0.5em;
+          }
+          .product .description p {
+            color: #8E8E8E;
+            font-size: 0.8em;
+            max-width: 100%;
+            margin: 0;
+            padding: 0.25em 0 0 0;
+          }
+          .product .description h4 {
+            margin: 0;
+          }
           </code>
         </pre>
         <p>Author: Team</p>
