@@ -271,7 +271,7 @@ nav .searchcart a:focus{
 
 
 
-.real-button-example a {
+a.ctabuttons, a.secondary-button {
   font-family: "Muli", "Mulish", sans-serif;
   font-weight: 600;
   font-size: 0.9em;
@@ -282,32 +282,34 @@ nav .searchcart a:focus{
 
   transition: 0.3s;
   border-radius: 20px;
-  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+  box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+
+  cursor: pointer;
 }
 
-.real-button-example a:hover{
+a.ctabuttons:hover{
   color: #F56F54;
 }
 
-.real-button-example a:focus{
-  box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+a.ctabuttons:focus{
+  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
 }
 
 .real-button-example {
   margin: 3em 0 3em 0;
 }
 
-.real-button-example .secondary-button {
+.secondary-button {
   color: #F56F54;
 }
 
-.real-button-example .secondary-button:hover {
+.secondary-button:hover {
   background-color: #F56F54;
   color: white;
 }
 
-.real-button-example .secondary-button:focus{
-  box-shadow: inset 10px 10px 20px #D05E47, inset -10px -10px 20px #FFAB97;
+.secondary-button:focus{
+  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 9px 9px 13px #D05E47, inset -9px -9px 12px #FF8061;
 }
 
 /* End of TODO convert real button example to primary button class */
@@ -465,11 +467,17 @@ a.sampleproductcard:hover{
   height: auto;
 }
 
+
+.shopping-cart .cart-product-wrapper {
+  padding: 2em 0 2em 0;
+  min-height: 20em;
+  height: 100%;
+  flex-grow: 5;
+}
+
 .shopping-cart .product {
   display: flex;
   flex-direction: row;
-
-  padding: 2em 0 8em 0;
 }
 
 .shopping-cart .subtotal {

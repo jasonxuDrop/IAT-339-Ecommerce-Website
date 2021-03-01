@@ -365,7 +365,6 @@
 
       <!-- Button components -->
       <!-- TODO disable drag on buttons -->
-      <!-- TODO button should work independently outside of <div.real-button-example> -->
       <!-- TODO change button class name for buttons -->
 
       <section id="buttons">
@@ -754,29 +753,33 @@
           </div>
           <img src="img/orangeline.svg" alt="">
 
-          <div class="product">
-            <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
-            <div class="description">
-
-              <div>
-                <div class="flex-row space-between">
-                  <h4>Clear Resin Keycap Set</h4>
-                  <a class="flat-button" href="">
-                    <img src="img/icons/x.svg" alt="">
-                  </a>
-                </div>
-
-                <p>Microchip style clear resin artisan keycaps.</p>
+          <div class="cart-product-wrapper">
+            
+            <div class="product">
+              <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+              <div class="description">
+  
+                  <div>
+                    <div class="flex-row space-between">
+                      <h4>Clear Resin Keycap Set</h4>
+                      <a class="flat-button" href="">
+                        <img src="img/icons/x.svg" alt="">
+                      </a>
+                    </div>
+  
+                    <p>Microchip style clear resin artisan keycaps.</p>
+                  </div>
+  
+                  <h4 class="orange-pricetag">$35</h4>
+  
+                  <h4>
+                    <a class="flat-button small">-</a>
+                    1
+                    <a class="flat-button small">+</a>
+                  </h4>
               </div>
-
-              <h4 class="orange-pricetag">$35</h4>
-
-              <h4>
-                <a class="flat-button small">-</a>
-                1
-                <a class="flat-button small">+</a>
-              </h4>
             </div>
+
           </div>
 
 
@@ -786,8 +789,8 @@
             <h4>Subtotal</h4>
             <h4>$35.00</h4>
           </div>
-          <div class="real-button-example flex-row justify-content-center">
-            <a href="#buttons" class="secondary-button">proceed to checkout</a>
+          <div class="flex-row justify-content-center">
+            <a href="#checkout" class="secondary-button">proceed to checkout</a>
           </div>
         </div> <!-- end of live sample -->
 
