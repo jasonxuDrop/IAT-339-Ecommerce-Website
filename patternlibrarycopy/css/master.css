@@ -91,15 +91,20 @@ nav {
 
 
 .logo-dark a{
+
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 28px;
+
+
+  border-radius: 25px;
   width: 52pt;
   height: auto;
   color: #FAFBFF;
   background-color: #312E37;
-  border-radius: 30pt;
-  box-shadow:  8px 8px 16px #242228,
-   -8px -8px 16px #3E3A46;
+  /*border-radius: 30pt;*/
+  box-shadow:  8px 8px 16px #242228, -8px -8px 16px #3E3A46;
   text-align: center;
-  padding: 18pt 30pt;
+  /*padding: 18pt 30pt;*/
   font-family: 'Comfortaa', cursive;
 }
 
@@ -658,13 +663,13 @@ footer{
 
 footer .footer-row{
   display: flex;
-  margin: auto 3em auto 3em;
+  margin: 2em 3em 4em 3em;
   justify-content: space-between;
 }
 
 footer ul li{
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.5em 0;
 }
 
 footer ul{
@@ -707,12 +712,31 @@ footer p {
   border-radius: 20px;
   text-decoration: none;
   border: none;
-  font-size: 14pt;
-  box-shadow: inset 5px 5px 10px #242228,
-  inset -5px -5px 10px #3E3A46;
+  font-size: 0.9em;
+  box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3E3A46;
   background-color: #312E37;
+  color: pink;
+}
+
+/* align copyright text to be inline with logo */
+.footer-row .secondary-textcopyright{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-heading {
   color: #C6D1D3;
 }
+
+.social-media-links img{
+  width: 20px;
+  height: auto;
+}
+
+
 
 /* End of Footer */
 
@@ -882,7 +906,6 @@ footer p {
   margin-right: 0;
 
 }
-
 
 
 
