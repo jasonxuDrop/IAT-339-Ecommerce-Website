@@ -947,6 +947,10 @@ footer p {
     grid-column: 2 / 8;
   }
 
+  .main-content {
+    grid-column: 1 / 9;
+  }
+
 
   .main-content-wrapper {
     display: grid;
