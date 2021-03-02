@@ -816,6 +816,16 @@ footer p {
   footer{
       min-height: 60vh;
   }
+  .hero-product-container .real-button-example{
+    display: none;
+  }
+  .product-content-container .black-box{
+    grid-column: 1/9;
+    grid-row: 1/7;
+  }
+  .sample-product-header .black-box p{
+    max-width: 100%;
+  }
 }
 
 /* End of Nav Media Queries */
