@@ -120,7 +120,7 @@ nav {
 
 .mainnav a, .mainnav-mobile a{
   /*padding: 0 1.5em 0 1.5em;*/
-  padding: 0.5em 1.5em 0.5em 1.5em;
+  padding: 0.5em .75em 0.5em .75em;
   color: #3E3E3E;
 }
 
@@ -866,6 +866,7 @@ footer p {
 
 .burger{
   display: none;
+  flex-wrap: wrap;
 }
 .mobilenav {
   display: none;
@@ -914,6 +915,58 @@ footer p {
 
 }
 
+/* Change to mobile nav */
+@media screen and (max-width: 52em) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .mainnav-mobile { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainnav-mobile .logo-shoppingcart-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mobile-searchbar .searchbar{
+    width: 100%;
+  }
+
+  nav .mainnav .mobilenav{
+    padding: 0;
+    margin: 0;
+  }
+.mainnav {
+    display: none;
+  }
+.mainnav .shophighlight, .mainnav .guidehighlight, .mainnav .citehighlight, .mainnav .patternhighlight, .patternhighlight, .mainnav .navlink {
+    display: none;
+  }
+
+  .burger{
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 0 1em 0;
+  }
+  .mobileicon img{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #CBCBCB, -5px -5px 10px #FFFFFF;
+  }
+  nav .searchcart{
+    display: none;
+  }
+}
+
 /* dealing with the product cards*/
 @media screen and (max-width: 43em) {
 
@@ -930,66 +983,8 @@ footer p {
     grid-row: 4 / 6;
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-  }
-
-  .mainnav-mobile { /*  the little mobile icons  */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-  }
-  .mainnav-mobile .logo-shoppingcart-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .mobile-searchbar .searchbar{
-    width: 100%;
-  }
-  .burger{
-    /*background-color: aqua;*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1em 0 1em 0;
-  }
-
-  .mobileicon img{
-    display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px #CBCBCB, -5px -5px 10px #FFFFFF;
-  }
-
-  nav .mainnav .mobilenav{
-    padding: 0;
-    margin: 0;
-  }
-
   .hero-container p{
     max-width: 100%;
-  }
-
-  .mainnav {
-    display: none;
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;*/
-
-  }
-
-  .mainnav .shophighlight, .mainnav .guidehighlight, .mainnav .citehighlight, .mainnav .patternhighlight, .patternhighlight, .mainnav .navlink {
-    display: none;
-  }
-
-  nav .searchcart{
-    display: none;
   }
 
   .colourchips{
@@ -1019,17 +1014,6 @@ footer p {
     max-width: 100%;
   }
 
-
-
-
-
-
-
-
-
-
-
-
   footer .footer-toppart{
     display: flex;
     flex-direction: column;
@@ -1041,7 +1025,7 @@ footer p {
 
   }
 
-
+  
 }
 
 
