@@ -389,7 +389,10 @@ pre {
   font-size: 2em;
 }
 
-
+.codestructure img {
+  width: 75%;
+  height: auto;
+}
 
 
 /* Product Card */
