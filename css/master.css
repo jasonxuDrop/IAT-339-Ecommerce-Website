@@ -372,6 +372,7 @@ pre {
 
 .inlinelink {
   color: #F56F54;
+  word-wrap: break-word;
 }
 
 .inlinelink:hover {
