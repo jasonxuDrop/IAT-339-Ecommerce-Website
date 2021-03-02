@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/grid.css">
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
@@ -20,12 +21,14 @@
 
   <body onload="patternpageFuntion()">
 
-    <header>
+    <header class="grid-container">
+
+      
 
     <!-- <h1>Iteration2 Pattern Library Activity</h1> -->
     <!-- <p>(html only - excuse the ugly)</p> -->
 
-    <nav>
+    <nav class="col-12">
       <div class="mainnav">
         <a href="index.html" id="logo">cliq</a>
 
@@ -128,71 +131,73 @@
     </div>
 
     <footer>
-      <div class="footer-row">
-          <div class="mailing-list">
-              <p class="footer-heading">JOIN OUR MAILING LIST</p>
-              <p>Info about upcoming releases, new arrivals and more!</p>
+      <div class="grid-container">
+        <div class="footer-row col-12">
+            <div class="mailing-list">
+                <p class="footer-heading">JOIN OUR MAILING LIST</p>
+                <p>Info about upcoming releases, new arrivals and more!</p>
 
-              <!-- TODO: text colour here isnt actually registering -->
-              <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+                <!-- TODO: text colour here isnt actually registering -->
+                <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
 
-          </div>
-          <div class="company-info-wrapper">
-              <div class="company-contact company-list-info">
-                  <p class="footer-heading">CLIQ</p>
-                  <ul>
-                      <li>
-                          <a class="default-link" href="#">about us</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="#">contact us</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="patternlibraryhome.html">styleguide</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank">github</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="citations.html">citation</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="faq-help company-list-info">
-                  <p class="footer-heading">HELP</p>
-                  <ul>
-                      <li>
-                          <a class="default-link" href="#">shipping</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="#">returns</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="social-media-links">
-                  <ul>
-                      <li>
-                          <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                          <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/twitchwhite2.svg" alt=""></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/twitterwhite2.svg" alt=""></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/instagramwhite.svg" alt=""></a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="footer-row">
-          <div class="logo-dark">
-              <a href="index.html">cliq</a>
-          </div>
-          <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
+            </div>
+            <div class="company-info-wrapper">
+                <div class="company-contact company-list-info">
+                    <p class="footer-heading">CLIQ</p>
+                    <ul>
+                        <li>
+                            <a class="default-link" href="#">about us</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="#">contact us</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="patternlibraryhome.html">styleguide</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank">github</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="citations.html">citation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="faq-help company-list-info">
+                    <p class="footer-heading">HELP</p>
+                    <ul>
+                        <li>
+                            <a class="default-link" href="#">shipping</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="#">returns</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media-links">
+                    <ul>
+                        <li>
+                            <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
+                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitchwhite2.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitterwhite2.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/instagramwhite.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row col-12">
+            <div class="logo-dark">
+                <a href="index.html">cliq</a>
+            </div>
+            <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
 

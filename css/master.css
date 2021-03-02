@@ -32,7 +32,7 @@ header h1 {
 }
 
 header {
-  padding: 2.5rem;
+  padding: 2.5rem 0;
 }
 
 
@@ -85,10 +85,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 1.5em 0 1.5em;
 
   font-family: "Mulish", sans-serif;
-
 }
 
 /* Beginning of Nav */
@@ -199,7 +197,7 @@ nav .searchcart a:focus{
   margin: 0;
   padding: 0;
 
-  grid-column: 2 / 4;
+  /* grid-column: 2 / 4; */
 }
 
 .subnav ul {
@@ -682,12 +680,12 @@ footer{
   list-style: none;
   flex-direction: column;
   color:#FAFBFF;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 footer .footer-row{
   display: flex;
-  margin: 2em 3em 4em 3em;
+  margin: 2em 0 4em;
   justify-content: space-between;
 }
 
@@ -921,7 +919,7 @@ footer p {
 }
 
 /* Change to mobile nav */
-@media screen and (max-width: 52em) {
+@media screen and (max-width: 57em) {
   nav {
     display: flex;
     flex-direction: row;
@@ -1001,7 +999,7 @@ footer p {
     margin: 0;
     padding: 0;
 
-    grid-column: 2 / 8;
+    /* grid-column: 2 / 8; */
   }
 
   .main-content {
@@ -1047,4 +1045,7 @@ footer p {
 }
 .flex-row.justify-content-center {
   justify-content: center;
+}
+.margin-top-100px {
+  margin-top: 100px;
 }
