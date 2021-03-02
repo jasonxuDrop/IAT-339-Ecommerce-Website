@@ -631,11 +631,11 @@ a.sampleproductcard:hover{
 }
 
 #references a{
-  color: #F56F54;
+  color: #C6D1D3;
 }
 
 #references a:hover{
-  opacity: 50%;
+  color: #F56F54;
 }
 
 
