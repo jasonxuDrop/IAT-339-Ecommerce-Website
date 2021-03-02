@@ -722,7 +722,8 @@ footer p {
   font-size: 0.9em;
   box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3E3A46;
   background-color: #312E37;
-  color: pink;
+  color: #F56F54;
+  caret-color: #FAFFFD;
 }
 .text-input-dark::placeholder {
   color: #C6D1D3;
