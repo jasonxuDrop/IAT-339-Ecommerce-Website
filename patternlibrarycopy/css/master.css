@@ -261,6 +261,10 @@ nav .searchcart a:focus{
   position: relative;
 }
 
+.hero-product-container img{
+  vertical-align: bottom;
+}
+
 .hero-product-container .real-button-example{
   position: absolute;
   bottom: 2em;
@@ -628,11 +632,11 @@ a.sampleproductcard:hover{
 }
 
 #references a{
-  color: #F56F54;
+  color: #C6D1D3;
 }
 
 #references a:hover{
-  opacity: 50%;
+  color: #F56F54;
 }
 
 

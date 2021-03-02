@@ -4,95 +4,100 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
+    <title>Pattern Library Assignment</title>
+  </head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body onload="patternPageFunctionTest()">
 
-  <link rel="stylesheet" href="css/master.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
-
-  <title>Citations</title>
-
-</head>
-
-  <!-- <body onload="citationpageFuntion()"> -->
-    <body>
 
     <header>
+      <nav>
+        <div class="mainnav">
+          <a href="index.html" id="logo">cliq</a>
 
-    <!-- <h1>Iteration2 Pattern Library Activity</h1> -->
-    <!-- <p>(html only - excuse the ugly)</p> -->
-
-    <nav>
-      <div class="mainnav">
-        <a href="index.html" id="logo">cliq</a>
-
-        <a href="#" class="mobilenav">
-          <img src="img/shopping-bagCliq2.png" alt="" class="mobileicon">
-        </a>
-        <a href="#" class="mobilenav"><img src="img/mobilemenu.png" alt="" class="mobileicon"></a>
+          <a href="#" class="mobilenav">
+            <img src="img/shopping-bagCliq2.png" alt="" class="mobileicon">
+          </a>
+          <a href="#" class="mobilenav"><img src="img/mobilemenu.png" alt="" class="mobileicon"></a>
 
 
-        <a href="#" class="shophighlight">shop</a>
-        <a href="#" class="guidehighlight">guides</a>
-        <a href="citations.html" class="citehighlight active">citations</a>
-        <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
-
-      </div>
-
-      <div class="searchcart">
-        <input type="text" name="" value="search" class="searchbar">
-        <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
-      </div>
-
-    </nav>
+          <a href="#" class="shophighlight">shop</a>
+          <a href="#" class="guidehighlight">guides</a>
+          <a href="citations.html" class="citehighlight">citations</a>
+          <a href="index.html" class="patternhighlight">patterns</a>
+        </div>
+        <div class="searchcart">
+          <input type="text" name="" value="search" class="searchbar">
+          <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+        </div>
+      </nav>
 
     </header>
 
     <div class="hero-container">
       <div class="content">
         <h1>CITATIONS</h1>
-        <p>All of my citations thus far used when building this pattern library.</p>
+        <p>All references used thus far during the creation of our pattern library for CLIQ.</p>
       </div>
     </div>
 
+    <div class="main-content-wrapper">
 
-    <div class="maincontentwrapper">
+      <!-- pattern library in page nav menu -->
+      <div class="subnav">
+
+        <ul>
+          <h2>BASIC STYLES</h2>
+          <li><a href="#colour-palette">Colour Palette</a></li>
+          <li><a href="#type">Typography</a></li>
+          <li><a href="#grids">Grid System</a></li>
+        </ul>
+
+        <ul>
+          <h2>CODE STRUCTURE</h2>
+          <li><a href="#namingconventions">Naming Conventions</a></li>
+          <li><a href="#filestructure">File Structure</a></li>
+        </ul>
+
+        <ul>
+          <h2>COMPONENTS</h2>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#inputfields">Input Fields</a></li>
+          <li><a href="#inlinelinks">Inline links</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#productcard">Product card</a></li>
+          <li><a href="#product-detail">Product detail</a></li>
+          <li><a href="#checkout">Shopping Cart</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+
+        <ul>
+          <h2><a href="wireframes.html">WIREFRAMES</a></h2>
+        </ul>
+
+        <ul>
+          <h2><a href="mockups.html">MOCKUPS</a></h2>
+        </ul>
 
 
-    <ul class="subnav">
-      <section>
-        <h2>BASIC STYLES</h2>
-        <li><a href="index.html#colourpalette">Colour Palette</a></li>
-        <li><a href="index.html#type">Typography</a></li>
-        <li><a href="index.html#grids">Grid System</a></li>
-      </section>
-      <section>
-        <h2>COMPONENTS</h2>
-        <li><a href="index.html#buttons">Buttons</a></li>
-        <li><a href="index.html#inputfields">Input Fields</a></li>
-        <li><a href="index.html#inlinelinks">Inline links</a></li>
-        <li><a href="index.html#navigation">Navigation</a></li>
-        <li><a href="index.html#productcard">Product card</a></li>
-        <li><a href="index.html#productdetail">Product detail</a></li>
-        <li><a href="index.html#checkout">Shopping Cart</a></li>
-        <li><a href="index.html#footer">Footer</a></li>
-      </section>
-      <section>
-        <h2><a href="wireframes.html">WIREFRAMES</a></h2>
-      </section>
-      <section>
-        <h2><a href="mockups.html">MOCKUPS</a></h2>
-      </section>
+      </div>
+      <!-- - End of - Pattern Library Nav Menu -->
 
-    </ul>
+    <!-- main content page wrap for everything on the right 2/3 of the page (aka wrapper for everything Except the subnav) -->
+    <div class="main-content">
 
 
-    <div class="maincontent">
+    <div class="basicstyles">
+
       <section id="references">
+        <h2 class="section-header">References</h2>
 
         <p>Code formatting in HTML. Retrieved from <a href="http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html" target="_blank">http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html</a></p>
 
@@ -102,19 +107,86 @@
 
         <p>Icons from Feather. Retrieved from <a href="https://feathericons.com/">https://feathericons.com/</a></p>
       </section>
-    </div>
 
     </div>
-    <!-- <pre>
-      <code>
-        p { color: pink; }
 
-      </code>
+    </div> <!-- end of main content tag -->
 
-    </pre> -->
+  </div> <!-- end of main-content-wrapper tag -->
+
+
+    <footer>
+      <div class="footer-row">
+          <div class="mailing-list">
+              <p class="footer-heading">JOIN OUR MAILING LIST</p>
+              <p>Info about upcoming releases, new arrivals and more!</p>
+
+              <!-- TODO: text colour here isnt actually registering -->
+              <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+
+          </div>
+          <div class="company-info-wrapper">
+              <div class="company-contact company-list-info">
+                  <p class="footer-heading">CLIQ</p>
+                  <ul>
+                      <li>
+                          <a href="#">about us</a>
+                      </li>
+                      <li>
+                          <a href="#">contact us</a>
+                      </li>
+                      <li>
+                          <a href="index.html">styleguide</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website">github</a>
+                      </li>
+                      <li>
+                          <a href="citations.html">citation</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="faq-help company-list-info">
+                  <p class="footer-heading">HELP</p>
+                  <ul>
+                      <li>
+                          <a href="#">shipping</a>
+                      </li>
+                      <li>
+                          <a href="#">returns</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="social-media-links">
+                  <ul>
+                      <li>
+                          <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
+                          <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website"><img src="img/githubwhite.svg" alt=""></a>
+                      </li>
+                      <li>
+                          <a href="#"><img src="img/twitchwhite2.svg" alt=""></a>
+                      </li>
+                      <li>
+                          <a href="#"><img src="img/twitterwhite2.svg" alt=""></a>
+                      </li>
+                      <li>
+                          <a href="#"><img src="img/instagramwhite.svg" alt=""></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-row">
+          <div class="logo-dark">
+              <a href="index.html">cliq</a>
+          </div>
+          <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
+      </div>
+  </footer>
 
     <!-- link to the js file -->
     <script src="js/tabhighlighting.js"></script>
+
 
   </body>
 
