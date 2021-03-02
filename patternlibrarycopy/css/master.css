@@ -146,11 +146,15 @@ nav #logo:focus {
   margin-right: 2em;
   padding: 0.5em 0 0.5em 2em;
 
-  color: #C6D1D3;
+  color: #312E37;
 
   border: 0px;
   box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
   border-radius: 18px;
+}
+
+.searchbar::placeholder{
+  color: #d1d1d1;
 }
 
 nav .searchcart a{
@@ -729,7 +733,11 @@ footer p {
   font-size: 0.9em;
   box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3E3A46;
   background-color: #312E37;
-  color: pink;
+  color: #FAFFFD;
+  caret-color: #FAFFFD;
+}
+.text-input-dark::placeholder {
+  color: #C6D1D3;
 }
 
 /* align copyright text to be inline with logo */
