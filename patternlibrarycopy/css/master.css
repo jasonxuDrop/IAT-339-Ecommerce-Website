@@ -226,13 +226,20 @@ nav .searchcart a:focus{
 }
 
 
-#colour-palette .colourchips{
+.colourchips{
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
   grid-column: 1 / span 3;
 
   padding-right: 1em;
+}
+.colourchips > div {
+  margin-right: 20px;
+}
+.colourchips img {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -446,7 +453,10 @@ pre {
   font-size: 2em;
 }
 
-
+.codestructure img {
+  width: 75%;
+  height: auto;
+}
 
 
 /* Product Card */
@@ -700,11 +710,11 @@ a.sampleproductcard:hover{
 }
 
 #references a{
-  color: #F56F54;
+  color: #C6D1D3;
 }
 
 #references a:hover{
-  opacity: 50%;
+  color: #F56F54;
 }
 
 
@@ -1009,7 +1019,7 @@ footer p {
     display: none;
   }
 
-  #colour-palette .colourchips{
+  .colourchips{
     grid-template-columns: repeat(1, 1fr);
   }
 
