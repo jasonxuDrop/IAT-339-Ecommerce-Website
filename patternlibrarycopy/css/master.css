@@ -286,10 +286,6 @@ nav .searchcart a:focus{
   border-radius: 20px;
 }
 
-/* TODO convert real button example to primary button class */
-
-/* !Primary/default button, secondary button, interactive-link */
-
 /* default btn */
 .default-btn{
   font-family: "Muli", "Mulish", sans-serif;
@@ -348,84 +344,6 @@ nav .searchcart a:focus{
 .default-link:hover{
   color: #F56F54;
 }
-
-
-/* end of default-link */
-
-/* a.ctabuttons, a.secondary-button {
-  font-family: "Muli", "Mulish", sans-serif;
-  font-weight: 600;
-  font-size: 0.9em;
-  color: #3E3E3E;
-
-  background-color: #EFEFEF;
-  padding: 1em 3em 1em 3em;
-
-  transition: 0.3s;
-  border-radius: 20px;
-  box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
-
-  cursor: pointer;
-}
-
-a.ctabuttons:hover{
-  color: #F56F54;
-}
-
-a.ctabuttons:focus{
-  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
-}
-
-.real-button-example {
-  margin: 3em 0 3em 0;
-}
-
-.secondary-button {
-  color: #F56F54;
-}
-
-.secondary-button:hover {
-  background-color: #F56F54;
-  color: white;
-}
-
-.secondary-button:focus {
-  background-color: #F56F54;
-  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 9px 9px 13px #D05E47, inset -9px -9px 12px #FF8061;
-} */
-
-/* End of TODO convert real button example to primary button class */
-/* 
-.flat-button {
-	display: block;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-
-	text-decoration: none;
-	font-weight: 400;
-	transition-duration: 0.3s;
-	transition-property: color, box-shadow;
-
-	padding: 6px;
-	border-radius: 15px;
-}
-.flat-button:hover{
-  cursor: pointer;
-  color: #F56F54;
-}
-.flat-button:active {
-  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
-}
-.flat-button.small {
-  display: inline;
-  padding: 5px;
-  border-radius: 5px;
-} */
-
-/* End of buttons */
-
-
 
 
 pre {
