@@ -68,6 +68,10 @@ h3 {
     letter-spacing: 3px;
 }
 
+.home-page{
+  height: 100vh;
+}
+
 .light-color-text{
   color: #C6D1D3;
 }
@@ -111,7 +115,7 @@ nav {
 /* mainnav */
 
 
-.mainnav .navlink.current-page {
+.mainnav .navlink.current-page, .mainnav-mobile .navlink.current-page {
   /*color: pink;*/
   color: #F56F56;
   box-shadow: inset -1.5px -1.5px 3px #FAFBFF, inset 3px 3px 6px #BEBEBE;
@@ -132,7 +136,7 @@ nav #logo {
   padding: 0.5em 1em 0.5em 1em;
   margin-right: 1em;
   font-size: 28px;
-
+  user-select:none;
 
   border-radius: 25px;
   background: #EFEFEF;
