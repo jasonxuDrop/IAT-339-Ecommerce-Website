@@ -473,7 +473,7 @@ a.sampleproductcard:hover{
 
 /* START OF SHOPPING CART */
 .shopping-cart {
-  width: clamp(20em,50%,32em);
+  width: clamp(20em,100%,32em);
 /*   border: 1px solid;
   border-color: #8E8E8E; */
   border-radius: 35px;
@@ -540,6 +540,24 @@ a.sampleproductcard:hover{
 
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
+
+.shopping-cart-checkout{ 
+  border: none;
+  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+}
+@media screen and (max-width:62em) {
+  .shopping-cart-checkout{
+   display: none;
+  }
+}
+
+@media screen and (max-width:62em){
+  .checkout-summary-section {
+    align-items: stretch !important;
+    text-align: center;
+  }
+}
+
 
 .product .description{
   display: flex;
@@ -1064,6 +1082,9 @@ footer p {
   align-items: flex-end;
 }
 
+.align-self-stretch{
+  align-self: stretch;
+}
 
 .margin-top-100px {
   margin-top: 100px;
