@@ -11,7 +11,7 @@
 <body>
 
     <div class="grid-container">
-        <div class="col-12 mobile-skip-1-col mobile-col-10">
+        <div class="col-12 mobile-start-col-2 mobile-col-10">
             <p></p>
             <a href="index.html#grids" class="flat-button small">&#x3C; back to UI Pattern Library</a>
             <h1>Grid System</h1>
@@ -57,7 +57,7 @@
         <div class="col-1 grid-example tall">
         <p>12</p>
         </div>
-        <pre class="skip-1-col col-10">
+        <pre class="start-col-2 col-10">
         <code>
         &#x3C;div class=&#x22;grid-container&#x22;&#x3E;
             &#x3C;div class=&#x22;col-1&#x22;&#x3E;
@@ -72,17 +72,17 @@
         <div class="col-12">
             <h2 class="section-header">fixed-size grid content example</h2>
             <h3>Full Span</h3>
-            <p>use skip-1-col or skip-1-col to place centent at the end of 1st/2nd grid column.</p>
+            <p>use start-col-X to specify the starting grid column.</p>
         </div>
     </div>
     <div class="grid-container example">
-        <div class="skip-1-col col-10 grid-example">
-            <p>skip-1-col col-10</p>
+        <div class="start-col-2 col-10 grid-example">
+            <p>start-col-2 col-10</p>
         </div>
-        <pre class="skip-1-col col-10">
+        <pre class="start-col-2 col-10">
         <code>
         &#x3C;div class=&#x22;grid-container&#x22;&#x3E;
-            &#x3C;div class=&#x22;skip-1-col col-10&#x22;&#x3E;
+            &#x3C;div class=&#x22;start-col-2 col-10&#x22;&#x3E;
                 ... content
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
@@ -96,8 +96,8 @@
         </div>
     </div>
     <div class="grid-container example">
-        <div class="skip-1-col col-5 grid-example">
-            <p>skip-1-col col-5</p>
+        <div class="start-col-2 col-5 grid-example">
+            <p>start-col-2 col-5</p>
         </div>
         <div class="col-5 grid-example">
             <p>col-5</p>
@@ -110,25 +110,19 @@
         </div>
     </div>
     <div class="grid-container example">
-        <div class="skip-1-col col-3 grid-example">
-            <p>skip-1-col col-3</p>
+        <div class="start-col-2 col-3 grid-example">
+            <p>start-col-2 col-3</p>
         </div>
-        <div class="col-1">
-            <p>col-1</p>
+        <div class="start-col-6 col-6 grid-example">
+            <p>start-col-6 col-6</p>
         </div>
-        <div class="col-6 grid-example">
-            <p>col-6</p>
-        </div>
-        <pre class="skip-1-col col-10">
+        <pre class="start-col-2 col-10">
         <code>
         &#x3C;div class=&#x22;grid-container&#x22;&#x3E;
-            &#x3C;div class=&#x22;skip-1-col col-3&#x22;&#x3E;
+            &#x3C;div class=&#x22;start-col-2 col-3&#x22;&#x3E;
                 ... content
             &#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;col-1&#x22;&#x3E;
-                NO CONTENT, used for gap only
-            &#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;col-6&#x22;&#x3E;
+            &#x3C;div class=&#x22;start-col-6 col-6&#x22;&#x3E;
                 ... content
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
@@ -142,14 +136,11 @@
         </div>
     </div>
     <div class="grid-container example">
-        <div class="skip-1-col col-6 grid-example">
-            <p>skip-1-col col-6</p>
+        <div class="start-col-2 col-6 grid-example">
+            <p>start-col-2 col-6</p>
         </div>
-        <div class="col-1">
-            <p>col-1</p>
-        </div>
-        <div class="col-3 grid-example">
-            <p>col-3</p>
+        <div class="start-col-9 col-3 grid-example">
+            <p>start-col-9 col-3</p>
         </div>
     </div>
 
@@ -184,19 +175,19 @@
 
 
     <div class="grid-container">
-        <div class="col-12 mobile-skip-1-col mobile-col-10">
+        <div class="col-12 mobile-start-col-2 mobile-col-10">
             <h2 class="section-header">responsive grid content</h2>
             <p>when there are classes with "mobile-" prefix and screen width is less than 45em (720px), the mobile grid content calsses will override the original class properties </p>
         </div>
     </div>
     <div class="grid-container example">
-        <div class="col-12 mobile-skip-1-col mobile-col-10 grid-example">
-            <p>col-12  mobile-skip-1-col mobile-col-10</p>
+        <div class="col-12 mobile-start-col-2 mobile-col-10 grid-example">
+            <p>col-12  mobile-start-col-2 mobile-col-10</p>
         </div>
-        <pre class="skip-1-col col-10">
+        <pre class="start-col-2 col-10">
         <code>
         &#x3C;div class=&#x22;grid-container&#x22;&#x3E;
-            &#x3C;div class=&#x22;col-12  mobile-skip-1-col mobile-col-10&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-12  mobile-start-col-2 mobile-col-10&#x22;&#x3E;
                 ... content
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
