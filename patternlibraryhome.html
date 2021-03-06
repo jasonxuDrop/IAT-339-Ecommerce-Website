@@ -393,10 +393,12 @@
         <p>Name: Search and Email input.</p>
         <p>Description: User input fields for search fields and email entry.</p>
         <p>Responsive example (of the actual code being executed):</p>
+        <p class="input-label">Label</p>
         <input type="text" name="" placeholder="search" class="searchbar">
         <p>Code sample:</p>
         <pre>
           <code>
+            &#x3C;p class=&#x22;input-label&#x22;&#x3E;Label&#x3C;/p&#x3E;
             &lt;input type="text" placeholder="search" class="searchbar"&gt;
             .searchbar {
               margin-right: 2em;
@@ -408,9 +410,32 @@
               box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
               border-radius: 18px;
             }
+            .input-label {
+              padding-left: 26.7px;
+              margin-bottom: 3px;
+            }
           </code>
         </pre>
         <p>Author: Jason</p>
+      </section>
+
+      <section id="checkbox">
+        <h2>checkbox</h2>
+        <p>Used on the checkout pages</p>
+        <p>STYLES TO BE ADDED</p>
+
+        <input type="checkbox" name="same-adress" id="same-adress" class="checkbox">
+        <label for="same-adress"> My billing address is the same as my shipping address</label>
+
+        <p>Code sample:</p>
+        <pre>
+          <code>
+            &#x3C;input type=&#x22;checkbox&#x22; name=&#x22;same-adress&#x22; id=&#x22;same-adress&#x22; class=&#x22;checkbox&#x22;&#x3E;
+            &#x3C;label for=&#x22;same-adress&#x22;&#x3E; My billing address is the same as my shipping address&#x3C;/label&#x3E;
+          </code>
+        </pre>
+        <p>Maintain: Jason</p>
+
       </section>
 
       <!-- Link (inline) Components -->
@@ -423,8 +448,8 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;a href="#pageorsection""&gt;building your own&lt;/a&gt;
-            p a {
+            &lt;a class=&#x22;inlinelink&#x22; href="#pageorsection""&gt;building your own&lt;/a&gt;
+            a.inlinelink {
               color: #F56F54;
             }
           </code>
@@ -790,7 +815,7 @@
           &#x3C;/div&#x3E;
 
           .shopping-cart {
-            width: clamp(20em,50%,28em);
+            width: clamp(20em,100%,32em);
             border: 1px solid;
             border-color: #8E8E8E;
             border-radius: 35px;

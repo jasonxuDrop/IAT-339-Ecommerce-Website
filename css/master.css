@@ -173,6 +173,12 @@ nav #logo:focus {
   color: #d1d1d1;
 }
 
+.input-label {
+  box-sizing: border-box;
+  padding-left: 26.7px;
+  margin-bottom: 3px;
+}
+
 nav .searchcart a{
   padding: 0.5em 1em 0.5em 1em;
   box-shadow: 7px 7px 14px #BABABA, -8px -8px 9px #FFFFFF;
@@ -464,13 +470,16 @@ a.sampleproductcard:hover{
   max-width: 75%;
 }
 
-
+.nero-box-shadow {
+  border: none;
+  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+}
 
 /* START OF SHOPPING CART */
 .shopping-cart {
-  width: clamp(20em,50%,28em);
-  border: 1px solid;
-  border-color: #8E8E8E;
+  width: clamp(20em,100%,32em);
+/*   border: 1px solid;
+  border-color: #8E8E8E; */
   border-radius: 35px;
 
   padding: 2em;
@@ -515,7 +524,6 @@ a.sampleproductcard:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .shopping-cart .checkout-button {
@@ -536,6 +544,24 @@ a.sampleproductcard:hover{
 
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
+
+.shopping-cart-checkout{ 
+  border: none;
+  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+}
+@media screen and (max-width:62em) {
+  .shopping-cart-checkout{
+   display: none;
+  }
+}
+
+@media screen and (max-width:62em){
+  .checkout-summary-section {
+    align-items: stretch !important;
+    text-align: center;
+  }
+}
+
 
 .product .description{
   display: flex;
@@ -1043,35 +1069,26 @@ footer p {
   justify-content: flex-start;
   align-items: center;
 }
-.flex-row.space-between{
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex-row.space-between, .flex-col.space-between{
   justify-content: space-between;
 }
-.flex-row.justify-content-center {
+.flex-row.justify-content-center, .flex-col.justify-content-center {
   justify-content: center;
 }
+.flex-row.align-items-end, .flex-col.align-items-end  {
+  align-items: flex-end;
+}
+
+.align-self-stretch{
+  align-self: stretch;
+}
+
 .margin-top-100px {
   margin-top: 100px;
-}
-
-/* product-detail page*/
-.detail-img-preview-container > div{
-  grid-column: 1/-1;
-  height:20em;
-}
-
-#img-preview-1{
-  background-color: blue;
-}
-
-#img-preview-2{
-  height: 30em;
-  margin-right: -24em;
-}
-
-#img-preview-3{
-  background-color: blue;
-}
-
-.detail-img-preview{
-  height: 15em;
 }
