@@ -9,6 +9,27 @@
     margin: 0 auto;
 }
 
+.grid-container-bleed {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.25em;
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.max-width{
+    width: 1240px;
+}
+
+.max-row{
+    grid-row: 1/-1;
+}
+
+.max-col{
+    grid-column: 1/-1;
+}
+
 @media screen and (max-width:90em){
     .grid-container {
 	    width: calc(100vw - 215px);

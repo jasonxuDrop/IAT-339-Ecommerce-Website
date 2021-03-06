@@ -68,6 +68,10 @@ h3 {
     letter-spacing: 3px;
 }
 
+.hide-overflow-x{
+  overflow-x: hidden;
+}
+
 .home-page{
   height: 100vh;
 }
@@ -557,7 +561,6 @@ a.sampleproductcard:hover{
   display: grid;
 
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(6, 4em);
 }
 
 .product-content-container .real-button-example {
@@ -1048,4 +1051,27 @@ footer p {
 }
 .margin-top-100px {
   margin-top: 100px;
+}
+
+/* product-detail page*/
+.detail-img-preview-container > div{
+  grid-column: 1/-1;
+  height:20em;
+}
+
+#img-preview-1{
+  background-color: blue;
+}
+
+#img-preview-2{
+  height: 30em;
+  margin-right: -24em;
+}
+
+#img-preview-3{
+  background-color: blue;
+}
+
+.detail-img-preview{
+  height: 15em;
 }
