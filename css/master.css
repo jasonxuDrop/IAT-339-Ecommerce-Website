@@ -169,6 +169,12 @@ nav #logo:focus {
   color: #d1d1d1;
 }
 
+.input-label {
+  box-sizing: border-box;
+  padding-left: 26.7px;
+  margin-bottom: 3px;
+}
+
 nav .searchcart a{
   padding: 0.5em 1em 0.5em 1em;
   box-shadow: 7px 7px 14px #BABABA, -8px -8px 9px #FFFFFF;

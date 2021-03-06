@@ -397,11 +397,13 @@
         <p>Name: Search and Email input.</p>
         <p>Description: User input fields for search fields and email entry.</p>
         <p>Responsive example (of the actual code being executed):</p>
+        <p class="input-label">Label</p>
         <input type="text" name="" placeholder="search" class="searchbar">
         <p>Code sample:</p>
         <pre>
           <code>
             &lt;input type="text" placeholder="search" class="searchbar"&gt;
+            &#x3C;p class=&#x22;input-label&#x22;&#x3E;Label&#x3C;/p&#x3E;
             .searchbar {
               margin-right: 2em;
               padding: 0.5em 0 0.5em 2em;
@@ -411,6 +413,10 @@
               border: 0px;
               box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
               border-radius: 18px;
+            }
+            .input-label {
+              padding-left: 26.7px;
+              margin-bottom: 3px;
             }
           </code>
         </pre>
