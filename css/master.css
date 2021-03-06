@@ -466,13 +466,16 @@ a.sampleproductcard:hover{
   max-width: 75%;
 }
 
-
+.nero-box-shadow {
+  border: none;
+  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
+}
 
 /* START OF SHOPPING CART */
 .shopping-cart {
-  width: clamp(20em,50%,28em);
-  border: 1px solid;
-  border-color: #8E8E8E;
+  width: clamp(20em,50%,32em);
+/*   border: 1px solid;
+  border-color: #8E8E8E; */
   border-radius: 35px;
 
   padding: 2em;
@@ -517,7 +520,6 @@ a.sampleproductcard:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .shopping-cart .checkout-button {
@@ -1046,12 +1048,29 @@ footer p {
   justify-content: flex-start;
   align-items: center;
 }
-.flex-row.space-between{
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex-row.space-between, .flex-col.space-between{
   justify-content: space-between;
 }
-.flex-row.justify-content-center {
+.flex-row.justify-content-center, .flex-col.justify-content-center {
   justify-content: center;
 }
+.flex-row.align-items-end, .flex-col.align-items-end  {
+  align-items: flex-end;
+}
+
+
 .margin-top-100px {
   margin-top: 100px;
+}
+.margin-top-40px {
+  margin-top: 40px;
+}
+.margin-top-20px {
+  margin-top: 20px;
 }
