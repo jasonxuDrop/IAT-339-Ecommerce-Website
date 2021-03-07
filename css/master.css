@@ -40,8 +40,9 @@ p {
   line-height: 140%;
 }
 
+/* TODO used for pattern */
 section p {
-  max-width: 75%;
+  /* max-width: 75%; */
 }
 
 h1 {
@@ -710,6 +711,7 @@ footer{
   flex-direction: column;
   color:#FAFBFF;
   padding: 1em 0;
+  margin-top: 5em;
 }
 
 footer .footer-row{
@@ -1091,4 +1093,66 @@ footer p {
 
 .margin-top-100px {
   margin-top: 100px;
+}
+
+/* product-detail page*/
+.detail-img-preview-container > div{
+  grid-column: 1/-1;
+  height:20em;
+}
+
+#img-preview-1{
+  background-color: blue;
+}
+
+#img-preview-2{
+  height: 30em;
+  margin-right: -24em;
+}
+
+#img-preview-3{
+  background-color: blue;
+}
+
+.detail-img-preview{
+  height: 15em;
+}
+
+.page-break > div{
+  margin: auto;
+}
+
+.neu-divider{
+  height: 10em;
+  width: 10em;
+}
+
+.neu-extrusion{
+  border-radius: 25px;
+  background: #EFEFEF;
+  box-shadow: 15px 15px 30px #CBCBCB, -15px -15px 30px #FFFFFF;
+  margin: 3em 0;
+}
+
+.product-description-container{
+  padding: 3em;
+}
+
+.switch-char{
+  min-width: 7em;
+  min-height: 7em;
+}
+
+.justify-space{
+  display: flex;
+  justify-content: space-between;
+}
+
+.extended-section-margin{
+  margin: 5rem 0;
+}
+
+.product-detail-extend-y {
+  margin-top: -5em;
+  margin-bottom: -5em;
 }
