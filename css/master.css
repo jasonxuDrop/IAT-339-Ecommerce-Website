@@ -439,7 +439,7 @@ nav .searchcart a:focus{
   color: #F56F54;
 }
 
-.primary-btn:active{
+.primary-btn:active, .primary-btn.active{
   box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
   inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
 }
@@ -459,7 +459,7 @@ nav .searchcart a:focus{
   -10px -10px 20px #ffffff;
 }
 
-.secondary-btn:active{
+.secondary-btn:active, .secondary-btn.active{
   background-color: #F56F54;
   box-shadow: inset 10px 10px 20px #D05E47,
   inset -10px -10px 20px #FFAB97;
