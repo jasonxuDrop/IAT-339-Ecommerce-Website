@@ -74,7 +74,7 @@ h3 {
 }
 
 .home-page{
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .light-color-text{
@@ -85,6 +85,10 @@ h3 {
   height: 8em;
   width: 8em;
 }
+
+
+
+
 
 nav {
   display: flex;
@@ -269,6 +273,16 @@ nav .searchcart a:focus{
 
 
 
+.hero-container.home-page{
+  background-image: url(../img/cliqHeroBanner.jpg);
+
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 65%;
+
+}
+
 .hero-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -309,6 +323,91 @@ nav .searchcart a:focus{
   right: 2em;
 }
 
+
+
+.about-us h2, .about-us p{
+  color: white;
+}
+
+/*.best-sellers {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}*/
+
+.imgleft-contentright {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.imgleft-contentright img{
+  width: 100%;
+  height: auto;
+  grid-column: 2 / span 3;
+}
+.imgleft-contentright .product-info {
+
+  grid-column: 6 / span 2;
+  /*background-color: pink;*/
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.imgright-contentleft {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.imgright-contentleft img{
+  width: 100%;
+  height: auto;
+  grid-column: 5 / span 3;
+}
+.imgright-contentleft .product-info {
+
+  grid-column: 2 / span 2;
+  /*background-color: pink;*/
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+.product-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 100px;
+}
+
+
+.product-grid-container .filter{
+  grid-column: 2 / span 1;
+}
+
+.product-grid-container #product1{
+  grid-column: 3 / span 3;
+}
+.product-grid-container #product2{
+  grid-column: 6 / span 3;
+}
+.product-grid-container #product3{
+  grid-column: 9 / span 3;
+}
+.product-grid-container #product4{
+  grid-column: 3 / span 3;
+  grid-row: 2 / span 1;
+}
+
+
+
+
+
+
+
 .real-button-example {
   padding: 1.5em .75em;
   background-color: #efefef;
@@ -330,6 +429,7 @@ nav .searchcart a:focus{
   box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
 
   cursor: pointer;
+
 }
 
 /* end of default btn */
@@ -433,7 +533,7 @@ a.sampleproductcard:hover{
   border-radius: 25px;
   background-color: #EFEFEF;
   width: 300px;
-
+  color: #312E37;
   display: flex;
   flex-direction: column;
 
@@ -546,7 +646,7 @@ a.sampleproductcard:hover{
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
 
-.shopping-cart-checkout{ 
+.shopping-cart-checkout{
   border: none;
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
@@ -595,6 +695,7 @@ a.sampleproductcard:hover{
 }
 
 .black-box {
+  background-color: #312E37;
   grid-column: 1/5;
   grid-row: 1/7;
 }
@@ -958,7 +1059,7 @@ footer p {
     margin: 0;
   }
 
-  .mainnav-mobile { 
+  .mainnav-mobile {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1059,7 +1160,7 @@ footer p {
 
   }
 
-  
+
 }
 
 
