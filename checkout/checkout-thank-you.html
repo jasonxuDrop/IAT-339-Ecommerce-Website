@@ -6,10 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/master.css">
     <link rel="stylesheet" href="../css/grid.css">
-    <!-- TODO title of site -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
+    
     <title>Document</title>
 </head>
 <body>
+
+    <header class="grid-container">
+        <nav class="col-12">
+            <div class="mainnav-mobile">
+                <div class="logo-shoppingcart-menu">
+                <a href="../index.html" id="logo">cliq</a>
     
+                <a href="checkout-customer.html" class="mobileicon">
+                    <img src="../img/shopping-bagCliq2.png" alt="" >
+                </a>
+                <a href="#" class="mobileicon">
+                    <img src="../img/mobilemenu.png" alt="">
+                </a>
+                </div>
+                <div class="burger">
+                    <a href="../product-list.html" class="navlink">shop</a>
+                    <a href="../build-guides.html" class="navlink">guides</a>
+                    <a href="../citations.html" class="navlink">citations</a>
+                    <a href="../patternlibraryhome.html" class="navlink current-page">patterns</a>
+                </div>
+                <div class="mobile-searchbar">
+                <input type="text" name="" placeholder="search" class="searchbar">
+                </div>
+            </div>
+    
+    
+            <div class="mainnav">
+                <a href="../index.html" id="logo">cliq</a>
+                <a href="../product-list.html" class="navlink">shop</a>
+                <a href="../build-guides.html" class="navlink">guides</a>
+                <a href="../citations.html" class="navlink">citations</a>
+                <a href="../patternlibraryhome.html" class="navlink current-page">patterns</a>
+            </div>
+    
+            <div class="searchcart">
+                <input type="text" name="" placeholder="search" class="searchbar">
+                <a href="checkout-customer.html"><img src="../img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+            </div>
+        </nav>
+  
+    </header>
+
+
+
+    <div class="grid-container">
+
+        <div class="col-5 mobile-col-12 align-self-stretch flex-col space-between">
+            <h1>Shipping info</h1>
+
+            <div class="flex-row space-between">
+                <div>
+                    <p class="input-label">First Name</p>
+                    <input type="text" placeholder="" class="searchbar">
+                </div>
+                
+                <div>
+                    <p class="input-label">Last Name</p>
+                    <input type="text" placeholder="" class="searchbar">
+                </div>
+            </div>
+            
+            <p class="input-label">Address</p>
+            <input type="text" placeholder="" class="searchbar">
+
+            <div class="flex-row space-between">
+                <div>
+                    <p class="input-label">City</p>
+                    <input type="text" placeholder="" class="searchbar">
+                </div>
+                
+                <div>
+                    <p class="input-label">State/Province</p>
+                    <input type="text" placeholder="" class="searchbar">
+                </div>
+            </div>
+            
+            <p class="input-label">Country</p>
+            <input type="text" placeholder="" class="searchbar">
+
+            <div class="flex-row space-between">
+                <div>
+                    <p class="input-label">Postal Code</p>
+                    <input type="text" placeholder="" class="searchbar">
+                </div>
+                
+                <div>
+                    <p class="input-label">Phone Number</p>
+                    <input type="text" placeholder="" class="searchbar">
+                </div>
+            </div>
+
+            <div>
+                <input type="checkbox" name="same-adress" id="same-adress" class="checkbox">
+                <label for="same-adress"> My billing address is the same as my shipping address</label>
+            </div>
+            
+        </div>
+
+        <div class="start-col-8 col-5 mobile-col-12 mobile-start-col-1">
+            <div class="flex-col align-items-end checkout-summary-section">
+
+                <div class="shopping-cart shopping-cart-checkout">
+                    <div class="flex-row space-between">
+                        <h3>Your Cart</h3>
+                        <a class="flat-button" href="">
+                            <img src="../img/icons/x.svg" alt="">
+                        </a>
+                    </div>
+                    <img src="../img/orangeline.svg" alt="">
+                    <div class="cart-product-wrapper">
+
+                        <div class="product">
+                            <img src="../img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                            <div class="description">
+            
+                                <div>
+                                <div class="flex-row space-between">
+                                    <h4>Clear Resin Keycap Set</h4>
+                                    <a class="flat-button" href="">
+                                    <img src="../img/icons/x.svg" alt="">
+                                    </a>
+                                </div>
+            
+                                <p>Microchip style clear resin artisan keycaps.</p>
+                                </div>
+            
+                                <h4 class="orange-pricetag">$35</h4>
+            
+                                <h4>
+                                <a class="flat-button small">-</a>
+                                1
+                                <a class="flat-button small">+</a>
+                                </h4>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="../img/greyline.svg" alt="">
+                    <div class="subtotal">
+                        <h4>Subtotal</h4>
+                        <h4>$35.00</h4>
+                    </div>
+                </div>
+                
+                
+                <a href="#checkout" class="secondary-btn default-btn margin-top-40px">proceed to checkout</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="grid-container">
+            <div class="footer-row col-12">
+                <div class="mailing-list">
+                    <p class="footer-heading">JOIN OUR MAILING LIST</p>
+                    <p>Info about upcoming releases, new arrivals and more!</p>
+        
+                    <!-- TODO: text colour here isnt actually registering -->
+                    <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+        
+                </div>
+                <div class="company-info-wrapper">
+                    <div class="company-contact company-list-info">
+                        <p class="footer-heading">CLIQ</p>
+                        <ul>
+                            <li>
+                                <a class="default-link" href="../index.html#about">about us</a>
+                            </li>
+                            <li>
+                                <a class="default-link" href="#">contact us</a>
+                            </li>
+                            <li>
+                                <a class="default-link" href="../patternlibraryhome.html">styleguide</a>
+                            </li>
+                            <li>
+                                <a class="default-link" href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank">github</a>
+                            </li>
+                            <li>
+                                <a class="default-link" href="../citations.html">citation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="faq-help company-list-info">
+                        <p class="footer-heading">HELP</p>
+                        <ul>
+                            <li>
+                                <a class="default-link" href="#">shipping</a>
+                            </li>
+                            <li>
+                                <a class="default-link" href="#">returns</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-media-links">
+                        <ul>
+                            <li>
+                                <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
+                                <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../img/twitchwhite2.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../img/twitterwhite2.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../img/instagramwhite.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row col-12">
+                <div class="logo-dark">
+                    <a href="index.html">cliq</a>
+                </div>
+                <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
