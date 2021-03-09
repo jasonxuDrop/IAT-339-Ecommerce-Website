@@ -40,8 +40,9 @@ p {
   line-height: 140%;
 }
 
+/* TODO used for pattern */
 section p {
-  max-width: 75%;
+  /* max-width: 75%; */
 }
 
 h1 {
@@ -275,7 +276,7 @@ nav .searchcart a:focus{
 .hero-container.home-page{
   background-image: url(../img/cliqHeroBanner.jpg);
 
-  height: 100vh;
+  height: 80vh;
   background-position: right;
   background-repeat: no-repeat;
   background-size: 65%;
@@ -284,7 +285,7 @@ nav .searchcart a:focus{
 
 .hero-container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 
   grid-template-rows: repeat(8, 1fr);
 }
@@ -294,9 +295,13 @@ nav .searchcart a:focus{
 }
 
 .hero-container .content {
-  grid-column: 2 / span 6;
+  grid-column: 3 / span 6;
 
-  grid-row: 3 / span 4;
+  grid-row: 2 / span 4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -328,26 +333,37 @@ nav .searchcart a:focus{
   color: white;
 }
 
-/*.best-sellers {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-}*/
+.about-us p{
+  /*grid-column: 7 / span 3;*/
+  /*padding-left: 6rem;*/
+  max-width: 55%;
+}
+.about-us {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 6rem 0 6rem 0;
+}
+
 
 .imgleft-contentright {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2.5em 0 2.5em 0;
 }
 
 .imgleft-contentright img{
   width: 100%;
   height: auto;
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 6;
 }
 .imgleft-contentright .product-info {
 
-  grid-column: 6 / span 2;
+  grid-column: 8 / span 4;
   /*background-color: pink;*/
-
+  margin-left: 3rem;
   display: flex;
   flex-direction: column;
 
@@ -355,22 +371,75 @@ nav .searchcart a:focus{
 
 .imgright-contentleft {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2.5em 0 2.5em 0;
 }
 .imgright-contentleft img{
   width: 100%;
   height: auto;
-  grid-column: 5 / span 3;
+  grid-column: 6 / span 6;
 }
 .imgright-contentleft .product-info {
 
-  grid-column: 2 / span 2;
-  /*background-color: pink;*/
-
+  grid-column: 2 / span 4;
+  margin-right: 3rem;
   display: flex;
   flex-direction: column;
 
 }
+
+#homepage-guides {
+  /*background-image: url(../img/cliqguideskeyboard2.png);
+
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;*/
+
+  margin: 0 0 3rem 0;
+}
+
+.guide-container.guides-page{
+  background-image: url(../img/cliqguideskeyboard2.png);
+
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+
+}
+
+.guide-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.guide-container p{
+  max-width: 100%;
+}
+
+.guide-container h2{
+  font-size: 2rem;
+}
+
+.guide-container .content {
+  grid-column: 5 / span 4;
+
+  grid-row: 4 / span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+
+
+
+
 
 
 
@@ -409,7 +478,8 @@ nav .searchcart a:focus{
 
 .real-button-example {
   padding: 1.5em .75em;
-  background-color: #efefef;
+  margin: 1.5em 0 1.5em;
+  /*background-color: #efefef;*/
   border-radius: 20px;
 }
 
@@ -811,6 +881,7 @@ footer{
   flex-direction: column;
   color:#FAFBFF;
   padding: 1em 0;
+  margin-top: 5em;
 }
 
 footer .footer-row{
@@ -1147,6 +1218,14 @@ footer p {
     max-width: 100%;
   }
 
+  .about-us p{
+    max-width: 100%;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+
   footer .footer-toppart{
     display: flex;
     flex-direction: column;
@@ -1198,4 +1277,67 @@ footer p {
 }
 .margin-top-20px {
   margin-top: 20px;
+}
+
+
+/* product-detail page*/
+.detail-img-preview-container > div{
+  grid-column: 1/-1;
+  height:20em;
+}
+
+#img-preview-1{
+  background-color: blue;
+}
+
+#img-preview-2{
+  height: 30em;
+  margin-right: -24em;
+}
+
+#img-preview-3{
+  background-color: blue;
+}
+
+.detail-img-preview{
+  height: 15em;
+}
+
+.page-break > div{
+  margin: auto;
+}
+
+.neu-divider{
+  height: 10em;
+  width: 10em;
+}
+
+.neu-extrusion{
+  border-radius: 25px;
+  background: #EFEFEF;
+  box-shadow: 15px 15px 30px #CBCBCB, -15px -15px 30px #FFFFFF;
+  margin: 3em 0;
+}
+
+.product-description-container{
+  padding: 3em;
+}
+
+.switch-char{
+  min-width: 7em;
+  min-height: 7em;
+}
+
+.justify-space{
+  display: flex;
+  justify-content: space-between;
+}
+
+.extended-section-margin{
+  margin: 5rem 0;
+}
+
+.product-detail-extend-y {
+  margin-top: -5em;
+  margin-bottom: -5em;
 }

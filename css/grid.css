@@ -18,14 +18,17 @@
     margin: 0 auto;
 }
 
+/* standard max width for our site */
 .max-width{
     width: 1240px;
 }
 
+/* spans all rows of grid container */
 .max-row{
     grid-row: 1/-1;
 }
 
+/* spans all columns of grid container */
 .max-col{
     grid-column: 1/-1;
 }
