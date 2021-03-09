@@ -1,0 +1,62 @@
+.banner-container-product-list {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.banner-image-product-list {
+    
+}
+
+.hero-text {
+
+}
+.hero-img {
+
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 9em;
+}
+
+/* flex product to 2 cards per row */
+@media screen and (max-width: 90em) {
+    .sampleproductcard {
+        width: clamp(300px, 46%, 445px);
+        margin-bottom: 3rem;
+    }
+}
+
+/* flex product to 1 cards per row */
+@media screen and (max-width: 66em) {
+    .sampleproductcard {
+        width: clamp(300px, 100%, 445px);
+    }
+}
+
+/* mobile breakpoint for girds */
+@media screen and (max-width: 45em) {
+    .banner-container-product-list {
+        margin-top: 20px;
+    }
+
+    .hero-img {
+        order: -1;
+
+        display: flex;
+        justify-content: center;
+    }
+    .hero-img > img {
+        width: 120%;
+    }
+
+    .product-container {
+        margin-bottom: 3.75em;
+    }
+    .sampleproductcard, .filter {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+

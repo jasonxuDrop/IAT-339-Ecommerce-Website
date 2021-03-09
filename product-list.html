@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/product-list.css">
+
 
     <title>CLIQ - Products</title>
 </head>
@@ -58,157 +60,203 @@
 
   </header>
 
-  <div class="hero-container home-page">
-    <div class="content">
-      <h1>Mechanical Keyboards</h1>
-      <p>Future home page of CLIQ, currently under construction. Pls navigate to 'patterns' for our pattern library :-D</p>
+  
+
+    <div class="hide-overflow-x">
+        <div class="grid-container banner-container-product-list">
+            <div class="col-4 mobile-col-12 hero-text">
+                <h1>mechanical keyboards</h1>
+                <p>Thoughtfully designed and quality crafted keyboards, keycaps, and plates. Discover your next keyboard addition. </p>
+                <div class="margin-top-40px">
+                    <a href="build-guides.html" class="secondary-btn default-btn">learn more</a>
+                </div>
+            </div>
+            
+            <div class="start-col-6 col-7 mobile-start-col-1 mobile-col-12 hero-img">
+                <!-- TODO replace with actual interactable keyboard -->
+                <img src="img/banner/product-list-banner-img.png" alt="">
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="product-grid-container">
-
-      <div class="filter">
-        <h2>Filter</h2>
-        <p>Test1</p>
-        <p>Test2</p>
-      </div>
-
-      <a href="product-detail.html" class="sampleproductcard" id="product1">
-        <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
-
-        <div class="product-info">
-          <div class="">
-            <p>CLEAR KEYCAPS</p>
-            <p class="light-color-text">In Stock</p>
-          </div>
-          <div class="">
-            <p class="orange-pricetag">$35</p>
-          </div>
-        </div>
-      </a> <!-- end of the live product sample card -->
-
-      <a href="product-detail.html" class="sampleproductcard" id="product2">
-        <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
-
-        <div class="product-info">
-          <div class="">
-            <p>CLEAR KEYCAPS</p>
-            <p class="light-color-text">In Stock</p>
-          </div>
-          <div class="">
-            <p class="orange-pricetag">$35</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="product-detail.html" class="sampleproductcard" id="product3">
-        <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
-
-        <div class="product-info">
-          <div class="">
-            <p>CLEAR KEYCAPS</p>
-            <p class="light-color-text">In Stock</p>
-          </div>
-          <div class="">
-            <p class="orange-pricetag">$35</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="product-detail.html" class="sampleproductcard" id="product4">
-        <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
-
-        <div class="product-info">
-          <div class="">
-            <p>CLEAR KEYCAPS</p>
-            <p class="light-color-text">In Stock</p>
-          </div>
-          <div class="">
-            <p class="orange-pricetag">$35</p>
-          </div>
-        </div>
-      </a>
-
-
-
-
-
-  </div>
-
-
-
-  <footer>
     <div class="grid-container">
-      <div class="footer-row col-12">
-          <div class="mailing-list">
-              <p class="footer-heading">JOIN OUR MAILING LIST</p>
-              <p>Info about upcoming releases, new arrivals and more!</p>
+        <div class="filter col-2 mobile-col-12">
+            <h2>Filter</h2>
+            <p>Test1</p>
+            <p>Test2</p>
+        </div>
 
-              <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+        <div class="col-9 start-col-4 mobile-start-col-1 mobile-col-12 product-container">
+            
+            <a href="#" class="sampleproductcard" id="product1">
+                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
 
-          </div>
-          <div class="company-info-wrapper">
-              <div class="company-contact company-list-info">
-                  <p class="footer-heading">CLIQ</p>
-                  <ul>
-                      <li>
-                          <a class="default-link" href="#">about us</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="#">contact us</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="patternlibraryhome.html">styleguide</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank">github</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="citations.html">citation</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="faq-help company-list-info">
-                  <p class="footer-heading">HELP</p>
-                  <ul>
-                      <li>
-                          <a class="default-link" href="#">shipping</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="#">returns</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="social-media-links">
-                  <ul>
-                      <li>
-                          <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                          <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/twitchwhite2.svg" alt=""></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/twitterwhite2.svg" alt=""></a>
-                      </li>
-                      <li>
-                          <a href="#"><img src="img/instagramwhite.svg" alt=""></a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="footer-row col-12">
-          <div class="logo-dark">
-              <a href="index.html">cliq</a>
-          </div>
-          <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
-      </div>
+                <div class="product-info">
+                <div class="">
+                    <p>CLEAR KEYCAPS</p>
+                    <p class="light-color-text">In Stock</p>
+                </div>
+                <div class="">
+                    <p class="orange-pricetag">$35</p>
+                </div>
+                </div>
+            </a> 
+
+            <a href="#" class="sampleproductcard" id="product2">
+                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+
+                <div class="product-info">
+                <div class="">
+                    <p>CLEAR KEYCAPS</p>
+                    <p class="light-color-text">In Stock</p>
+                </div>
+                <div class="">
+                    <p class="orange-pricetag">$35</p>
+                </div>
+                </div>
+            </a>
+
+            <a href="#" class="sampleproductcard" id="product3">
+                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+
+                <div class="product-info">
+                <div class="">
+                    <p>CLEAR KEYCAPS</p>
+                    <p class="light-color-text">In Stock</p>
+                </div>
+                <div class="">
+                    <p class="orange-pricetag">$35</p>
+                </div>
+                </div>
+            </a>
+
+            <a href="#" class="sampleproductcard" id="product4">
+                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+
+                <div class="product-info">
+                <div class="">
+                    <p>CLEAR KEYCAPS</p>
+                    <p class="light-color-text">In Stock</p>
+                </div>
+                <div class="">
+                    <p class="orange-pricetag">$35</p>
+                </div>
+                </div>
+            </a>
+
+            <a href="#" class="sampleproductcard" id="product5">
+                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+
+                <div class="product-info">
+                <div class="">
+                    <p>CLEAR KEYCAPS</p>
+                    <p class="light-color-text">In Stock</p>
+                </div>
+                <div class="">
+                    <p class="orange-pricetag">$35</p>
+                </div>
+                </div>
+            </a>
+
+            <a href="#" class="sampleproductcard" id="product6">
+                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+
+                <div class="product-info">
+                <div class="">
+                    <p>CLEAR KEYCAPS</p>
+                    <p class="light-color-text">In Stock</p>
+                </div>
+                <div class="">
+                    <p class="orange-pricetag">$35</p>
+                </div>
+                </div>
+            </a>
+
+
+        </div>
+        
+        <div class="col-12 page-navagation">
+            <a class="default-btn primary-btn">&#x3C;</a>
+            <a class="default-btn primary-btn active">1</a>
+            <a class="default-btn primary-btn">2</a>
+            <a class="default-btn primary-btn">3</a>
+            <a class="default-btn primary-btn">&#x3E;</a>
+        </div>
     </div>
-</footer>
 
-<!-- link to the js file -->
-<script src="js/tabhighlighting.js"></script>
+
+
+
+    <footer>
+        <div class="grid-container">
+        <div class="footer-row col-12">
+            <div class="mailing-list">
+                <p class="footer-heading">JOIN OUR MAILING LIST</p>
+                <p>Info about upcoming releases, new arrivals and more!</p>
+
+                <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+
+            </div>
+            <div class="company-info-wrapper">
+                <div class="company-contact company-list-info">
+                    <p class="footer-heading">CLIQ</p>
+                    <ul>
+                        <li>
+                            <a class="default-link" href="#">about us</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="#">contact us</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="patternlibraryhome.html">styleguide</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank">github</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="citations.html">citation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="faq-help company-list-info">
+                    <p class="footer-heading">HELP</p>
+                    <ul>
+                        <li>
+                            <a class="default-link" href="#">shipping</a>
+                        </li>
+                        <li>
+                            <a class="default-link" href="#">returns</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media-links">
+                    <ul>
+                        <li>
+                            <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
+                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitchwhite2.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitterwhite2.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/instagramwhite.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row col-12">
+            <div class="logo-dark">
+                <a href="index.html">cliq</a>
+            </div>
+            <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
 
 
 </body>
