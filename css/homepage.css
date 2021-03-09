@@ -1,0 +1,233 @@
+
+
+.hero-container.home-page{
+  background-image: url(../img/cliqHeroBanner.jpg);
+
+  height: 80vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 65%;
+
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.hero-container p{
+  max-width: 75%;
+}
+
+.hero-container .content {
+  grid-column: 3 / span 6;
+
+  grid-row: 2 / span 4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.hero-container h1{
+  font-family: moonFont;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #3E3E3E;
+}
+
+.hero-product-container{
+  position: relative;
+}
+
+.hero-product-container img{
+  vertical-align: bottom;
+}
+
+.hero-product-container .real-button-example{
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+
+
+.about-us h2, .about-us p{
+  color: white;
+}
+
+.about-us p{
+  /*grid-column: 7 / span 3;*/
+  /*padding-left: 6rem;*/
+  max-width: 55%;
+}
+.about-us {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 6rem 0 6rem 0;
+}
+
+.mobilebest-seller.mobile-product-cards{
+  display: none;
+}
+
+.imgleft-contentright {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2.5em 0 2.5em 0;
+}
+
+.imgleft-contentright img{
+  width: 100%;
+  height: auto;
+  grid-column: 2 / span 6;
+}
+.imgleft-contentright .product-info {
+
+  grid-column: 8 / span 4;
+  /*background-color: pink;*/
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.imgright-contentleft {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2.5em 0 2.5em 0;
+}
+.imgright-contentleft img{
+  width: 100%;
+  height: auto;
+  grid-column: 6 / span 6;
+}
+.imgright-contentleft .product-info {
+
+  grid-column: 2 / span 4;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#homepage-guides {
+  /*background-image: url(../img/cliqguideskeyboard2.png);
+
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;*/
+
+  margin: 0 0 3rem 0;
+}
+
+.guide-container.guides-page{
+  background-image: url(../img/cliqguideskeyboard2.png);
+
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+
+}
+
+.guide-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.guide-container p{
+  max-width: 100%;
+}
+
+.guide-container h2{
+  font-size: 2rem;
+}
+
+.guide-container .content {
+  grid-column: 5 / span 4;
+
+  grid-row: 4 / span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+
+
+/* switch to mobile res */
+@media screen and (max-width: 57em) {
+
+
+  .hero-container.home-page{
+    background-image: url(../img/cliqHeroBanner.jpg);
+    /*background-color: pink;*/
+    height: 80vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+
+  .hero-container .content {
+    grid-column: 4 / span 6;
+
+    grid-row: 2 / span 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-container .content p, .about-us p{
+    max-width: 100%;
+  }
+  .about-us {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 6rem 0 6rem 0;
+  }
+  .about-us h2, #best-sellers h2{
+    text-align: center;
+  }
+
+  .desktopbest-seller{
+    display: none;
+  }
+
+  #best-sellers{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobilebest-seller.mobile-product-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /*nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }*/
+
+
+}
