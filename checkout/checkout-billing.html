@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/master.css">
     <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/checkout.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
@@ -32,7 +33,7 @@
                     <a href="../product-list.html" class="navlink">shop</a>
                     <a href="../build-guides.html" class="navlink">guides</a>
                     <a href="../citations.html" class="navlink">citations</a>
-                    <a href="../patternlibraryhome.html" class="navlink current-page">patterns</a>
+                    <a href="../patternlibraryhome.html" class="navlink">patterns</a>
                 </div>
                 <div class="mobile-searchbar">
                 <input type="text" name="" placeholder="search" class="searchbar">
@@ -45,7 +46,7 @@
                 <a href="../product-list.html" class="navlink">shop</a>
                 <a href="../build-guides.html" class="navlink">guides</a>
                 <a href="../citations.html" class="navlink">citations</a>
-                <a href="../patternlibraryhome.html" class="navlink current-page">patterns</a>
+                <a href="../patternlibraryhome.html" class="navlink">patterns</a>
             </div>
     
             <div class="searchcart">
@@ -60,68 +61,57 @@
 
     <div class="grid-container">
 
-        <div class="col-5 mobile-col-12 align-self-stretch flex-col space-between">
-            <h1>Shipping info</h1>
+        <div class="col-5 info-column">
+            <h1>Billing Info</h1>
 
             <div class="flex-row space-between">
-                <div>
+                <div class="textfield-container wide">
                     <p class="input-label">First Name</p>
-                    <input type="text" placeholder="" class="searchbar">
+                    <input type="text" placeholder="" class="searchbar wide">
                 </div>
                 
-                <div>
+                <div class="textfield-container wide">
                     <p class="input-label">Last Name</p>
-                    <input type="text" placeholder="" class="searchbar">
+                    <input type="text" placeholder="" class="searchbar wide">
                 </div>
             </div>
             
-            <p class="input-label">Address</p>
-            <input type="text" placeholder="" class="searchbar">
+            <div class="textfield-container">
+                <p class="input-label">Credit Card Number</p>
+                <input type="text" placeholder="" class="searchbar wide">
+            </div>
 
             <div class="flex-row space-between">
-                <div>
-                    <p class="input-label">City</p>
-                    <input type="text" placeholder="" class="searchbar">
+                <div class="textfield-container wide">
+                    <p class="input-label">Expiration Month</p>
+                    <input type="text" placeholder="" class="searchbar wide">
                 </div>
                 
-                <div>
-                    <p class="input-label">State/Province</p>
-                    <input type="text" placeholder="" class="searchbar">
+                <div class="textfield-container wide">
+                    <p class="input-label">Expiration Year</p>
+                    <input type="text" placeholder="" class="searchbar wide">
                 </div>
             </div>
             
-            <p class="input-label">Country</p>
-            <input type="text" placeholder="" class="searchbar">
-
-            <div class="flex-row space-between">
-                <div>
-                    <p class="input-label">Postal Code</p>
-                    <input type="text" placeholder="" class="searchbar">
-                </div>
-                
-                <div>
-                    <p class="input-label">Phone Number</p>
-                    <input type="text" placeholder="" class="searchbar">
-                </div>
+            <div class="textfield-container">
+                <p class="input-label">CVV</p>
+                <input type="text" placeholder="" class="searchbar wide">
             </div>
 
-            <div>
-                <input type="checkbox" name="same-adress" id="same-adress" class="checkbox">
-                <label for="same-adress"> My billing address is the same as my shipping address</label>
-            </div>
             
+
+            <div class="textfield-container">
+                <input type="checkbox" name="same-adress" id="same-adress" class="input-checkbox">
+                <label for="same-adress"> Same as shipping address</label>
+            </div>
         </div>
 
         <div class="start-col-8 col-5 mobile-col-12 mobile-start-col-1">
             <div class="flex-col align-items-end checkout-summary-section">
 
-                <div class="shopping-cart shopping-cart-checkout">
-                    <div class="flex-row space-between">
-                        <h3>Your Cart</h3>
-                        <a class="flat-button" href="">
-                            <img src="../img/icons/x.svg" alt="">
-                        </a>
-                    </div>
+                <div class="shopping-cart shopping-cart-checkout nero-box-shadow">
+                    <h3>Your Cart</h3>
+                    
                     <img src="../img/orangeline.svg" alt="">
                     <div class="cart-product-wrapper">
 
@@ -140,7 +130,7 @@
                                 <p>Microchip style clear resin artisan keycaps.</p>
                                 </div>
             
-                                <h4 class="orange-pricetag">$35</h4>
+                                <h4 class="orange-pricetag">$18.99</h4>
             
                                 <h4>
                                 <a class="flat-button small">-</a>
@@ -151,16 +141,28 @@
                         </div>
                         
                     </div>
+
+                    <div class="flex-row space-between">
+                        <span>Total</span>
+                        <span>$18.99</span>
+                    </div>
+                    <div class="flex-row space-between">
+                        <span>Tax</span>
+                        <span>$3.56</span>
+                    </div>
+                    <div class="flex-row space-between">
+                        <span>Shipping</span>
+                        <span>$10.00</span>
+                    </div>
                     <img src="../img/greyline.svg" alt="">
                     <div class="subtotal">
-                        <h4>Subtotal</h4>
-                        <h4>$35.00</h4>
+                        <span>Subtotal</span>
+                        <span class="orange-pricetag">US $35.00</span>
                     </div>
                 </div>
                 
                 
-                <a href="#checkout" class="secondary-btn default-btn margin-top-40px">proceed to checkout</a>
-                
+                <a href="#checkout" class="secondary-btn default-btn margin-top-40px disabled">proceed to checkout</a>
             </div>
         </div>
     </div>
@@ -212,7 +214,7 @@
                         <ul>
                             <li>
                                 <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                                <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
+                                <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="../img/githubwhite.svg" alt=""></a>
                             </li>
                             <li>
                                 <a href="#"><img src="../img/twitchwhite2.svg" alt=""></a>

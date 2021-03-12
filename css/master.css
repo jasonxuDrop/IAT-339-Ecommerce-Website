@@ -183,6 +183,7 @@ nav #logo:focus {
   box-sizing: border-box;
   padding-left: 26.7px;
   margin-bottom: 3px;
+  margin-top: 0px;
 }
 
 nav .searchcart a{

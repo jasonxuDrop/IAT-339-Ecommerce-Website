@@ -2,10 +2,14 @@
 .info-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   align-self: stretch;
   margin-right: -2.5em;
+  min-height: 42vh;
+}
+.info-column > * {
+  margin-bottom: 40px;
 }
 
 .shopping-cart-checkout{
