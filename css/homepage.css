@@ -54,7 +54,13 @@
   right: 2em;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
 
+h3{
+  font-size: 1.5rem;
+}
 
 .about-us h2, .about-us p{
   color: white;
@@ -118,6 +124,15 @@
 
 }
 
+.view-all-section{
+  grid-column: 1/span 12;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
 #homepage-guides {
   /*background-image: url(../img/cliqguideskeyboard2.png);
 
@@ -150,10 +165,6 @@
   max-width: 100%;
 }
 
-.guide-container h2{
-  font-size: 2rem;
-}
-
 .guide-container .content {
   grid-column: 5 / span 4;
 
@@ -166,7 +177,12 @@
   text-align: center;
 }
 
-
+/* for big screen */
+@media screen and (min-width: 110em) {
+  .hero-container h1{
+    font-size: 4.75rem;
+  }
+}
 
 /* switch to mobile res */
 @media screen and (max-width: 57em) {
