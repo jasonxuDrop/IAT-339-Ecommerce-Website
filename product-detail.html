@@ -42,7 +42,7 @@
         
             <div class="mainnav">
                 <a href="index.html" id="logo">cliq</a>
-                <a href="products.html" class="navlink">shop</a>
+                <a href="product-list.html" class="navlink">shop</a>
                 <a href="build-guides.html" class="navlink">guides</a>
                 <a href="citations.html" class="navlink">citations</a>
                 <a href="patternlibraryhome.html" class="navlink">patterns</a>
@@ -84,15 +84,15 @@
                 </div>
                 <!-- end of black-box -->
 
-                <div class="detail-img-preview-container col-6 start-col-5 max-row" style="background-color:cyan">
+                <div class="detail-img-preview-container col-6 start-col-5 max-row">
                     <div class="detail-img-preview" id="img-preview-1">
-        
+                        <img src="img/products/lindesign-kb-case.jpg" alt="keyboard case">
                     </div>
-                    <div class="detail-img-preview" id="img-preview-2" style="background-color: green;">
-        
+                    <div class="detail-img-preview" id="img-preview-2">
+                        <img src="img/products/lindesign-kb-case.jpg" alt="keyboard case">
                     </div>
                     <div class="detail-img-preview" id="img-preview-3">
-        
+                        <img src="img/products/lindesign-kb-case.jpg" alt="keyboard case">
                     </div>
                 </div>
                 </div>
@@ -110,31 +110,34 @@
             </section>
 
             <!-- keyswitch section -->
-            <section class="col-12 extended-section-margin">
+            <section class="keyswitch-section col-12 extended-section-margin">
                 <div class="neu-extrusion">
                     <div class="switch-detail-container grid-container-bleed">
                         <div class="product-description-container col-6 start-col-1">
                             <h2>CHERRY MX BLUE</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi voluptatum eum, quis, nostrum voluptate itaque harum rerum dolores repellat asperiores sunt iste, hic consectetur facere error magnam temporibus obcaecati!</p>
                             <div class="switch-characteristics-container justify-space">
-                                <div class="neu-small-container switch-char neu-extrusion" ></div>
-                                <div class="neu-small-container switch-char neu-extrusion" ></div>
-                                <div class="neu-small-container switch-char neu-extrusion" ></div>
+                                <div class="neu-small-container neu-container switch-char neu-extrusion">
+                                    <img src="img/icons/switch-type.svg" alt="switch type icon">
+                                </div>
+                                <div class="neu-small-container neu-container switch-char neu-extrusion">
+                                    <img src="img/icons/switch-weight.svg" alt="switch weight icon">
+                                </div>
+                                <div class="neu-small-container neu-container switch-char neu-extrusion">
+                                    <img src="img/icons/switch-travel.svg" alt="switch travel icon">
+                                </div>
                             </div>
                         </div>
                         <div class="product-detail-extend-y neu-extrusion col-5 max-row start-col-7">
-                            <!-- <img src="" alt="" > -->
-                            <div></div>
+                            <img src="img/switch-render.png" alt="Key switch render">
                         </div>
                     </div>
                 </div>
             </section>
             <!-- end of keyswitch section -->
 
-            <!-- !incomplete -->
-            <!-- TODO replace classes -->
             <!-- keycap section -->
-            <section class="col-12 extended-section-margin">
+            <section class="keycap-section col-12 extended-section-margin">
                 <div class="neu-extrusion">
                     <div class="switch-detail-container grid-container-bleed">
                         <div class="product-description-container col-6 start-col-1">
@@ -142,8 +145,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi voluptatum eum, quis, nostrum voluptate itaque harum rerum dolores repellat asperiores sunt iste, hic consectetur facere error magnam temporibus obcaecati!</p>
                         </div>
                         <div class="product-detail-extend-y neu-extrusion col-5 max-row start-col-7">
-                            <!-- <img src="" alt="" > -->
-                            <div></div>
+                            <img src="img/products/minimal-2-keycaps.png" alt="Minimal 2 keycap set">
                         </div>
                     </div>
 
@@ -151,9 +153,15 @@
                     <div class="keycap-detail-container">
                         <h2>ARTISINAL KEYCAPS</h2>
                         <div class="switch-characteristics-container justify-space">
-                            <div class="neu-med-container neu-extrusion"></div>
-                            <div class="neu-med-container neu-extrusion"></div>
-                            <div class="neu-med-container neu-extrusion"></div>
+                            <div class="neu-med-container neu-container neu-extrusion">
+                                <img class="neu-med-container-img" src="img/products/artisinal-keycap-green-triangle.png" alt="Artisinal keycap">
+                            </div>
+                            <div class="neu-med-container neu-container neu-extrusion">
+                                <img class="neu-med-container-img" src="img/products/artisinal-keycap-black-x.png" alt="Artisinal keycap">
+                            </div>
+                            <div class="neu-med-container neu-container neu-extrusion">
+                                <img class="neu-med-container-img" src="img/products/artisinal-keycap-bluedot.png" alt="Artisinal keycap">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,13 +171,59 @@
             <!-- gallery section -->
             <section class="gallery-section col-12">
                 <h2>GALLERY</h2>
-                <div class="test-img"></div>
-                <div class="test-img"></div>
-                <div class="test-img"></div>
-                <div class="test-img"></div>
-                <div class="gallery-wrapper max-col"></div>
+                <div class="gallery-grid-container">
+                    <figure class="gallery-item gallery-item-1">
+                        <img class="gallery-img" src="/img/products/lindesign-kb-case.jpg" alt="Gallery image 1">
+                    </figure>
+                    <figure class="gallery-item gallery-item-2">
+                        <img class="gallery-img" src="/img/products/lindesign-kb-case.jpg" alt="Gallery image 1">
+                    </figure>
+                    <figure class="gallery-item gallery-item-3">
+                        <img class="gallery-img" src="/img/products/lindesign-kb-case.jpg" alt="Gallery image 1">
+                    </figure>
+                    <figure class="gallery-item gallery-item-4">
+                        <img class="gallery-img" src="/img/products/lindesign-kb-case.jpg" alt="Gallery image 1">
+                    </figure>
+                </div>
+                <div class="gallery-background-banner max-col"></div>
             </section>
             <!-- end of gallery -->
+
+            <!-- beginning of check-out-more section -->
+            <section class="check-out-more-section col-12">
+                <h2>ALSO CHECK OUT</h2>
+                <div class="check-out-wrapper">
+                    <a class="primary-btn pagination-btn">&#x3C;</a>
+                    <a href="product-detail.html" class="sampleproductcard" id="product4">
+                        <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+        
+                        <div class="product-info">
+                        <div class="">
+                            <p>CYRILLIC BEIGE</p>
+                            <p class="light-color-text">In Stock</p>
+                        </div>
+                        <div class="">
+                            <p class="orange-pricetag">$35</p>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="product-detail.html" class="sampleproductcard" id="product4">
+                        <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+        
+                        <div class="product-info">
+                        <div class="">
+                            <p>CYRILLIC BEIGE</p>
+                            <p class="light-color-text">In Stock</p>
+                        </div>
+                        <div class="">
+                            <p class="orange-pricetag">$35</p>
+                        </div>
+                        </div>
+                    </a>
+                    <a class="default-btn primary-btn pagination-btn">&#x3E;</a>
+                </div>
+            </section>
+            <!-- end of of check-out-more section -->
 
         </div>
         <!-- end of grid container -->
