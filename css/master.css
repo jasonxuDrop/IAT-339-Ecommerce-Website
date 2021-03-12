@@ -333,7 +333,6 @@ nav .searchcart a:focus{
   box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
 
   cursor: pointer;
-
 }
 
 /* end of default btn */
@@ -371,6 +370,19 @@ nav .searchcart a:focus{
 }
 
 /* end of secondary-btn */
+
+/* disabled-btn */
+.default-btn:disabled, .default-btn.disabled {
+  color: #FAFFFD;
+  background-color: #C6D1D3;
+  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
+  inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+  cursor: default;
+}
+.default-btn.disabled:hover {
+  color: #FAFFFD;
+}
+/* end of disabled-btn */
 
 /* default-link */
 
