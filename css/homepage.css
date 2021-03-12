@@ -34,7 +34,7 @@
 
 .hero-container h1{
   font-family: moonFont;
-  font-size: 3rem;
+  /*font-size: 3rem;*/
   font-weight: 300;
   letter-spacing: 5px;
   color: #3E3E3E;
@@ -59,7 +59,7 @@ h2 {
 }
 
 h3{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .about-us h2, .about-us p{
@@ -176,6 +176,28 @@ h3{
 
   text-align: center;
 }
+
+.guide-container .content .guides-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.guide-container .content a{
+  text-decoration: none;
+  color: #3E3E3E;
+}
+
+
+.guide-container .content a:hover{
+  /*color: #F65F54;*/
+  opacity: 70%;
+
+}
+
+
+
 
 /* for big screen */
 @media screen and (min-width: 110em) {
