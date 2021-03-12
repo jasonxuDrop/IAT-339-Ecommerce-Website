@@ -168,6 +168,7 @@ nav #logo:focus {
   padding: 0.5em 0 0.5em 2em;
 
   color: #312E37;
+  background-color: #EFEFEF;
 
   border: 0px;
   box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
