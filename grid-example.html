@@ -11,12 +11,12 @@
 <body>
 
     <div class="grid-container">
-        <div class="col-12 mobile-start-col-2 mobile-col-10">
-            <p></p>
+        <div class="col-12 mobile-start-col-2 mobile-col-10 margin-top-20px">
             <a href="index.html#grids" class="flat-button small">&#x3C; back to UI Pattern Library</a>
             <h1>Grid System</h1>
             <h2 class="section-header">Grid Container</h2>
             <p id="gridparagraph">Our grid system consists of 12 columns with a 20px gutter. Many of our layouts skip the first and last column, spanning the 10 inner columns of the grid. An example of the 12 column grid is below, along with our other grid layout sizes.</p>
+            <h3>grid-container</h3>
         </div>
     </div>
 
@@ -60,6 +60,69 @@
         <pre class="start-col-2 col-10">
         <code>
         &#x3C;div class=&#x22;grid-container&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1&#x22;&#x3E;
+                ... content
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        </code>
+        </pre>
+    </div>
+
+    <div class="grid-container">
+        <div class="col-12 mobile-start-col-2 mobile-col-10">
+            <h3>full-grid-container</h3>
+            <p>An alternative grid container for content that needs to reach the edge of the page. All the col-x and start-col-x classes still work with this container, but the column numbers are shifted 1 column to the left. A negative margin is still recommended for most content. The bleed columns might get stretched quite far in some browsers. </p>
+        </div>
+    </div>
+    <div class="full-grid-container example">
+        <div class="col-1 grid-example tall">
+        <p>1</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>2</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>3</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>4</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>5</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>6</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>7</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>8</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>9</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>10</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>11</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>12</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>13</p>
+        </div>
+        <div class="col-1 grid-example tall">
+        <p>14</p>
+        </div>
+        <div class="max-col grid-example">
+        <p>max-col</p>
+        </div>
+        <pre class="start-col-3 col-10">
+        <code>
+        &#x3C;div class=&#x22;full-grid-container&#x22;&#x3E;
             &#x3C;div class=&#x22;col-1&#x22;&#x3E;
                 ... content
             &#x3C;/div&#x3E;
