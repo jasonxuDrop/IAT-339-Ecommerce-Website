@@ -45,7 +45,7 @@ section p {
   /* max-width: 75%; */
 }
 
-h1 {
+h1, .big-title {
     font-family: moonFont;
     font-weight: 300;
     color: #3E3E3E;
@@ -86,7 +86,16 @@ h3 {
   width: 8em;
 }
 
-
+/* table */
+table {
+  border-collapse: collapse;
+  box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+}
+tr , th , td  {
+  border: 1px solid #C6D1D3;
+  padding: .75em 1em;
+}
+/* end of table */
 
 
 
