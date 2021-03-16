@@ -90,7 +90,8 @@
     height: 380px;
     flex-shrink: 0;
     transform: matrix(0.71, 0.41, -1.22, 0.71, 0, 0);
-    margin-bottom: 150px;
+    /* TODO NEED A HEIGHT QUERY FOR PLACEMENT OF THIS */
+    /* margin-bottom: 150px; */
     margin-left: -40px;
 
     border-radius: 10px;
