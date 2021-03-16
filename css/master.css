@@ -628,6 +628,22 @@ a.sampleproductcard:hover{
   grid-row: 1/7;
 }
 
+.black-box .content h2, .black-box .content h3{
+  color: white;
+}
+.black-box .content h2{
+  font-size: 2.5em;
+  margin-bottom: 0.25em;
+}
+.black-box .content h3{
+  font-size: 1.75em;
+  margin-top: 0;
+}
+
+.black-box .content{
+  padding: 3em 2em 2em 3em;
+}
+
 
 
 
@@ -655,12 +671,12 @@ a.sampleproductcard:hover{
 
 }
 
-.sample-product-header .black-box h3{
+.sample-product-header .black-box h2{
   color: white;
-  font-size: 1.75em;
+  /*font-size: 1.75em;*/
 
 }
-.sample-product-header .black-box h4{
+.sample-product-header .black-box h3{
   font-family: moonFont;
   color: white;
 }
