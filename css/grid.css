@@ -252,7 +252,13 @@
 .start-col-12 {
     grid-column-start: 12;
 }
-<<<<<<< HEAD
+.start-col-13 {
+    grid-column-start: 13;
+}
+.start-col-14 {
+    grid-column-start: 14;
+}
+
 
 /* ------- product details page ------- */
 /* product details page - gallery section */
@@ -319,11 +325,4 @@
 
 /* end of  product details page - gallery section */
 /* ------- end of product details page ------- */
-=======
-.start-col-13 {
-    grid-column-start: 13;
-}
-.start-col-14 {
-    grid-column-start: 14;
-}
->>>>>>> main
+
