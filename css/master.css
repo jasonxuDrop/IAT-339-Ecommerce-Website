@@ -45,7 +45,7 @@ section p {
   /* max-width: 75%; */
 }
 
-h1 {
+h1, .big-title {
     font-family: moonFont;
     font-weight: 300;
     color: #3E3E3E;
@@ -86,7 +86,16 @@ h3 {
   width: 8em;
 }
 
-
+/* table */
+table {
+  border-collapse: collapse;
+  box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+}
+tr , th , td  {
+  border: 1px solid #C6D1D3;
+  padding: .75em 1em;
+}
+/* end of table */
 
 
 
@@ -168,6 +177,7 @@ nav #logo:focus {
   padding: 0.5em 0 0.5em 2em;
 
   color: #312E37;
+  background-color: #EFEFEF;
 
   border: 0px;
   box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
@@ -182,6 +192,7 @@ nav #logo:focus {
   box-sizing: border-box;
   padding-left: 26.7px;
   margin-bottom: 3px;
+  margin-top: 0px;
 }
 
 nav .searchcart a{
@@ -332,7 +343,6 @@ nav .searchcart a:focus{
   box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
 
   cursor: pointer;
-
 }
 
 /* end of default btn */
@@ -368,8 +378,31 @@ nav .searchcart a:focus{
   box-shadow: inset 10px 10px 20px #D05E47,
   inset -10px -10px 20px #FFAB97;
 }
-
 /* end of secondary-btn */
+
+/* disabled-btn */
+.default-btn:disabled, .default-btn.disabled {
+  color: #FAFFFD;
+  background-color: #C6D1D3;
+  box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
+  inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+  cursor: default;
+}
+.default-btn.disabled:hover {
+  color: #FAFFFD;
+}
+/* end of disabled-btn */
+
+/* flat button II */
+/* * please don't delete again T^T * */
+.flat-button{
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+}
+.flat-button:focus {
+  box-shadow: inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
+}
+/* end of flat button II */
 
 /* default-link */
 
@@ -409,6 +442,15 @@ pre {
   height: auto;
 }
 
+
+
+/*.sampleproductcard.filterDiv {
+  display: none;
+}
+
+.show {
+  display: flex;
+}*/
 
 /* Product Card */
 
@@ -547,22 +589,6 @@ a.sampleproductcard:hover{
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
 
-.shopping-cart-checkout{
-  border: none;
-  box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
-}
-@media screen and (max-width:62em) {
-  .shopping-cart-checkout{
-   display: none;
-  }
-}
-
-@media screen and (max-width:62em){
-  .checkout-summary-section {
-    align-items: stretch !important;
-    text-align: center;
-  }
-}
 
 
 .product .description{
@@ -570,6 +596,7 @@ a.sampleproductcard:hover{
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0.5em;
+  width: 100%;
 }
 .product .description p {
   color: #8E8E8E;
@@ -601,6 +628,22 @@ a.sampleproductcard:hover{
   grid-row: 1/7;
 }
 
+.black-box .content h2, .black-box .content h3{
+  color: white;
+}
+.black-box .content h2{
+  font-size: 2.5em;
+  margin-bottom: 0.25em;
+}
+.black-box .content h3{
+  font-size: 1.75em;
+  margin-top: 0;
+}
+
+.black-box .content{
+  padding: 3em 2em 2em 3em;
+}
+
 
 
 
@@ -628,12 +671,12 @@ a.sampleproductcard:hover{
 
 }
 
-.sample-product-header .black-box h3{
+.sample-product-header .black-box h2{
   color: white;
-  font-size: 1.75em;
+  /*font-size: 1.75em;*/
 
 }
-.sample-product-header .black-box h4{
+.sample-product-header .black-box h3{
   font-family: moonFont;
   color: white;
 }
@@ -777,7 +820,7 @@ footer p {
   color: #C6D1D3;
 }
 
-.text-input-dark:focus{
+.text-input-dark:focus, .searchbar:focus{
   outline: none;
 }
 
@@ -1074,7 +1117,7 @@ footer p {
 
 
 
-
+/* ------- general style combo classes ------- */
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -1102,7 +1145,8 @@ footer p {
 }
 
 .margin-top-100px {
-  margin-top: 100px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 .margin-top-40px {
   margin-top: 40px;
@@ -1110,6 +1154,8 @@ footer p {
 .margin-top-20px {
   margin-top: 20px;
 }
+/* ------- end of general style combo classes ------- */
+
 
 
 /* ------- product-detail page ------- */
@@ -1310,6 +1356,7 @@ footer p {
   z-index: -1;
 }
 
+<<<<<<< HEAD
 figure{
   margin: 0;
 }
@@ -1354,3 +1401,6 @@ figure{
 /* end of check-out-more-section */
 
 /* ------- end of product details page ------- */
+=======
+/* ------- end of product details page ------- */
+>>>>>>> main

@@ -3,25 +3,43 @@
     margin-bottom: 130px;
 }
 .banner-image-product-list {
-    
+
 }
 
 .product-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 9em;
+    margin-bottom: 4em;
 }
 
 .page-navagation {
     display: flex;
     justify-content: center;
+    padding-bottom: 4em;
 }
 .page-navagation > .default-btn {
     padding-left: 1.25em;
     padding-right: 1.25em;
     margin-left: .425em;
     margin-right: .425em;
+}
+
+.page-navagation img{
+  width: 18px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#rightarrow{
+  padding-right: 1em;
+}
+#leftarrow{
+  padding-left: 1em;
+}
+
+.filter h2{
+  font-size: 1.5em;
 }
 
 /* flex product to 2 cards per row */
@@ -63,4 +81,3 @@
         margin-right: 2em;
     }
 }
-

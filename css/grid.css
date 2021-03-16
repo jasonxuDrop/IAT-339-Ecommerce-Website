@@ -9,6 +9,19 @@
     margin: 0 auto;
 }
 
+/* alternative grid-container that goes to the edge of the page */
+.full-grid-container {
+    display: grid;
+    grid-template-columns: 
+        [full-start] minmax(80px, 1fr) 
+        [main-start] repeat(12, minmax(0, 5.3125em)) [main-end]
+        minmax(80px, 1fr) [full-end];
+    grid-gap: 1.25em;
+}
+.full-grid-container > .max-col{
+    grid-column: full;
+}
+
 .grid-container-bleed {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -33,6 +46,7 @@
     grid-column: 1/-1;
 }
 
+/* auto margin to minimize cramp */
 @media screen and (max-width:90em){
     .grid-container {
 	    width: calc(100vw - 215px);
@@ -40,10 +54,18 @@
     }
 }
 
+/* "mobile-" size */
 @media screen and (max-width:45em){
     .grid-container {
 	    width: calc(100vw - 55px);
         margin: 0 20px;
+        grid-gap: .5em;
+    }
+    .full-grid-container {
+        grid-template-columns: 
+            [full-start] minmax(20px, 1fr) 
+            [main-start] repeat(12, minmax(0, 5.3125em)) [main-end]
+            minmax(20px, 1fr) [full-end];
         grid-gap: .5em;
     }
 
@@ -84,6 +106,12 @@
     .mobile-col-12 {
         grid-column-end: span 12 !important;
     }
+    .mobile-col-13 {
+        grid-column-end: span 13 !important;
+    }
+    .mobile-col-14 {
+        grid-column-end: span 14 !important;
+    }
 
     .mobile-start-col-1 {
         grid-column-start: 1  !important;
@@ -118,16 +146,22 @@
     .mobile-start-col-11 {
         grid-column-start: 11  !important;
     }
+    .mobile-start-col-12 {
+        grid-column-start: 12  !important;
+    }
+    .mobile-start-col-13 {
+        grid-column-start: 13  !important;
+    }
 }
 
 
 
 
 
-.grid-container.example p {
+.grid-container.example p, .full-grid-container.example p{
     text-align: center;
 }
-.grid-container.example {
+.grid-container.example, .full-grid-container.example {
     padding: 1em 0;
     background-color: #B8DAE4;
 }
@@ -175,6 +209,12 @@
 .col-12 {
     grid-column-end: span 12;
 }
+.col-13 {
+    grid-column-end: span 13;
+}
+.col-14 {
+    grid-column-end: span 14;
+}
 
 .start-col-1 {
     grid-column-start: 1;
@@ -212,6 +252,7 @@
 .start-col-12 {
     grid-column-start: 12;
 }
+<<<<<<< HEAD
 
 /* ------- product details page ------- */
 /* product details page - gallery section */
@@ -278,3 +319,11 @@
 
 /* end of  product details page - gallery section */
 /* ------- end of product details page ------- */
+=======
+.start-col-13 {
+    grid-column-start: 13;
+}
+.start-col-14 {
+    grid-column-start: 14;
+}
+>>>>>>> main
