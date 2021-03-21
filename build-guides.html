@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
 
-    <!-- TODO title of site -->
-    <title>Keyboard Guides</title>
+    <title>Guides</title>
 </head>
 <body>
     <header class="grid-container">
@@ -59,16 +58,18 @@
     
 
     <div class="full-grid-container guide-page-content">
-        <div class="subnav start-col-2 col-3 mobile-col-12">
+        <div class="subnav start-col-2 col-3 mobile-col-12" id="guide-nav">
             <ul>
-                <li><a href="#switch">switch</a></li>
-                <li><a href="#keycap" class="selected">keycap</a></li>
-                <li><a href="#plate">plate</a></li>
+                <!-- * use class="selected" to hightlight -->
+                <li><a href="#" onclick="showSwitch();">switch</a></li>
+                <li><a href="#" onclick="showKeycap();">keycap</a></li>
+                <li><a href="#"  onclick="showPlate();">plate</a></li>
             </ul>
         </div>
 
         <div class="start-col-5 col-9 guide-section">
-            <article id="graphic">
+            <!-- TEST ARTICLE -->
+            <!-- <article id="graphic">
                 <div class="page-base">
 
                 </div>
@@ -82,6 +83,23 @@
                     <h2>plate</h2>
                 </div>
                 <div class="page lit top">
+                    <h1>build guides</h1>
+                </div>
+            </article> -->
+            <article id="graphic">
+                <div class="page-base">
+
+                </div>
+                <div class="page">
+                    <h2>plate</h2>
+                </div>
+                <div class="page">
+                    <h2>keycap</h2>
+                </div>
+                <div class="page">
+                    <h2>switch</h2>
+                </div>
+                <div class="page lit">
                     <h1>build guides</h1>
                 </div>
             </article>
@@ -275,7 +293,10 @@
                 </div>
                 <p class="secondary-textcopyright">&copy; 2021 CLIQ All Rights Reserved.</p>
             </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
+
+    <script src="js/guides-sidenav.js"></script>
+
 </body>
 </html>

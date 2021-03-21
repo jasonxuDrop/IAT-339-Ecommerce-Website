@@ -35,15 +35,19 @@
 .guide-section {
     height: 100%;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: visible;
 
     border-radius: 70px 0 0 70px; /*TL TR BR BL*/
-    box-shadow: inset 10px 10px 20px #CBCBCB, inset -10px -10px 20px #FFFFFF;
+    box-shadow: inset 20px 20px 20px -10px #cbcbcb, inset 0px -30px 20px -20px #ffffff;
 }
+.guide-section::-webkit-scrollbar {
+    display: none;
+}
+
 .guide-section-extension {
     height: 100%;
     margin-left: -1.25em;
-    box-shadow: inset 0px 10px 20px #CBCBCB, inset 0px -10px 20px #FFFFFF;
+    box-shadow: inset 0px 30px 20px -20px #cbcbcb, inset 0px -30px 20px -20px #ffffff;
 }
 
 /* body::-webkit-scrollbar-track {} */
@@ -58,10 +62,12 @@
     align-items: center;
     height: 100%;
     width: 130%;
-    transition: height 1.6s ease-in-out .8s;
+    transition: height 1.6s ease-in-out, padding 1.6s ease-in-out;
 }
 #graphic.hide{
     height: 0;
+    padding: 0px 100px;
+    transition-delay: 1s;
 }
 .top {
     /* margin-top: 30%; */
@@ -105,8 +111,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
+    overflow-y: hidden;
 
     padding: 40px 100px;
+}
+.guide-section > article.hide {
+    height: 0px;
+    padding: 0 100px;
+    transition: height 1s ease-in-out, padding 1s ease-in-out;
 }
 .guide-section > article > *{
     grid-column: span 2;
