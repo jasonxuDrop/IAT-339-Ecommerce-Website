@@ -31,11 +31,14 @@
 .guide-page-content {
     height: 65vh;
 }
+.mobile-guide-page-content{
+    display: none;
+}
 
 .guide-section {
     height: 100%;
     overflow-y: auto;
-    overflow-x: visible;
+    overflow-x: hidden;
 
     border-radius: 70px 0 0 70px; /*TL TR BR BL*/
     box-shadow: inset 20px 20px 20px -10px #cbcbcb, inset 0px -30px 20px -20px #ffffff;
@@ -50,8 +53,6 @@
     box-shadow: inset 0px 30px 20px -20px #cbcbcb, inset 0px -30px 20px -20px #ffffff;
 }
 
-/* body::-webkit-scrollbar-track {} */
-/* body::-webkit-scrollbar-thumb {} */
 
 
 /* guide book graphic */
@@ -61,47 +62,63 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    width: 130%;
+    width: 110%;
     transition: height 1.6s ease-in-out, padding 1.6s ease-in-out;
 }
 #graphic.hide{
     height: 0;
-    padding: 0px 100px;
+    padding: 0px 0 0 100px;
     transition-delay: 1s;
 }
 .top {
     /* margin-top: 30%; */
 }
 .page{
-    width: 500px;
-    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 390px;
+    height: 280px;
     flex-shrink: 0;
     transform: matrix(0.71, 0.41, -1.22, 0.71, 0, 0);
-    margin-bottom: -360px;
+    margin-bottom: -270px;
 
-    background-color: #EBECF0;
+    /* background-color: ; */
     box-shadow: 4px 4px 8px rgba(203, 203, 203, .4);
+    background: #EBECF0 linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.2) 100%);
     /* transition : border 400ms ease-out, font 300ms ease-out;  */
     /* TODO make transition for the background color */
     transition: margin 1.2s ease-in-out, background 0.4s ease-in;
 }
 .page.lit{
-    background: linear-gradient(180deg, rgba(244,106,80,1) 0%, rgba(246,140,116,1) 100%);
+    color: white;
+    background: #F56F54 linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.2) 100%);
+    /* background: linear-gradient(180deg, rgba(244,106,80,1) 0%, rgba(246,140,116,1) 100%); */
 }
 .page.lifted{
     margin-bottom: 320px;
 }
 .page-base{
-    width: 560px;
-    height: 380px;
+    width: 470px;
+    height: 290px;
     flex-shrink: 0;
     transform: matrix(0.71, 0.41, -1.22, 0.71, 0, 0);
     /* TODO NEED A HEIGHT QUERY FOR PLACEMENT OF THIS */
     /* margin-bottom: 150px; */
-    margin-left: -40px;
+    margin-bottom: 10vh;
+    margin-left: -20px;
 
     border-radius: 10px;
     box-shadow: inset 10px 2px 20px #CBCBCB, inset -10px -2px 20px #FFFFFF;
+}
+
+.page > * {
+    width: 60%;
+    margin-top: 45px;
+    transform:scale(1.6,1);
+    -webkit-transform:scale(1.6,1);
+    text-align: center;
 }
 /* end of guide book graphic */
 
@@ -113,18 +130,57 @@
     grid-column-gap: 1em;
     overflow-y: hidden;
 
-    padding: 40px 100px;
+    padding: 40px 0 40px 100px;
 }
 .guide-section > article.hide {
     height: 0px;
-    padding: 0 100px;
+    padding: 0 0 0 100px;
     transition: height 1s ease-in-out, padding 1s ease-in-out;
 }
-.guide-section > article > *{
+.guide-section > article > * , 
+.mobile-guide-page-content > article > * {
     grid-column: span 2;
 }
-.guide-section > article > .col-1 {
+.guide-section > article > .col-1 ,
+.mobile-guide-page-content > article > .col-1 {
     grid-column: span 1;
     width: 100%;
 }
 /* end of guide articles */
+
+
+/* mobile nav */
+.mobile-guide-nav {
+    /* TODO make the site in mobile */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mobile-guide-page-content > article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+
+    margin-bottom: 200px;
+} 
+/* end of mobile nav */
+
+
+/* mobile width */
+@media only screen and (max-width: 73em) {
+    .guide-page-content {
+        display: none;
+    }
+    .mobile-guide-page-content {
+        display: grid;
+    }
+}
+@media only screen and (max-width: 35em) {
+    .mobile-guide-page-content > article{
+        grid-template-columns: 1fr;
+    }
+    .mobile-guide-page-content > article > * {
+        grid-column: span 1;
+    }
+}
+/* end of mobile width */
