@@ -940,6 +940,14 @@ footer p {
     object-fit: contain;
   }
 
+  .black-box .content h2{
+    font-size: 2rem;
+  }
+
+  .black-box .content{
+    padding: 1rem .5rem;
+  }
+
   #product-preview{
     display: none;
   }
@@ -954,6 +962,16 @@ footer p {
 
   .check-out-wrapper a{
     margin: 2rem auto;
+  }
+
+  /* Hide desktop neu-extrusion sections */
+  #keyswitch-desktop-sect, #keycap-desktop-sect, #add-to-cart-btn-wrapper, 
+  #animated-section-divider{
+    display: none;
+  }
+
+  .extended-section-margin{
+    margin: none;
   }
 
   /* End of Product Detail Media Queries */
