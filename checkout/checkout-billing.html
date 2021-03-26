@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
 
+    <link rel="icon" href="../img/cliqlogoplaceholderorange.png" type="image/x-icon">
     <!-- TODO title of site -->
     <title>Document</title>
 </head>
@@ -61,50 +62,44 @@
 
     <div class="grid-container">
 
-        <div class="col-5 info-column">
+        <form class="col-5 info-column">
             <h1>Billing Info</h1>
 
             <div class="flex-row space-between">
                 <div class="textfield-container wide">
-                    <p class="input-label">First Name</p>
+                    <label class="input-label">First Name</label>
                     <input type="text" placeholder="" class="searchbar wide">
                 </div>
                 
                 <div class="textfield-container wide">
-                    <p class="input-label">Last Name</p>
+                    <label class="input-label">Last Name</label>
                     <input type="text" placeholder="" class="searchbar wide">
                 </div>
             </div>
             
             <div class="textfield-container">
-                <p class="input-label">Credit Card Number</p>
+                <label class="input-label">Credit Card Number</label>
                 <input type="text" placeholder="" class="searchbar wide">
             </div>
 
             <div class="flex-row space-between">
                 <div class="textfield-container wide">
-                    <p class="input-label">Expiration Month</p>
+                    <label class="input-label">Expiration Month</label>
                     <input type="text" placeholder="" class="searchbar wide">
                 </div>
                 
                 <div class="textfield-container wide">
-                    <p class="input-label">Expiration Year</p>
+                    <label class="input-label">Expiration Year</label>
                     <input type="text" placeholder="" class="searchbar wide">
                 </div>
             </div>
             
             <div class="textfield-container">
-                <p class="input-label">CVV</p>
+                <label class="input-label">CVV</label>
                 <input type="text" placeholder="" class="searchbar wide">
             </div>
 
-            
-
-            <div class="textfield-container">
-                <input type="checkbox" name="same-adress" id="same-adress" class="input-checkbox">
-                <label for="same-adress"> Same as shipping address</label>
-            </div>
-        </div>
+        </form>
 
         <div class="start-col-8 col-5 mobile-col-12 mobile-start-col-1">
             <div class="flex-col align-items-end checkout-summary-section">
@@ -162,7 +157,11 @@
                 </div>
                 
                 
-                <a href="#checkout" class="secondary-btn default-btn margin-top-40px disabled">proceed to checkout</a>
+                <div class="margin-top-40px">
+                    <a href="checkout-customer.html" class="primary-btn default-btn margin-right-40px">previous</a>
+                    <a href="checkout-review.html" class="secondary-btn default-btn">next</a>
+                </div>
+
             </div>
         </div>
     </div>
