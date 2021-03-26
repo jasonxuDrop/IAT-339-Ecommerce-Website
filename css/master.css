@@ -673,6 +673,11 @@ a.sampleproductcard:hover{
 
 }
 
+#img-preview-2 {
+  height: 30em;
+  margin-right: -24em;
+}
+
 .sample-product-header .black-box {
   background-color: #312E37;
   padding: 0 2em 2em 2em;
