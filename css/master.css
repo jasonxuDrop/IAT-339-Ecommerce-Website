@@ -86,6 +86,11 @@ h3 {
   width: 8em;
 }
 
+.hidden{
+	display: none;
+}
+
+
 /* table */
 table {
   border-collapse: collapse;
