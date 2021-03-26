@@ -15,10 +15,15 @@ var aSwitch = document.querySelector('#guide-nav li:nth-child(1) a');
 var aKeycap = document.querySelector('#guide-nav li:nth-child(2) a');
 var aPlate = document.querySelector('#guide-nav li:nth-child(3) a');
 
+// scroll indicator
+var scrollIndicator = document.querySelector('.scroll-indicator');
+
 // hide all sections but graphic
 articleSwitch.classList.add('hide');
 articleKeycap.classList.add('hide');
 articlePlate.classList.add('hide');
+
+scrollIndicator.classList.remove('show');
 
 function showSwitch(){
     // highlight the selected article in the nav
@@ -44,6 +49,8 @@ function showSwitch(){
     articleSwitch.classList.remove('hide');
     articleKeycap.classList.add('hide');
     articlePlate.classList.add('hide');
+
+    scrollIndicator.classList.add('show');
 }
 function showKeycap(){
     // highlight the selected article in the nav
@@ -69,6 +76,8 @@ function showKeycap(){
     articleSwitch.classList.add('hide');
     articleKeycap.classList.remove('hide');
     articlePlate.classList.add('hide');
+    
+    scrollIndicator.classList.add('show');
 }
 function showPlate(){
     // highlight the selected article in the nav
@@ -94,4 +103,6 @@ function showPlate(){
     articleSwitch.classList.add('hide');
     articleKeycap.classList.add('hide');
     articlePlate.classList.remove('hide');
+    
+    scrollIndicator.classList.add('show');
 }

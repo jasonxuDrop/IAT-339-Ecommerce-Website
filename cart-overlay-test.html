@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
 
 
-    <title>CLIQ Home</title>
+    <title>TEST SHOPPING CART</title>
 
     <!-- add icon link -->
     <link rel="icon" href="img/cliqlogoplaceholderorange.png" type="image/x-icon">
@@ -21,37 +21,75 @@
 
   <body>
 
+    <div class="overlay">
+      <aside>
+        <div class="shopping-cart">
+          <div class="flex-row space-between">
+              <h3>Your Cart</h3>
+              <a class="flat-button">
+              <img src="img/icons/x.svg" alt="">
+              </a>
+          </div>
+          <img src="img/orangeline.svg" alt="">
+          <div class="cart-product-wrapper">
+              <div class="product">
+                  <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                  <div class="description">
+                      <div>
+                          <div class="flex-row space-between">
+                          <h4>Clear Resin Keycap Set</h4>
+                          <a class="flat-button" href="">
+                              <img src="img/icons/x.svg" alt="">
+                          </a>
+                          </div>
+                          <p>Microchip style clear resin artisan keycaps.</p>
+                      </div>
+                      <h4 class="orange-pricetag">$35</h4>
+                      <h4>
+                          <a class="flat-button small">-</a>
+                          1
+                          <a class="flat-button small">+</a>
+                      </h4>
+                  </div>
+              </div>
+              ... repeat div.product as needed...
+          </div>
+          <img src="img/greyline.svg" alt="">
+          <div class="subtotal">
+              <h4>Subtotal</h4>
+              <h4>$35.00</h4>
+          </div>
+          <div class="flex-row justify-content-center">
+              <a href="#checkout" class="secondary-button">proceed to checkout</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
     <header class="grid-container homepage-header">
 
       <nav class="col-12">
 
         <div class="mainnav-mobile">
-
           <div class="logo-shoppingcart-menu">
             <a href="index.html" id="logo">cliq</a>
 
             <a href="#" class="mobileicon">
               <img src="img/shopping-bagCliq2.png" alt="" >
             </a>
-            <a href="#" class="mobileicon" id="menutoggle">
+            <a href="#" class="mobileicon">
               <img src="img/mobilemenu.png" alt="">
             </a>
           </div>
-
-
-          <div class="" id="menu">
-            <div class="burger">
-                <a href="product-list.html" class="navlink">shop</a>
-                <a href="build-guides.html" class="navlink">guides</a>
-                <a href="citations.html" class="navlink">citations</a>
-                <a href="patternlibraryhome.html" class="navlink">patterns</a>
-            </div>
-            <div class="mobile-searchbar">
-              <input type="text" name="" placeholder="search" class="searchbar">
-            </div>
+          <div class="burger">
+              <a href="product-list.html" class="navlink">shop</a>
+              <a href="build-guides.html" class="navlink">guides</a>
+              <a href="citations.html" class="navlink">citations</a>
+              <a href="patternlibraryhome.html" class="navlink">patterns</a>
           </div>
-
-
+          <div class="mobile-searchbar">
+            <input type="text" name="" placeholder="search" class="searchbar">
+          </div>
         </div>
 
 
@@ -79,8 +117,7 @@
         <p id="mobile-hero-text">Get this keycap in your choice of five colours, all compatible with Cherry MX switches.</p>
         <p id="desktop-hero-text">Styled like a microchip full of precious connections, it looks like something you’d find on a motherboard. Get this keycap in your choice of five colours, all compatible with Cherry MX switches.</p>
         <div class="real-button-example">
-          <!-- <a href="#" class="primary-btn default-btn">shop now</a> -->
-          <a href="product-list.html" class="primary-btn default-btn">shop now</a>
+          <a href="#" class="primary-btn default-btn">shop now</a>
         </div>
       </div>
     </div>
@@ -188,7 +225,7 @@
                 <p class="light-color-text">In Stock</p>
             </div>
             <div class="">
-                <p class="orange-pricetag">$150</p>
+                <p class="orange-pricetag">$35</p>
             </div>
             </div>
         </a>
@@ -202,7 +239,7 @@
                 <p class="light-color-text">In Stock</p>
             </div>
             <div class="">
-                <p class="orange-pricetag">$22</p>
+                <p class="orange-pricetag">$35</p>
             </div>
             </div>
         </a>
@@ -306,7 +343,6 @@
 
   <!-- link to the js file -->
   <script src="js/tabhighlighting.js"></script>
-  <script src="js/mobilenav.js"></script>
 
 
   </body>
