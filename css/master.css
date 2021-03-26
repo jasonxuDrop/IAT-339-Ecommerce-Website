@@ -406,6 +406,7 @@ nav .searchcart a:focus{
 /* flat button II */
 /* * please don't delete again T^T * */
 .flat-button{
+  cursor: pointer;
   border-radius: 5px;
   box-shadow: inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
 }
@@ -517,6 +518,9 @@ a.sampleproductcard:hover{
 .orange-pricetag {
   color: #F56F54;
 }
+.orange-pricetag.hide {
+  display: none;
+}
 
 
 
@@ -529,11 +533,37 @@ a.sampleproductcard:hover{
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
 
-/* START OF SHOPPING CART */
+/* ! START OF SHOPPING CART */
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+}
+.overlay.hide{
+  display: none;
+}
+
+.shopping-cart-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-top: 100px;
+}
+@media only screen and (max-height: 60em){
+  .shopping-cart-container{
+    margin-top: 0;
+  }
+}
+
 .shopping-cart {
   width: clamp(20em,100%,32em);
+  max-height: 100vh;
+  overflow-y: auto;
 /*   border: 1px solid;
   border-color: #8E8E8E; */
+  background-color: #EFEFEF;
   border-radius: 35px;
 
   padding: 2em;
@@ -566,12 +596,16 @@ a.sampleproductcard:hover{
   min-height: 20em;
   height: 100%;
   flex-grow: 5;
+  flex-shrink: 5;
 }
 
 .shopping-cart .product {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+}
+.shopping-cart .product.hide {
+  display: none;
 }
 
 .shopping-cart .subtotal {
