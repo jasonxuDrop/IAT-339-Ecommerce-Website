@@ -961,6 +961,10 @@ footer p {
   display: none;
 }
 
+.mainnav-mobile{
+  display: none;
+}
+
 .mobileicon img{
   width: 40px;
   height: auto;
@@ -973,9 +977,7 @@ footer p {
 
 
 
-.mainnav-mobile{
-  display: none;
-}
+/* breakpoints: */
 
 /* 890 px / 16 = 59 em*/
 /* when smaller than or equal to this max width, apply this content*/
@@ -985,10 +987,10 @@ footer p {
   .card-row-container {
     grid-column: 1 / 9;
   }
-
 }
 
 
+/* condense space between nav elements when on desktop but window width shrinks */
 @media screen and (max-width: 59em) {
   nav {
     /*background-color: pink;*/
@@ -1004,7 +1006,8 @@ footer p {
 
 }
 
-/* Change to mobile nav */
+
+/* switch to mobile nav */
 @media screen and (max-width: 57em) {
   nav {
     display: flex;
@@ -1031,13 +1034,21 @@ footer p {
     padding: 0;
     margin: 0;
   }
-.mainnav {
+
+
+  /* hide main desktop nav when on mobile res */
+  .mainnav {
     display: none;
   }
-.mainnav .shophighlight, .mainnav .guidehighlight, .mainnav .citehighlight, .mainnav .patternhighlight, .patternhighlight, .mainnav .navlink {
+  .mainnav .shophighlight, .mainnav .guidehighlight, .mainnav .citehighlight, .mainnav .patternhighlight, .patternhighlight, .mainnav .navlink {
+    display: none;
+  }
+  nav .searchcart{
     display: none;
   }
 
+
+  /* mobile nav styling */
   .burger{
     /*background-color: aqua;*/
     display: flex;
@@ -1045,15 +1056,20 @@ footer p {
     justify-content: space-between;
     margin: 1em 0 1em 0;
   }
+
+  /* mobile nav icon styles and active states */
   .mobileicon img{
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #CBCBCB, -5px -5px 10px #FFFFFF;
+    transition: 0.3s;
   }
-  nav .searchcart{
-    display: none;
+  .mobileicon img:active{
+    box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
+    inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
   }
+
 }
 
 /* dealing with the product cards*/
