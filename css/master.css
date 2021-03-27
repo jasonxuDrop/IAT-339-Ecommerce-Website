@@ -655,6 +655,10 @@ a.sampleproductcard:hover{
 }
 /* END OF SHOPPING CART */
 
+/* Product detail page */
+#keycap-mobile-sect, #keyswitch-mobile-sect{
+  display: none;
+}
 
 .product-content-container {
   display: grid;
@@ -688,9 +692,6 @@ a.sampleproductcard:hover{
   padding: 3em 2em 2em 3em;
 }
 
-
-
-
 #product-detail .sample-product-header {
   width: 100%;
 }
@@ -715,7 +716,6 @@ a.sampleproductcard:hover{
 .sample-product-header .black-box {
   background-color: #312E37;
   padding: 0 2em 2em 2em;
-
 }
 
 .sample-product-header .black-box h2{
@@ -734,6 +734,15 @@ a.sampleproductcard:hover{
 
 }
 
+.mobile-img-container-fb img{
+  width: 100%;
+  z-index: 0;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* End of product detail page */
 
 
 #navigation .mininav {
@@ -928,6 +937,24 @@ footer p {
       display: flex;
   }
 
+  /* product details page */
+
+  .black-box .content{
+    padding: 0;
+  }
+
+  .mobile-tile-margin p, .mobile-tile-margin h2, .mobile-tile-margin h3, .mobile-tile-margin ul{
+    padding: 1rem 2.25rem
+  }
+  
+  .mobile-img-container-fb img{
+    width: 100%;
+    z-index: 0;
+    height: 20rem;
+    object-fit: contain;
+  }
+
+  /* end of product details page */
 }
 
 
@@ -978,10 +1005,6 @@ footer p {
     font-size: 2rem;
   }
 
-  .black-box .content{
-    padding: 1rem .5rem;
-  }
-
   #product-preview{
     display: none;
   }
@@ -1002,6 +1025,10 @@ footer p {
   #keyswitch-desktop-sect, #keycap-desktop-sect, #add-to-cart-btn-wrapper, 
   #animated-section-divider{
     display: none;
+  }
+
+  #keyswitch-mobile-sect, #keycap-mobile-sect{
+    display: block;
   }
 
   .extended-section-margin{
@@ -1218,6 +1245,14 @@ footer p {
 
   }
 
+  /* product details page */
+  .mobile-img-container-fb img{
+    width: 100%;
+    z-index: 0;
+    height: 20rem;
+    object-fit: cover;
+  }
+  /* end of product details page */
 
 }
 
@@ -1404,8 +1439,6 @@ footer p {
   width: 11em;
 }
 
-
-/* !testing */
 .keycap-section .artisinal-key-container{
   margin: 8em 3em 3em 3em;
   padding-bottom: 3em;
