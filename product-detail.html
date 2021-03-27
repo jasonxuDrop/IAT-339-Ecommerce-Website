@@ -60,7 +60,7 @@
 
     <!-- main content -->
     <div class="hide-overflow-x">
-        <div class="grid-container">
+        <div id="product-detail-pg-container" class="grid-container">
             <!-- product detail sample component -->
             <section id="product-detail" class="col-12">
 
@@ -68,7 +68,7 @@
             <div class="sample-product-header">
                 <div class="hero-product-container">
                     <img src="img/products/lindesign-hero.jpg" alt="keycap banner image">
-                    <div class="cta-border">
+                    <div id="add-to-cart-btn-wrapper" class="cta-border">
                         <a href="#product-detail" class="default-btn primary-btn">add to cart</a>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
             <!-- end of hero section -->
 
             <!-- page break section -->
-            <section class="justify-space col-12 grid-container-bleed section-divider">
+            <section id="animated-section-divider" class="justify-space col-12 grid-container-bleed section-divider">
                 <div class="artisinal-key-container col-12">
                     <div class="flex-container">
                         <div class="flex-cell-25">
@@ -134,13 +134,15 @@
 
             <!-- keyswitch section -->
             <section class="keyswitch-section col-12 extended-section-margin">
-                <div class="neu-extrusion">
+                <!-- Keyswitch desktop section -->
+                <div id="keyswitch-desktop-sect" class="neu-extrusion">
                     <div class="switch-detail-container grid-container-bleed">
                         <div class="product-description-container col-6 start-col-1">
                             <h2>CHERRY MX BLUE</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi voluptatum eum, quis, nostrum voluptate itaque harum rerum dolores repellat asperiores sunt iste, hic consectetur facere error magnam temporibus obcaecati!
-                            </p>                
+                            </p>        
+                            <!-- Container for keyswitch images and neu-extrusion -->        
                             <div class="key-switch-container">
                                 <h2>Key Switch Details</h2>
                                 <div class="flex-container">
@@ -161,12 +163,40 @@
                         </div>
                     </div>
                 </div>
+                <!-- end of keyswitch desktop section -->
+
+                <!-- keyswitch mobile section -->
+                <div class="mobile-tile-margin" id="keyswitch-mobile-sect">
+                    <h2>Cherry MX Blue</h2>
+                    <div class="mobile-img-container-fb">
+                        <img src="img/switch-render.png" alt="">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis molestiae numquam adipisci totam cumque vel, laborum ullam. Veniam deleniti consectetur quas vel ex dignissimos, dolorum maiores aliquam id ullam quaerat!</p>
+                
+                    <!-- Container for keyswitch images and neu-extrusion -->
+                    <div class="key-switch-container">
+                        <h2>Key Switch Details</h2>
+                        <div class="flex-container">
+                            <div class="flex-cell-33">
+                                <div class="neu-extrusion flex-item"></div>
+                            </div>
+                            <div class="flex-cell-33">
+                                <div class="neu-extrusion flex-item"></div>
+                            </div>
+                            <div class="flex-cell-33">
+                                <div class="neu-extrusion flex-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of keyswitch mobile section -->
             </section>
             <!-- end of keyswitch section -->
 
             <!-- keycap section -->
             <section class="keycap-section col-12 extended-section-margin">
-                <div class="neu-extrusion">
+                <!-- Keycap desktop section -->
+                <div id="keycap-desktop-sect" class="neu-extrusion">
                     <div class="switch-detail-container grid-container-bleed">
                         <div class="product-description-container col-6 start-col-1">
                             <h2>MINIMAL 2</h2>
@@ -177,7 +207,7 @@
                         </div>
                     </div>
 
-                    <!-- ARTISINAL KEYCAP SHOW -->
+                    <!-- Container for keycap images and neu-extrusion -->
                     <div class="artisinal-key-container">
                         <h2>Artisinal Keycaps</h2>
                         <div class="flex-container">
@@ -194,6 +224,49 @@
                     </div>
 
                 </div>
+                <!-- End of desktop keycap section -->
+
+                <!-- Keycap mobile section -->
+                <div class="mobile-tile-margin" id="keycap-mobile-sect">
+                    <h2>MINIMAL 2</h2>
+                    <div class="mobile-img-container-fb">
+                        <img src="img/products/minimal-2-keycaps.png" alt="Minimal 2 Keycap set">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid voluptas aut temporibus enim odio, est id aliquam iure, reiciendis eaque. Repellendus repellat ipsa omnis incidunt iste consectetur a animi?</p>
+                    <div class="keycap-details">
+                        <h3>DETAILS</h3>
+                        <ul>
+                            <li>Designed by Janglad</li>
+                            <li>Made in Germany</li>
+                            <li>Material: ABS Plastic</li>
+                        </ul>
+                    </div>
+                    <div class="keycap-specs">
+                        <h3>SPECS</h3>
+                        <ul>
+                            <li>Profile: Cherry</li>
+                            <li>Legends: Doubleshot</li>
+                            <li>Modifier Style: Icon+Text</li>
+                        </ul>
+                    </div>
+
+                    <!-- Container for keycap images and neu-extrusion -->
+                    <div class="key-switch-container">
+                        <h2>Key Switch Details</h2>
+                        <div class="flex-container">
+                            <div class="flex-cell-33">
+                                <div class="neu-extrusion flex-item"></div>
+                            </div>
+                            <div class="flex-cell-33">
+                                <div class="neu-extrusion flex-item"></div>
+                            </div>
+                            <div class="flex-cell-33">
+                                <div class="neu-extrusion flex-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Keycap mobile section -->
             </section>
             <!-- end of keycap section -->
 
@@ -281,9 +354,9 @@
                           <li>
                               <a class="default-link" href="index.html#about">about us</a>
                           </li>
-                          <!-- <li>
+                          <li>
                               <a class="default-link" href="#">contact us</a>
-                          </li> -->
+                          </li>
                           <li>
                               <a class="default-link" href="patternlibraryhome.html">styleguide</a>
                           </li>
@@ -334,7 +407,7 @@
         </div>
     </footer>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/js/product-detail.js"></script>
 
 </body>

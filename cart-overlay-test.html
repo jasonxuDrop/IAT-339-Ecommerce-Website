@@ -20,51 +20,100 @@
   </head>
 
   <body>
+    <!-- function for, open & close  -->
+    <!-- on click on menu, open -->
+    <!-- on click on X, close -->
+    <!-- on click on x, remove item -->
+    <!-- click on addtocart to add item -->
 
-    <div class="overlay">
-      <aside>
-        <div class="shopping-cart">
-          <div class="flex-row space-between">
-              <h3>Your Cart</h3>
-              <a class="flat-button">
-              <img src="img/icons/x.svg" alt="">
-              </a>
+    <!-- shopping cart -->
+    <div id="cart-overlay" class="overlay hide">
+      <div class="grid-container">
+        <aside class="col-12 shopping-cart-container">
+          <div class="shopping-cart">
+            <div class="flex-row space-between">
+                <h3>Your Cart</h3>
+                <a class="flat-button" onclick="openCart(false)">
+                  <img src="img/icons/x.svg" alt="">
+                </a>
+            </div>
+            <img src="img/orangeline.svg" alt="">
+            <div class="cart-product-wrapper">
+                <div class="product">
+                    <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                    <div class="description">
+                        <div>
+                            <div class="flex-row space-between">
+                            <h4>Clear Resin Keycap Set 0</h4>
+                            <a class="flat-button" onclick="removeItem(0)">
+                                <img src="img/icons/x.svg" alt="">
+                            </a>
+                            </div>
+                            <p>Microchip style clear resin artisan keycaps.</p>
+                        </div>
+                        <h4 class="orange-pricetag">$35</h4>
+                        <h4>
+                            <a class="flat-button small" onclick="changeItemCount(0,-1)">-</a>
+                            <span class="item-count">1</span> 
+                            <a class="flat-button small" onclick="changeItemCount(0,+1)">+</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="product hide">
+                    <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                    <div class="description">
+                        <div>
+                            <div class="flex-row space-between">
+                            <h4>Clear Resin Keycap Set 1</h4>
+                            <a class="flat-button" onclick="removeItem(1)">
+                                <img src="img/icons/x.svg" alt="">
+                            </a>
+                            </div>
+                            <p>Microchip style clear resin artisan keycaps.</p>
+                        </div>
+                        <h4 class="orange-pricetag">$35</h4>
+                        <h4>
+                            <a class="flat-button small" onclick="changeItemCount(1,-1)">-</a>
+                            <span class="item-count">1</span>
+                            <a class="flat-button small" onclick="changeItemCount(1,+1)">+</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="product hide">
+                    <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                    <div class="description">
+                        <div>
+                            <div class="flex-row space-between">
+                            <h4>Clear Resin Keycap Set 2</h4>
+                            <a class="flat-button" onclick="removeItem(2)">
+                                <img src="img/icons/x.svg" alt="">
+                            </a>
+                            </div>
+                            <p>Microchip style clear resin artisan keycaps.</p>
+                        </div>
+                        <h4 class="orange-pricetag">$35</h4>
+                        <h4>
+                            <a class="flat-button small" onclick="changeItemCount(2,-1)">-</a>
+                            <span class="item-count">1</span>
+                            <a class="flat-button small" onclick="changeItemCount(2,+1)">+</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <img src="img/greyline.svg" alt="">
+            <div class="subtotal">
+                <h4>Subtotal</h4>
+                <h4>$35.00</h4>
+            </div>
+            <div class="flex-row justify-content-center">
+                <a href="checkout/checkout-customer.html" class="secondary-btn default-btn">proceed to checkout</a>
+            </div>
+
           </div>
-          <img src="img/orangeline.svg" alt="">
-          <div class="cart-product-wrapper">
-              <div class="product">
-                  <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
-                  <div class="description">
-                      <div>
-                          <div class="flex-row space-between">
-                          <h4>Clear Resin Keycap Set</h4>
-                          <a class="flat-button" href="">
-                              <img src="img/icons/x.svg" alt="">
-                          </a>
-                          </div>
-                          <p>Microchip style clear resin artisan keycaps.</p>
-                      </div>
-                      <h4 class="orange-pricetag">$35</h4>
-                      <h4>
-                          <a class="flat-button small">-</a>
-                          1
-                          <a class="flat-button small">+</a>
-                      </h4>
-                  </div>
-              </div>
-              ... repeat div.product as needed...
-          </div>
-          <img src="img/greyline.svg" alt="">
-          <div class="subtotal">
-              <h4>Subtotal</h4>
-              <h4>$35.00</h4>
-          </div>
-          <div class="flex-row justify-content-center">
-              <a href="#checkout" class="secondary-button">proceed to checkout</a>
-          </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
+    <!-- end of shopping cart -->
 
     <header class="grid-container homepage-header">
 
@@ -74,7 +123,8 @@
           <div class="logo-shoppingcart-menu">
             <a href="index.html" id="logo">cliq</a>
 
-            <a href="#" class="mobileicon">
+            <!-- TODO add onClick to call toggleCart() -->
+            <a href="#" onclick="toggleCart()" class="mobileicon">
               <img src="img/shopping-bagCliq2.png" alt="" >
             </a>
             <a href="#" class="mobileicon">
@@ -101,9 +151,14 @@
             <a href="patternlibraryhome.html" class="navlink">patterns</a>
         </div>
 
+        
         <div class="searchcart">
           <input type="text" name="" placeholder="search" class="searchbar">
-          <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+          <!-- TODO add onClick to call toggleCart() -->
+          <a href="#" onclick="toggleCart()">
+            <img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg">
+            <span id="bag-item-count-desktop" class="orange-pricetag">1</span>
+          </a>
         </div>
       </nav>
 
@@ -343,7 +398,7 @@
 
   <!-- link to the js file -->
   <script src="js/tabhighlighting.js"></script>
-
+  <script src="js/cart-overlay.js"></script>
 
   </body>
 
