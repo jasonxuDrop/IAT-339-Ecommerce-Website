@@ -1,7 +1,7 @@
 
 
 .hero-container.home-page{
-  background-image: url(../img/clearkeycaps4.jpg);
+  background-image: url(../img/products/clearkeycaps4.jpg);
 
   height: 90vh;
   background-position: right;
@@ -149,7 +149,7 @@ h3{
 }
 
 .guide-container.guides-page{
-  background-image: url(../img/cliqguideskeyboard2.png);
+  background-image: url(../img/banner/cliqguideskeyboard2.png);
 
   height: 75vh;
   background-position: center;
@@ -200,6 +200,52 @@ h3{
 
 }
 
+.guide-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: hidden;
+  margin: 80px 0 100px;
+}
+.guide-container-2 {
+  width: 982px;
+  margin: auto;
+  flex-shrink: 0;
+  padding: 20px 0;
+}
+.guide-graphic-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 40px;
+  margin: 40px 0;
+}
+.guide-graphic-row:first-child {
+  margin-left: -70px;
+  margin-right: 70px;
+}
+.guide-graphic-row:last-child {
+  margin-left: 70px;
+  margin-right: -70px;
+}
+.guide-graphic-deco, .guide-graphic-cta {
+  font-family: moonFont;
+  font-size: 2.5em;
+
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guide-graphic-deco {
+  color: #C6D1D3;
+}
+.guide-graphic-cta {
+  grid-column-end: span 3;
+  justify-self: center;
+
+  width: 100%;
+  max-width: 70vw;
+}
 
 
 
@@ -215,7 +261,7 @@ h3{
 
 
   .hero-container.home-page{
-    background-image: url(../img/keycapTest.jpg);
+    background-image: url(../img/banner/keycapTest.jpg);
     /*background-color: pink;*/
     height: 110vh;
     background-position: top;
@@ -278,22 +324,11 @@ h3{
 
 
   .guide-container.guides-page{
-    background-image: url(../img/cliqguideskeyboard2.png);
+    background-image: url(../img/banner/cliqguideskeyboard2.png);
 
     height: 85vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-
   }
-
-
-  /*nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-  }*/
-
-
 }

@@ -21,6 +21,95 @@
 
   <body>
 
+    <!-- shopping cart -->
+    <div id="cart-overlay" class="overlay hide">
+      <div class="grid-container">
+        <aside class="col-12 shopping-cart-container">
+          <div class="shopping-cart">
+            <div class="flex-row space-between">
+                <h3>Your Cart</h3>
+                <a class="flat-button" onclick="openCart(false)">
+                  <img src="img/icons/x.svg" alt="">
+                </a>
+            </div>
+            <img src="img/icons/orangeline.svg" alt="">
+            <div class="cart-product-wrapper">
+                <div class="product">
+                    <img src="img/products/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                    <div class="description">
+                        <div>
+                            <div class="flex-row space-between">
+                            <h4>Clear Resin Keycap Set 0</h4>
+                            <a class="flat-button" onclick="removeItem(0)">
+                                <img src="img/icons/x.svg" alt="">
+                            </a>
+                            </div>
+                            <p>Microchip style clear resin artisan keycaps.</p>
+                        </div>
+                        <h4 class="orange-pricetag">$35</h4>
+                        <h4>
+                            <a class="flat-button small" onclick="changeItemCount(0,-1)">-</a>
+                            <span class="item-count">1</span> 
+                            <a class="flat-button small" onclick="changeItemCount(0,+1)">+</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="product hide">
+                    <img src="img/products/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                    <div class="description">
+                        <div>
+                            <div class="flex-row space-between">
+                            <h4>Clear Resin Keycap Set 1</h4>
+                            <a class="flat-button" onclick="removeItem(1)">
+                                <img src="img/icons/x.svg" alt="">
+                            </a>
+                            </div>
+                            <p>Microchip style clear resin artisan keycaps.</p>
+                        </div>
+                        <h4 class="orange-pricetag">$35</h4>
+                        <h4>
+                            <a class="flat-button small" onclick="changeItemCount(1,-1)">-</a>
+                            <span class="item-count">1</span>
+                            <a class="flat-button small" onclick="changeItemCount(1,+1)">+</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="product hide">
+                    <img src="img/products/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+                    <div class="description">
+                        <div>
+                            <div class="flex-row space-between">
+                            <h4>Clear Resin Keycap Set 2</h4>
+                            <a class="flat-button" onclick="removeItem(2)">
+                                <img src="img/icons/x.svg" alt="">
+                            </a>
+                            </div>
+                            <p>Microchip style clear resin artisan keycaps.</p>
+                        </div>
+                        <h4 class="orange-pricetag">$35</h4>
+                        <h4>
+                            <a class="flat-button small" onclick="changeItemCount(2,-1)">-</a>
+                            <span class="item-count">1</span>
+                            <a class="flat-button small" onclick="changeItemCount(2,+1)">+</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <img src="img/icons/greyline.svg" alt="">
+            <div class="subtotal">
+                <h4>Subtotal</h4>
+                <h4>$35.00</h4>
+            </div>
+            <div class="flex-row justify-content-center">
+                <a href="checkout/checkout-customer.html" class="secondary-btn default-btn">proceed to checkout</a>
+            </div>
+
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- end of shopping cart -->
+
     <header class="grid-container homepage-header">
 
       <!-- entire nav menu wrapper -->
@@ -32,11 +121,11 @@
           <div class="logo-shoppingcart-menu">
             <a href="index.html" class="logo">cliq</a>
 
-            <a href="#" class="mobileicon">
-              <img src="img/shopping-bagCliq2.png" alt="shopping bag icon">
+            <a href="#" onclick="toggleCart()" class="mobileicon">
+              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
             </a>
             <a href="#" class="mobileicon" id="menutoggle">
-              <img src="img/mobilemenu.png" alt="mobile burger menu icon">
+              <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
             </a>
           </div>
 
@@ -65,7 +154,10 @@
 
         <div class="searchcart">
           <input type="text" name="text-input" placeholder="search" class="searchbar">
-          <a href="#"><img src="img/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
+          <a href="#" onclick="toggleCart()" >
+            <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+            <span id="bag-item-count-desktop" class="orange-pricetag">1</span>
+          </a>
         </div>
         <!-- end of main desktop displayed nav -->
       </nav>
@@ -109,7 +201,7 @@
 
         <!-- section with image on the left and description on right -->
         <div class="imgleft-contentright">
-          <img src="img/cliqbestseller1.jpg" alt="canvas coloured keycap set image">
+          <img src="img/products/cliqbestseller1.jpg" alt="canvas coloured keycap set image">
 
           <div class="product-info">
             <h3>Canvas Custom Keycap Set</h3>
@@ -133,7 +225,7 @@
             </div>
           </div>
 
-          <img src="img/cliqbestseller2.jpg" alt="box 75 white keyboard image">
+          <img src="img/products/cliqbestseller2.jpg" alt="box 75 white keyboard image">
         </div>
       </div> <!-- end of second best seller div component -->
 
@@ -142,7 +234,7 @@
       <div class="col-12 desktopbest-seller">
         <div class="imgleft-contentright">
 
-          <img src="img/backlitKeycaps2.jpg" alt="white backlit keycap set image">
+          <img src="img/products/backlitKeycaps2.jpg" alt="white backlit keycap set image">
 
           <div class="product-info">
             <h3>White Backlit Keycap Set</h3>
@@ -160,7 +252,7 @@
 
         <!-- mobile product card best seller 1 -->
         <a href="product-detail.html" class="sampleproductcard">
-          <img src="img/canvasKeycapsProductCard.png" alt="canvas coloured keycap set image">
+          <img src="img/products/canvasKeycapsProductCard.png" alt="canvas coloured keycap set image">
 
           <div class="product-info">
             <div>
@@ -175,7 +267,7 @@
 
         <!-- mobile product card best seller 2 -->
         <a href="product-detail.html" class="sampleproductcard">
-          <img src="img/lindesignWhiteProductCard.png" alt="white box75 lindesign keyboard image">
+          <img src="img/products/lindesignWhiteProductCard.png" alt="white box75 lindesign keyboard image">
 
           <div class="product-info">
             <div>
@@ -190,7 +282,7 @@
 
         <!-- mobile product card best seller 3 -->
         <a href="product-detail.html" class="sampleproductcard">
-          <img src="img/backlitKeycapsProductCard.png" alt="white backlit keycap set image">
+          <img src="img/products/backlitKeycapsProductCard.png" alt="white backlit keycap set image">
 
           <div class="product-info">
             <div>
@@ -221,15 +313,33 @@
 
 
     <!-- guides section wrapper -->
-    <div class="guide-container guides-page" id="homepage-guides">
-      <div class="content">
-        <a href="build-guides.html">
-          <div class="guides-title">
-            <h2>guides</h2>
-            <img src="img/cliqchevron-right.svg" alt="right arrow icon">
-          </div>
-          <p>Learn sweet tips and tricks for your first or fiftienth custom keyboard build.</p>
-        </a>
+    <div class="guide-container-wrapper">
+      <div class="guide-container-2">
+        <div class="guide-graphic-row">
+          <div class="guide-graphic-deco neu-extrusion">Q</div>
+          <div class="guide-graphic-deco neu-extrusion">W</div>
+          <div class="guide-graphic-deco neu-extrusion">E</div>
+          <div class="guide-graphic-deco neu-extrusion">R</div>
+          <div class="guide-graphic-deco neu-extrusion">T</div>
+          <div class="guide-graphic-deco neu-extrusion">Y</div>
+          <div class="guide-graphic-deco neu-extrusion">U</div>
+        </div>
+        <div class="guide-graphic-row">
+          <div class="guide-graphic-deco neu-extrusion">A</div>
+          <div class="guide-graphic-deco neu-extrusion">S</div>
+          <a href="build-guides.html" class="guide-graphic-cta secondary-btn default-btn big-title">GUIDES &gt;</a>
+          <div class="guide-graphic-deco neu-extrusion">H</div>
+          <div class="guide-graphic-deco neu-extrusion">J</div>
+        </div>
+        <div class="guide-graphic-row">
+          <div class="guide-graphic-deco neu-extrusion">Z</div>
+          <div class="guide-graphic-deco neu-extrusion">X</div>
+          <div class="guide-graphic-deco neu-extrusion">C</div>
+          <div class="guide-graphic-deco neu-extrusion">V</div>
+          <div class="guide-graphic-deco neu-extrusion">B</div>
+          <div class="guide-graphic-deco neu-extrusion">N</div>
+          <div class="guide-graphic-deco neu-extrusion">M</div>
+        </div>
       </div>
     </div>
     <!-- end of guides -->
@@ -281,16 +391,16 @@
                     <ul>
                         <li>
                             <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt="white github icon"></a>
+                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/icons/githubwhite.svg" alt="white github icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/twitchwhite2.svg" alt="white twitch logo icon"></a>
+                            <a href="#"><img src="img/icons/twitchwhite2.svg" alt="white twitch logo icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/twitterwhite2.svg" alt="twitter icon"></a>
+                            <a href="#"><img src="img/icons/twitterwhite2.svg" alt="twitter icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/instagramwhite.svg" alt="instagram logo icon"></a>
+                            <a href="#"><img src="img/icons/instagramwhite.svg" alt="instagram logo icon"></a>
                         </li>
                     </ul>
                 </div>
@@ -308,6 +418,7 @@
   <!-- link to js files -->
   <script src="js/tabhighlighting.js"></script>
   <script src="js/mobilenav.js"></script>
+  <script src="js/cart-overlay.js"></script>
 
 
   </body>
