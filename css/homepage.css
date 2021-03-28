@@ -238,6 +238,7 @@ h3{
 }
 .guide-graphic-deco {
   color: #C6D1D3;
+  user-select: none;
 }
 .guide-graphic-cta {
   grid-column-end: span 3;
