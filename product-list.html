@@ -20,43 +20,51 @@
 
   <header class="grid-container">
 
+    <!-- entire nav menu wrapper -->
     <nav class="col-12">
 
+      <!-- mobile nav menu container -->
       <div class="mainnav-mobile">
+
         <div class="logo-shoppingcart-menu">
-          <a href="index.html" id="logo">cliq</a>
+          <a href="index.html" class="logo">cliq</a>
 
-          <a href="checkout/checkout-customer.html" class="mobileicon">
-            <img src="img/shopping-bagCliq2.png" alt="" >
-          </a>
           <a href="#" class="mobileicon">
-            <img src="img/mobilemenu.png" alt="">
+            <img src="img/shopping-bagCliq2.png" alt="shopping bag icon">
+          </a>
+          <a href="#" class="mobileicon" id="menutoggle">
+            <img src="img/mobilemenu.png" alt="mobile burger menu icon">
           </a>
         </div>
-        <div class="burger">
-            <a href="product-list.html" class="navlink current-page">shop</a>
-            <a href="build-guides.html" class="navlink">guides</a>
-            <a href="citations.html" class="navlink">citations</a>
-            <a href="patternlibraryhome.html" class="navlink">patterns</a>
+
+        <div class="" id="menu">
+          <div class="burger">
+              <a href="product-list.html" class="navlink">shop</a>
+              <a href="build-guides.html" class="navlink">guides</a>
+              <a href="citations.html" class="navlink">citations</a>
+              <a href="patternlibraryhome.html" class="navlink">patterns</a>
+          </div>
+          <div class="mobile-searchbar">
+            <input type="text" name="text-input" placeholder="search" class="searchbar">
+          </div>
         </div>
-        <div class="mobile-searchbar">
-          <input type="text" name="" placeholder="search" class="searchbar">
-        </div>
-      </div>
+      </div> <!-- end of mobile nav menu -->
 
 
+      <!-- main desktop nav -->
       <div class="mainnav">
-          <a href="index.html" id="logo">cliq</a>
-          <a href="product-list.html" class="navlink current-page">shop</a>
+          <a href="index.html" class="logo">cliq</a>
+          <a href="product-list.html" class="navlink">shop</a>
           <a href="build-guides.html" class="navlink">guides</a>
           <a href="citations.html" class="navlink">citations</a>
           <a href="patternlibraryhome.html" class="navlink">patterns</a>
       </div>
 
       <div class="searchcart">
-        <input type="text" name="" placeholder="search" class="searchbar">
-        <a href="checkout/checkout-customer.html"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+        <input type="text" name="text-input" placeholder="search" class="searchbar">
+        <a href="#"><img src="img/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
       </div>
+      <!-- end of main desktop displayed nav -->
     </nav>
 
   </header>
@@ -179,11 +187,11 @@
             </a>
 
             <a href="product-detail.html" class="sampleproductcard" id="product6">
-                <img src="img/cliqproduct6.png" alt="keycap banner image">
+                <img src="img/blueIcebergKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
                 <div class="">
-                    <p>BLUEBIRD</p>
+                    <p>ICEBERG</p>
                     <p class="light-color-text">In Stock</p>
                 </div>
                 <div class="">
@@ -221,25 +229,25 @@
             </a>
 
             <a href="product-detail.html" class="sampleproductcard" id="product9">
-                <img src="img/cliqproduct6.png" alt="keycap banner image">
+                <img src="img/whiteFogKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
                 <div class="">
-                    <p>BLUEBIRD</p>
+                    <p>WHITE FOG</p>
                     <p class="light-color-text">In Stock</p>
                 </div>
                 <div class="">
-                    <p class="orange-pricetag">$38</p>
+                    <p class="orange-pricetag">$29</p>
                 </div>
                 </div>
             </a>
 
             <a href="product-detail.html" class="sampleproductcard" id="product10">
-                <img src="img/cliqproduct6.png" alt="keycap banner image">
+                <img src="img/dotsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
                 <div class="">
-                    <p>BLUEBIRD</p>
+                    <p>GMK DOTS DARK</p>
                     <p class="light-color-text">In Stock</p>
                 </div>
                 <div class="">
