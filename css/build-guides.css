@@ -44,7 +44,11 @@
     box-shadow: inset 20px 20px 20px -10px #cbcbcb, inset 0px -30px 20px -20px #ffffff;
 }
 .guide-section::-webkit-scrollbar {
-    display: none;
+    width: 6px;
+}
+.guide-section::-webkit-scrollbar-thumb {
+    background: #c6d1d3;
+    border-radius: 5px;
 }
 
 .guide-section-extension {
@@ -80,7 +84,7 @@
 }
 #graphic.hide{
     height: 0;
-    padding: 0px 0 0 100px;
+    padding: 0px 100px 0 100px;
     transition-delay: 1s;
 }
 .top {
@@ -143,11 +147,11 @@
     grid-column-gap: 1em;
     overflow-y: hidden;
 
-    padding: 40px 0 40px 100px;
+    padding: 40px 100px;
 }
 .guide-section > article.hide {
     height: 0px;
-    padding: 0 0 0 100px;
+    padding: 0 100px 0 100px;
     transition: height 1s ease-in-out, padding 1s ease-in-out;
 }
 .guide-section > article > * , 
@@ -164,11 +168,20 @@
 
 /* mobile nav */
 .mobile-guide-nav {
-    /* TODO make the site in mobile */
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
+@media only screen and (max-width: 30em) {
+    .mobile-guide-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-guide-nav > a{
+        margin-bottom: 20px;
+    }
+}
+
 .mobile-guide-page-content > article {
     display: grid;
     grid-template-columns: 1fr 1fr;
