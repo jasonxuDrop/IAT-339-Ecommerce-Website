@@ -899,6 +899,23 @@ footer p {
 }
 
 
+.mailing-list #mail-arrow {
+  border: none;
+  padding: 8pt 14pt 8pt 14pt;
+  margin-left: 1em;
+  transition: 0.3s;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #242228, -5px -5px 10px #3e3a46;
+}
+
+.mailing-list #mail-arrow:active {
+  box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
+}
+
+#mail-arrow img{
+  vertical-align: middle;
+}
+
 
 /* End of Footer */
 
