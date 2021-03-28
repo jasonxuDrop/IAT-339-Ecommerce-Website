@@ -36,6 +36,10 @@
 
 }
 
+.page-navagation .active{
+  color: #F56F54;
+}
+
 #rightarrow{
   padding-right: 1em;
 }
