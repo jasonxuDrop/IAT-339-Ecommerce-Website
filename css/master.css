@@ -718,6 +718,10 @@ a.sampleproductcard:hover{
   padding: 0 2em 2em 2em;
 }
 
+.black-box ul li{
+  color: white;
+}
+
 .sample-product-header .black-box h2{
   color: white;
   /*font-size: 1.75em;*/
@@ -1040,7 +1044,16 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 1.5rem;
+    padding: .35rem;
+    box-sizing: border-box;
+  }
+
+  .keycap-section .flex-cell-50 {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: .35rem;
     box-sizing: border-box;
   }
 
@@ -1415,11 +1428,10 @@ footer p {
 }
 
 .product-detail-extend-y img{
-  margin: auto;
-  border-radius: 1.5rem;
+  margin: 1.5rem;
   width: 90%;
   height: 90%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -1491,13 +1503,16 @@ footer p {
   box-sizing: border-box;
 }
 
-.flex-cell-25:before {
-  content: '';
-  display: table;
-  padding-top: 100%;
+.flex-cell-50 {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
-.flex-cell-33:before {
+.flex-cell-25:before, .flex-cell-33:before, .flex-cell-50:before {
   content: '';
   display: table;
   padding-top: 100%;
@@ -1508,6 +1523,12 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.keycap-section .flex-item img{
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
 }
 
 .switch-detail {
