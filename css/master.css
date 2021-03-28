@@ -1035,6 +1035,19 @@ footer p {
     margin: none;
   }
 
+  .keycap-section .flex-cell-33 {
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .keycap-section .flex-container{
+    justify-content: center;
+  }
+
   /* End of Product Detail Media Queries */
 }
 
@@ -1450,6 +1463,16 @@ footer p {
   flex-wrap: wrap;
 }
 
+.flex-33-contain{
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
 .flex-cell-25 {
   flex: 0 0 25%;
   display: flex;
@@ -1485,6 +1508,14 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.switch-detail {
+  text-align: center;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color:#F56F56;
 }
 
 /* end of keycap section */
