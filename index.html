@@ -23,21 +23,22 @@
 
     <header class="grid-container homepage-header">
 
+      <!-- entire nav menu wrapper -->
       <nav class="col-12">
 
+        <!-- mobile nav menu container -->
         <div class="mainnav-mobile">
 
           <div class="logo-shoppingcart-menu">
-            <a href="index.html" id="logo">cliq</a>
+            <a href="index.html" class="logo">cliq</a>
 
             <a href="#" class="mobileicon">
-              <img src="img/shopping-bagCliq2.png" alt="" >
+              <img src="img/shopping-bagCliq2.png" alt="shopping bag icon">
             </a>
             <a href="#" class="mobileicon" id="menutoggle">
-              <img src="img/mobilemenu.png" alt="">
+              <img src="img/mobilemenu.png" alt="mobile burger menu icon">
             </a>
           </div>
-
 
           <div class="" id="menu">
             <div class="burger">
@@ -47,16 +48,15 @@
                 <a href="patternlibraryhome.html" class="navlink">patterns</a>
             </div>
             <div class="mobile-searchbar">
-              <input type="text" name="" placeholder="search" class="searchbar">
+              <input type="text" name="text-input" placeholder="search" class="searchbar">
             </div>
           </div>
+        </div> <!-- end of mobile nav menu -->
 
 
-        </div>
-
-
+        <!-- main desktop nav -->
         <div class="mainnav">
-            <a href="index.html" id="logo">cliq</a>
+            <a href="index.html" class="logo">cliq</a>
             <a href="product-list.html" class="navlink">shop</a>
             <a href="build-guides.html" class="navlink">guides</a>
             <a href="citations.html" class="navlink">citations</a>
@@ -64,16 +64,17 @@
         </div>
 
         <div class="searchcart">
-          <input type="text" name="" placeholder="search" class="searchbar">
-          <a href="#"><img src="img/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+          <input type="text" name="text-input" placeholder="search" class="searchbar">
+          <a href="#"><img src="img/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
         </div>
+        <!-- end of main desktop displayed nav -->
       </nav>
 
     </header>
 
+    <!-- hero section with image, h1, blurb, etc -->
     <div class="hero-container home-page">
       <div class="content">
-        <!-- <h1>cliq home - WIP</h1> -->
         <!-- <p>Future home page of CLIQ, currently under construction. Pls navigate to 'patterns' for our pattern library :-D</p> -->
         <h1>new resin artisan keycaps</h1>
         <p id="mobile-hero-text">Get this keycap in your choice of five colours, all compatible with Cherry MX switches.</p>
@@ -85,53 +86,46 @@
       </div>
     </div>
 
-
-
+    <!-- about us section -->
     <div class="black-box">
       <div class="grid-container">
-
-      <section class="about-us col-10 start-col-2" id="about-us">
-        <h2>About Us</h2>
-        <p>We are an artisanal keyboard company that distributes key board components to new users trying to enter the artisanal keyboard industry. We provide quality parts and focus on the essential components that will have the most impact on the user experience of the keyboard.</p>
-      </section>
-
+        <section class="about-us col-10 start-col-2" id="about-us">
+          <h2>About Us</h2>
+          <p>We are an artisanal keyboard company that distributes key board components to new users trying to enter the artisanal keyboard industry. We provide quality parts and focus on the essential components that will have the most impact on the user experience of the keyboard.</p>
+        </section>
       </div>
-
     </div>
 
-
+    <!-- best sellers section -->
     <section class="grid-container" id="best-sellers">
 
       <div class="col-10 start-col-2">
         <h2>Best Sellers</h2>
       </div>
 
-
+      <!-- first best seller component -->
       <!-- class="home-page product-content-wrap" -->
       <div class="col-12 desktopbest-seller">
-        <div class="imgleft-contentright">
 
-          <img src="img/cliqbestseller1.jpg" alt="">
+        <!-- section with image on the left and description on right -->
+        <div class="imgleft-contentright">
+          <img src="img/cliqbestseller1.jpg" alt="canvas coloured keycap set image">
 
           <div class="product-info">
-
             <h3>Canvas Custom Keycap Set</h3>
-            <!-- <p>Brief description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p> -->
             <p>Designed by Mito (the brains behind Laser, Godspeed, and Pulse), this set is sculpted in XDA profile, which is similar to DSA with uniform height for maximum layout compatibility.</p>
             <div class="real-button-example">
               <a href="product-detail.html" class="primary-btn default-btn">learn more</a>
             </div>
           </div>
-
         </div>
-      </div>
+      </div> <!-- end of first best seller div -->
 
 
+      <!-- second best seller component -->
       <div class="col-12 desktopbest-seller">
         <div class="imgright-contentleft">
-
           <div class="product-info">
-
             <h3>Box 75 Keyboard</h3>
             <p>The BOX 75 features a traditional top mount interior, with an exterior wrapped by an intricate series of interlocking frames that tilt and support the keyboard.</p>
             <div class="real-button-example">
@@ -139,99 +133,106 @@
             </div>
           </div>
 
-          <img src="img/cliqbestseller2.jpg" alt="">
-
+          <img src="img/cliqbestseller2.jpg" alt="box 75 white keyboard image">
         </div>
-      </div>
+      </div> <!-- end of second best seller div component -->
 
 
+      <!-- third best seller component -->
       <div class="col-12 desktopbest-seller">
         <div class="imgleft-contentright">
 
-          <!-- <img src="img/cliqbestseller3.jpg" alt=""> -->
-          <img src="img/backlitKeycaps2.jpg" alt="">
+          <img src="img/backlitKeycaps2.jpg" alt="white backlit keycap set image">
 
           <div class="product-info">
-
             <h3>White Backlit Keycap Set</h3>
-            <p>Cyrillic keycap sets are universally sought after by mechanical keyboard enthusiasts.</p>
+            <p>These semitransparent backlit keycap sets are universally sought after by mechanical keyboard enthusiasts.</p>
             <div class="real-button-example">
               <a href="product-detail.html" class="primary-btn default-btn">learn more</a>
             </div>
           </div>
 
         </div>
-      </div>
+      </div> <!-- end of third best seller div component -->
 
+      <!-- mobile best seller section wrapper -->
       <div class="mobilebest-seller mobile-product-cards">
 
+        <!-- mobile product card best seller 1 -->
         <a href="product-detail.html" class="sampleproductcard">
-            <img src="img/canvasKeycapsProductCard.png" alt="keycap banner image">
+          <img src="img/canvasKeycapsProductCard.png" alt="canvas coloured keycap set image">
 
-            <div class="product-info">
-            <div class="">
-                <p>CANVAS KEYCAPS</p>
-                <p class="light-color-text">In Stock</p>
+          <div class="product-info">
+            <div>
+              <p>CANVAS KEYCAPS</p>
+              <p class="light-color-text">In Stock</p>
             </div>
-            <div class="">
-                <p class="orange-pricetag">$35</p>
+            <div>
+              <p class="orange-pricetag">$35</p>
             </div>
-            </div>
-        </a>
+          </div>
+        </a> <!-- end of product card 1 -->
 
-        <a href="product-detail.html" class="sampleproductcard" id="product1">
-            <img src="img/lindesignWhiteProductCard.png" alt="keycap banner image">
+        <!-- mobile product card best seller 2 -->
+        <a href="product-detail.html" class="sampleproductcard">
+          <img src="img/lindesignWhiteProductCard.png" alt="white box75 lindesign keyboard image">
 
-            <div class="product-info">
-            <div class="">
-                <p>BOX75 KEYBOARD</p>
-                <p class="light-color-text">In Stock</p>
+          <div class="product-info">
+            <div>
+              <p>BOX75 KEYBOARD</p>
+              <p class="light-color-text">In Stock</p>
             </div>
-            <div class="">
-                <p class="orange-pricetag">$150</p>
+            <div>
+              <p class="orange-pricetag">$150</p>
             </div>
-            </div>
-        </a>
+          </div>
+        </a> <!-- end of product card 2 -->
 
-        <a href="product-detail.html" class="sampleproductcard" id="product1">
-            <img src="img/backlitKeycapsProductCard.png" alt="keycap banner image">
+        <!-- mobile product card best seller 3 -->
+        <a href="product-detail.html" class="sampleproductcard">
+          <img src="img/backlitKeycapsProductCard.png" alt="white backlit keycap set image">
 
-            <div class="product-info">
-            <div class="">
-                <p>BACKLIT KEYCAPS</p>
-                <p class="light-color-text">In Stock</p>
+          <div class="product-info">
+            <div>
+              <p>BACKLIT KEYCAPS</p>
+              <p class="light-color-text">In Stock</p>
             </div>
-            <div class="">
-                <p class="orange-pricetag">$22</p>
+            <div>
+              <p class="orange-pricetag">$22</p>
             </div>
-            </div>
-        </a>
+          </div>
+        </a> <!-- end of mobile product card 3 -->
 
-      </div>
+      </div> <!-- end of mobile best seller wrapper div -->
+    </section> <!-- end of total best seller section -->
 
-    </section>
 
+
+    <!-- view all products section -->
     <div class="grid-container">
       <section class="view-all-section">
         <div class="real-button-example">
           <a href="product-list.html" class="secondary-btn default-btn">view all products</a>
         </div>
       </section>
-
     </div>
 
+
+
+
+    <!-- guides section wrapper -->
     <div class="guide-container guides-page" id="homepage-guides">
       <div class="content">
         <a href="build-guides.html">
           <div class="guides-title">
             <h2>guides</h2>
-            <img src="img/cliqchevron-right.svg" alt="">
+            <img src="img/cliqchevron-right.svg" alt="right arrow icon">
           </div>
           <p>Learn sweet tips and tricks for your first or fiftienth custom keyboard build.</p>
         </a>
       </div>
     </div>
-
+    <!-- end of guides -->
 
 
     <footer>
@@ -241,7 +242,7 @@
                 <p class="footer-heading">JOIN OUR MAILING LIST</p>
                 <p>Info about upcoming releases, new arrivals and more!</p>
 
-                <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+                <input class="text-input-dark" placeholder="email address" type="text" name="text-input">
 
             </div>
             <div class="company-info-wrapper">
@@ -280,16 +281,16 @@
                     <ul>
                         <li>
                             <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt=""></a>
+                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/githubwhite.svg" alt="white github icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/twitchwhite2.svg" alt=""></a>
+                            <a href="#"><img src="img/twitchwhite2.svg" alt="white twitch logo icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/twitterwhite2.svg" alt=""></a>
+                            <a href="#"><img src="img/twitterwhite2.svg" alt="twitter icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/instagramwhite.svg" alt=""></a>
+                            <a href="#"><img src="img/instagramwhite.svg" alt="instagram logo icon"></a>
                         </li>
                     </ul>
                 </div>
@@ -304,7 +305,7 @@
       </div>
   </footer>
 
-  <!-- link to the js file -->
+  <!-- link to js files -->
   <script src="js/tabhighlighting.js"></script>
   <script src="js/mobilenav.js"></script>
 
