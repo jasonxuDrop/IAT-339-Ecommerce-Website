@@ -15,7 +15,7 @@ body {
 
 body, html {
   margin: 0;
-
+  scroll-behavior: smooth;
 }
 
 a {
@@ -699,7 +699,7 @@ a.sampleproductcard:hover{
 #product-detail .sample-product-header img{
   width: 100%;
   z-index: 0;
-  height: 65vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -1507,7 +1507,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  padding: 0.5rem;
+  padding: 1.5rem;
   box-sizing: border-box;
 }
 
