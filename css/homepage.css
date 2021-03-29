@@ -230,7 +230,7 @@ h3{
 .guide-graphic-deco, .guide-graphic-cta {
   font-family: moonFont;
   font-size: 2.5em;
-
+  font-weight: 300;
   height: 100px;
   display: flex;
   align-items: center;
