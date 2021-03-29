@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/product-list.css">
+    <link rel="stylesheet" href="css/build-guides.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
@@ -76,7 +77,7 @@
             <div class="col-4 mobile-col-12 hero-text">
                 <h1>mechanical keyboards</h1>
                 <p>Thoughtfully designed and quality crafted keyboards, keycaps, and plates. Discover your next keyboard addition. </p>
-                <div class="margin-top-40px">
+                <div class="margin-top-40px" id="learn-more-container">
                     <a href="build-guides.html" class="secondary-btn default-btn">learn more</a>
                 </div>
             </div>
@@ -111,6 +112,18 @@
             <a href="#" class="filterbtn" onclick="filterSelection('keycaps')"><p>Keycaps</p></a>
             <a href="#" class="filterbtn" onclick="filterSelection('keyplates')"><p>Key plates</p></a> -->
 
+        </div>
+
+        <div class="filter-mobile">
+          <h2>Categories</h2>
+          <div class="grid-container" id="mobile-filter-grid">
+
+            <div class="mobile-guide-nav col-12" id="filterContainer-mobile">
+                <a class="primary-btn default-btn" href="#m-switch">Keyboards</a>
+                <a class="primary-btn default-btn" href="#m-keycap">Keycaps</a>
+                <a class="primary-btn default-btn" href="#m-plate">Plates</a>
+            </div>
+          </div>
         </div>
 
         <!-- product list CONTAINER -->
@@ -259,7 +272,7 @@
 
         </div>
 
-        <div class="start-col-4 col-9 page-navagation">
+        <div class="start-col-4 col-9 mobile-start-col-1 page-navigation">
             <a class="default-btn primary-btn" id="leftarrow"><img src="img/icons/cliqchevron-left.svg" alt=""></a>
             <a class="default-btn primary-btn active">1</a>
             <a class="default-btn primary-btn">2</a>
