@@ -54,7 +54,8 @@ function addItem(i) {
 	// change the menu icon display number
 	var currentN = parseInt(bagItemCountDesktop.innerHTML);
 	currentN++;
-	itemCounts[i].innerHTML = currentN;
+	bagItemCountDesktop.classList.remove('hide');
+	bagItemCountDesktop.innerHTML = 1;
 }
 
 // function for removing item
@@ -66,7 +67,7 @@ function removeItem(i) {
 	var currentN = parseInt(bagItemCountDesktop.innerHTML);
 	currentN--;
 	if(currentN==0) bagItemCountDesktop.classList.add('hide');
-	itemCounts[i].innerHTML = currentN;
+	bagItemCountDesktop.innerHTML = currentN;
 }
 
 // function to increase or decrease purchase amount
