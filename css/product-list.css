@@ -161,12 +161,13 @@
       justify-content: center;
     }
     #mobile-filter-grid{
-      display: grid;
+      display: flex;
     }
 
     .page-navigation {
       display: flex;
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: center;
       padding-bottom: 4em;
     }
 
