@@ -3,7 +3,7 @@
 .hero-container.home-page{
   background-image: url(../img/products/clearkeycaps4.jpg);
 
-  height: 90vh;
+  height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
   background-size: 65%;
@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .hero-container p{
@@ -22,9 +22,9 @@
 }
 
 .hero-container .content {
-  grid-column: 3 / span 5;
+  grid-column: 2 / span 6;
 
-  grid-row: 2 / span 4;
+  grid-row: 2 / span 7;
 
   display: flex;
   flex-direction: column;
