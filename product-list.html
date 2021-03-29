@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/product-list.css">
+    <link rel="stylesheet" href="css/build-guides.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
@@ -39,7 +40,7 @@
 
         <div class="" id="menu">
           <div class="burger">
-              <a href="product-list.html" class="navlink">shop</a>
+              <a href="product-list.html" class="navlink current-page">shop</a>
               <a href="build-guides.html" class="navlink">guides</a>
               <a href="citations.html" class="navlink">citations</a>
               <a href="patternlibraryhome.html" class="navlink">patterns</a>
@@ -54,7 +55,7 @@
       <!-- main desktop nav -->
       <div class="mainnav">
           <a href="index.html" class="logo">cliq</a>
-          <a href="product-list.html" class="navlink">shop</a>
+          <a href="product-list.html" class="navlink current-page">shop</a>
           <a href="build-guides.html" class="navlink">guides</a>
           <a href="citations.html" class="navlink">citations</a>
           <a href="patternlibraryhome.html" class="navlink">patterns</a>
@@ -76,8 +77,8 @@
             <div class="col-4 mobile-col-12 hero-text">
                 <h1>mechanical keyboards</h1>
                 <p>Thoughtfully designed and quality crafted keyboards, keycaps, and plates. Discover your next keyboard addition. </p>
-                <div class="margin-top-40px">
-                    <a href="build-guides.html" class="secondary-btn default-btn">learn more</a>
+                <div class="margin-top-40px" id="learn-more-container">
+                    <a href="build-guides.html" class="secondary-btn default-btn">buying guide</a>
                 </div>
             </div>
 
@@ -96,21 +97,33 @@
             <h2>Categories</h2>
             <div class="filterbtn active">
               <!-- <a href="#productlistcontainer" class=""><img src="img/orangecircle.svg" alt="" id="box"></a> -->
-              <a class=""><img src="img/icons/orangecircle.svg" alt="" id="box"></a>
+              <a class=""><img src="img/icons/orangecircle.svg" alt="orange filled dot icon" class="box"></a>
               <p>Keyboards</p>
             </div>
             <div class="filterbtn active">
-              <a class=""><img src="img/icons/orangecircle.svg" alt="" id="box"></a>
+              <a class=""><img src="img/icons/orangecircle.svg" alt="orange filled dot icon" class="box"></a>
               <p>Keycaps</p>
             </div>
             <div class="filterbtn active">
-              <a class=""><img src="img/icons/orangecircleempty.svg" alt="" id="box"></a>
+              <a class=""><img src="img/icons/orangecircleempty.svg" alt="orange empty circle icon" class="box"></a>
               <p>Plates</p>
             </div>
             <!-- <a href="#" class="filterbtn" onclick="filterSelection('keyboards')"><p>Keyboards</p></a>
             <a href="#" class="filterbtn" onclick="filterSelection('keycaps')"><p>Keycaps</p></a>
             <a href="#" class="filterbtn" onclick="filterSelection('keyplates')"><p>Key plates</p></a> -->
 
+        </div>
+
+        <div class="filter-mobile mobile-start-col-1 mobile-col-12">
+          <h2>Shop By</h2>
+          <!-- <div class="" id="mobile-filter-grid"> -->
+
+            <div class="mobile-guide-nav col-12" id="filterContainer-mobile">
+                <a class="primary-btn default-btn" href="#m-switch">switch</a>
+                <a class="primary-btn default-btn" href="#m-keycap">keycaps</a>
+                <a class="primary-btn default-btn" href="#m-plate">plates</a>
+            </div>
+          <!-- </div> -->
         </div>
 
         <!-- product list CONTAINER -->
@@ -223,7 +236,7 @@
                     <p class="light-color-text">In Stock</p>
                 </div>
                 <div class="">
-                    <p class="orange-pricetag">$38</p>
+                    <p class="orange-pricetag">$60</p>
                 </div>
                 </div>
             </a>
@@ -237,7 +250,7 @@
                     <p class="light-color-text">In Stock</p>
                 </div>
                 <div class="">
-                    <p class="orange-pricetag">$29</p>
+                    <p class="orange-pricetag">$30</p>
                 </div>
                 </div>
             </a>
@@ -251,7 +264,7 @@
                     <p class="light-color-text">In Stock</p>
                 </div>
                 <div class="">
-                    <p class="orange-pricetag">$38</p>
+                    <p class="orange-pricetag">$240</p>
                 </div>
                 </div>
             </a>
@@ -259,7 +272,7 @@
 
         </div>
 
-        <div class="start-col-4 col-9 page-navagation">
+        <div class="start-col-4 col-9 mobile-start-col-1 mobile-col-12 page-navigation">
             <a class="default-btn primary-btn" id="leftarrow"><img src="img/icons/cliqchevron-left.svg" alt=""></a>
             <a class="default-btn primary-btn active">1</a>
             <a class="default-btn primary-btn">2</a>
@@ -279,7 +292,7 @@
                 <p class="footer-heading">JOIN OUR MAILING LIST</p>
                 <p>Info about upcoming releases, new arrivals and more!</p>
 
-                <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
+                <input class="text-input-dark" placeholder="email address" type="text" name="text-input">
                 <a href="#" id="mail-arrow"><img src="img/icons/cliqchevron-right-white.svg" alt="white right arrow icon"></a>
             </div>
             <div class="company-info-wrapper">

@@ -16,7 +16,7 @@
     <title>CLIQ Home</title>
 
     <!-- add icon link -->
-    <link rel="icon" href="img/cliqlogoplaceholderorange.png" type="image/x-icon">
+    <link rel="icon" href="img/icons/cliqlogoplaceholderorange.png" type="image/x-icon">
   </head>
 
   <body>
@@ -29,7 +29,7 @@
             <div class="flex-row space-between">
                 <h3>Your Cart</h3>
                 <a class="flat-button" onclick="openCart(false)">
-                  <img src="img/icons/x.svg" alt="">
+                  <img src="img/icons/x.svg" alt="close">
                 </a>
             </div>
             <img src="img/icons/orangeline.svg" alt="">
@@ -41,7 +41,7 @@
                             <div class="flex-row space-between">
                             <h4>Clear Resin Keycap Set 0</h4>
                             <a class="flat-button" onclick="removeItem(0)">
-                                <img src="img/icons/x.svg" alt="">
+                                <img src="img/icons/x.svg" alt="close">
                             </a>
                             </div>
                             <p>Microchip style clear resin artisan keycaps.</p>
@@ -49,7 +49,7 @@
                         <h4 class="orange-pricetag">$35</h4>
                         <h4>
                             <a class="flat-button small" onclick="changeItemCount(0,-1)">-</a>
-                            <span class="item-count">1</span> 
+                            <span class="item-count">1</span>
                             <a class="flat-button small" onclick="changeItemCount(0,+1)">+</a>
                         </h4>
                     </div>
@@ -61,7 +61,7 @@
                             <div class="flex-row space-between">
                             <h4>Clear Resin Keycap Set 1</h4>
                             <a class="flat-button" onclick="removeItem(1)">
-                                <img src="img/icons/x.svg" alt="">
+                                <img src="img/icons/x.svg" alt="close">
                             </a>
                             </div>
                             <p>Microchip style clear resin artisan keycaps.</p>
@@ -81,7 +81,7 @@
                             <div class="flex-row space-between">
                             <h4>Clear Resin Keycap Set 2</h4>
                             <a class="flat-button" onclick="removeItem(2)">
-                                <img src="img/icons/x.svg" alt="">
+                                <img src="img/icons/x.svg" alt="close">
                             </a>
                             </div>
                             <p>Microchip style clear resin artisan keycaps.</p>
@@ -110,6 +110,11 @@
     </div>
     <!-- end of shopping cart -->
 
+
+
+
+
+
     <header class="grid-container homepage-header">
 
       <!-- entire nav menu wrapper -->
@@ -121,7 +126,7 @@
           <div class="logo-shoppingcart-menu">
             <a href="index.html" class="logo">cliq</a>
 
-            <a href="#" onclick="toggleCart()" class="mobileicon">
+            <a href="#" class="mobileicon">
               <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
             </a>
             <a href="#" class="mobileicon" id="menutoggle">
@@ -154,10 +159,7 @@
 
         <div class="searchcart">
           <input type="text" name="text-input" placeholder="search" class="searchbar">
-          <a href="#" onclick="toggleCart()" >
-            <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
-            <span id="bag-item-count-desktop" class="orange-pricetag">1</span>
-          </a>
+          <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
         </div>
         <!-- end of main desktop displayed nav -->
       </nav>
@@ -165,7 +167,7 @@
     </header>
 
     <!-- hero section with image, h1, blurb, etc -->
-    <div class="hero-container home-page">
+    <div class="hero-container grid-container home-page">
       <div class="content">
         <!-- <p>Future home page of CLIQ, currently under construction. Pls navigate to 'patterns' for our pattern library :-D</p> -->
         <h1>new resin artisan keycaps</h1>
@@ -345,25 +347,25 @@
     <!-- end of guides -->
 
 
+
+
     <footer>
-      <div class="grid-container">
-        <div class="footer-row col-12">
+        <div class="grid-container">
+          <div class="footer-row col-12">
+
             <div class="mailing-list">
                 <p class="footer-heading">JOIN OUR MAILING LIST</p>
                 <p>Info about upcoming releases, new arrivals and more!</p>
 
                 <input class="text-input-dark" placeholder="email address" type="text" name="text-input">
-
+                <a href="#" id="mail-arrow"><img src="img/icons/cliqchevron-right-white.svg" alt="white right arrow icon"></a>
             </div>
             <div class="company-info-wrapper">
                 <div class="company-contact company-list-info">
                     <p class="footer-heading">CLIQ</p>
                     <ul>
                         <li>
-                            <a class="default-link" href="#">about us</a>
-                        </li>
-                        <li>
-                            <a class="default-link" href="#">contact us</a>
+                            <a class="default-link" href="index.html#about">about us</a>
                         </li>
                         <li>
                             <a class="default-link" href="patternlibraryhome.html">styleguide</a>
@@ -390,8 +392,7 @@
                 <div class="social-media-links">
                     <ul>
                         <li>
-                            <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/icons/githubwhite.svg" alt="white github icon"></a>
+                            <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/icons/githubwhite.svg" alt="github white icon"></a>
                         </li>
                         <li>
                             <a href="#"><img src="img/icons/twitchwhite2.svg" alt="white twitch logo icon"></a>
@@ -400,7 +401,7 @@
                             <a href="#"><img src="img/icons/twitterwhite2.svg" alt="twitter icon"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/icons/instagramwhite.svg" alt="instagram logo icon"></a>
+                            <a href="#"><img src="img/icons/instagramwhite.svg" alt="instagram white logo icon"></a>
                         </li>
                     </ul>
                 </div>
@@ -412,8 +413,8 @@
             </div>
             <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
         </div>
-      </div>
-  </footer>
+        </div>
+    </footer>
 
   <!-- link to js files -->
   <script src="js/tabhighlighting.js"></script>

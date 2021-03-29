@@ -13,30 +13,29 @@
     margin-bottom: 4em;
 }
 
-.page-navagation {
+.page-navigation {
     display: flex;
     justify-content: center;
     padding-bottom: 4em;
 }
-.page-navagation > .default-btn {
+.page-navigation > .default-btn {
     padding-left: 1.25em;
     padding-right: 1.25em;
     margin-left: .425em;
     margin-right: .425em;
 }
 
-.page-navagation img{
+.page-navigation img{
   width: 18px;
   height: auto;
   vertical-align: middle;
 }
 
-.page-navagation a{
-
+.page-navigation a{
 
 }
 
-.page-navagation .active{
+.page-navigation .active{
   color: #F56F54;
 }
 
@@ -46,6 +45,12 @@
 #leftarrow{
   padding-left: 1em;
 }
+
+
+
+
+
+
 
 .filter h2{
   font-size: 1.5em;
@@ -68,7 +73,7 @@
   justify-content: center;
 }
 
-.filter div #box{
+.filter div .box{
   /*border: 2px solid red;*/
   padding: 10px;
   border-radius: 5px;
@@ -79,7 +84,7 @@
 
 }
 
-.filter div #box:active{
+.filter div .box:active{
   box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
   inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
 }
@@ -88,7 +93,15 @@
 
 
 
-
+#filterContainer-mobile{
+  display: none;
+}
+.filter-mobile h2{
+  display: none;
+}
+#mobile-filter-grid{
+  display: none;
+}
 
 
 /* flex product to 2 cards per row */
@@ -126,7 +139,36 @@
         margin-bottom: 3.75em;
     }
     .sampleproductcard, .filter {
-        margin-left: 2em;
-        margin-right: 2em;
+        margin-left: 0;
+        margin-right: 0;
     }
+    #learn-more-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #filterContainer {
+      display: none;
+    }
+    #filterContainer-mobile{
+      display: flex;
+
+    }
+    .filter-mobile h2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    #mobile-filter-grid{
+      display: flex;
+    }
+
+    .page-navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 4em;
+    }
+
 }
