@@ -47,7 +47,7 @@
                           <h4 class="orange-pricetag">$35</h4>
                           <h4>
                               <a class="flat-button small" onclick="changeItemCount(0,-1)">-</a>
-                              <span class="item-count">1</span> 
+                              <span class="item-count">1</span>
                               <a class="flat-button small" onclick="changeItemCount(0,+1)">+</a>
                           </h4>
                       </div>
@@ -101,7 +101,7 @@
               <div class="flex-row justify-content-center">
                   <a href="checkout/checkout-customer.html" class="secondary-btn default-btn">proceed to checkout</a>
               </div>
-  
+
             </div>
           </aside>
         </div>
@@ -162,8 +162,7 @@
 
   </header>
 
-
-
+  <!-- product list banner -->
     <div class="hide-overflow-x">
         <div class="grid-container banner-container-product-list">
             <div class="col-4 mobile-col-12 hero-text">
@@ -180,22 +179,33 @@
         </div>
     </div>
 
+    <!-- main page container -->
     <div class="grid-container">
 
         <!-- filter CONTROLS -->
         <div class="filter col-2 mobile-col-12" id="filterContainer">
+
             <h2>Categories</h2>
-            <div class="filterbtn active">
+
+            <div class="">
               <!-- <a href="#productlistcontainer" class=""><img src="img/orangecircle.svg" alt="" id="box"></a> -->
-              <a class=""><img src="img/icons/orangecircle.svg" alt="orange filled dot icon" class="box"></a>
+              <a class="filterbtn active box" onclick="filterSelection('all')">
+                <div class="dot"></div>
+              </a>
+              <p>All</p>
+            </div>
+            <!-- <div class="filterbtn active"> -->
+            <div class="">
+              <!-- <a href="#productlistcontainer" class=""><img src="img/orangecircle.svg" alt="" id="box"></a> -->
+              <a class="filterbtn" onclick="filterSelection('keyboards')"><img src="img/icons/orangecircle.svg" alt="orange filled dot icon" class="box"></a>
               <p>Keyboards</p>
             </div>
-            <div class="filterbtn active">
-              <a class=""><img src="img/icons/orangecircle.svg" alt="orange filled dot icon" class="box"></a>
+            <div class="">
+              <a class="filterbtn" onclick="filterSelection('keycaps')"><img src="img/icons/orangecircle.svg" alt="orange filled dot icon" class="box"></a>
               <p>Keycaps</p>
             </div>
-            <div class="filterbtn active">
-              <a class=""><img src="img/icons/orangecircleempty.svg" alt="orange empty circle icon" class="box"></a>
+            <div class="">
+              <a class="filterbtn" onclick="filterSelection('plates')"><img src="img/icons/orangecircleempty.svg" alt="orange empty circle icon" class="box"></a>
               <p>Plates</p>
             </div>
             <!-- <a href="#" class="filterbtn" onclick="filterSelection('keyboards')"><p>Keyboards</p></a>
@@ -219,7 +229,7 @@
         <!-- product list CONTAINER -->
         <div class="product-container col-9 start-col-4 mobile-start-col-1 mobile-col-12" id="productlistcontainer">
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard filterDiv keyboards" id="product1">
+            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product1">
                 <img src="img/products/cliqproduct1.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -233,7 +243,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard filterDiv keycaps" id="product2">
+            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product2">
                 <img src="img/products/cliqproduct2.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -247,7 +257,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard filterDiv keycaps" id="product3">
+            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product3">
                 <img src="img/products/cliqproduct3.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -261,7 +271,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard filterDiv keyboards" id="product4">
+            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product4">
                 <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -275,7 +285,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard" id="product5">
+            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product5">
                 <img src="img/products/cliqproduct5.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -289,7 +299,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard" id="product6">
+            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product6">
                 <img src="img/products/blueIcebergKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -303,7 +313,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard" id="product7">
+            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product7">
                 <img src="img/products/canvasKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -317,7 +327,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard" id="product8">
+            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product8">
                 <img src="img/products/backlitKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -331,7 +341,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard" id="product9">
+            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product9">
                 <img src="img/products/whiteFogKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
@@ -345,7 +355,7 @@
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="sampleproductcard" id="product10">
+            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product10">
                 <img src="img/products/dotsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
