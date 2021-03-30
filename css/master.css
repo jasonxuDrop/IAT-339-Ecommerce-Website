@@ -1312,6 +1312,12 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .citation-flex{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
   .subnav {
     list-style-type: none;
     margin: 0;
@@ -1589,6 +1595,16 @@ article h4{
   flex-wrap: wrap;
 }
 
+.flex-33{
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
 .flex-33-contain{
   flex: 0 0 33.33%;
   display: flex;
@@ -1626,17 +1642,36 @@ article h4{
   box-sizing: border-box;
 }
 
-.flex-cell-25:before, .flex-cell-33:before, .flex-cell-50:before {
+.flex-cell-25:before, .flex-cell-33:before, .flex-cell-50:before, {
   content: '';
   display: table;
   padding-top: 100%;
 }
+
+.flex-33:before{
+  display: table;
+  content: '';
+}
+
 
 .flex-item {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-citation-item{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-citation-item img{
+  width: 100%;
+  object-fit: cover;
 }
 
 .keycap-section .flex-item img{
