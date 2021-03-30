@@ -976,6 +976,10 @@ footer p {
       display: none;
   }
 
+  .animated-arrow{
+    display: none;
+  }
+
   .logo-dark{
       display: none;
   }
@@ -1326,7 +1330,6 @@ footer p {
     margin: 0;
     padding: 0;
 
-    /* grid-column: 2 / 8; */
   }
 
   .main-content {
@@ -1606,6 +1609,7 @@ article h4{
   align-items: stretch;
   padding: 0.5rem;
   box-sizing: border-box;
+  margin-bottom: 7rem;
 }
 
 .flex-33-contain{
@@ -1672,9 +1676,10 @@ article h4{
   flex-direction: column;
 }
 
-.flex-citation-item img{
+.flex-citation-item img{    
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  height: 11rem;
 }
 
 .keycap-section .flex-item img{
