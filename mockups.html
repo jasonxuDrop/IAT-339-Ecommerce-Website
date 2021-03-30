@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/grid.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap">
 
+    <link rel="icon" href="img/icons/cliqlogoplaceholderorange.png" type="image/x-icon">
+  
     <title>Visual Mockups - Pattern Library Assignment</title>
 
   </head>
@@ -22,30 +24,56 @@
   <body onload="patternpageFuntion()">
 
     <div class="header-wrapper">
-      <header>
+      <header class="grid-container homepage-header">
 
-        <nav>
+        <!-- entire nav menu wrapper -->
+        <nav class="col-12">
+
+          <!-- mobile nav menu container -->
+          <div class="mainnav-mobile">
+
+            <div class="logo-shoppingcart-menu">
+              <a href="index.html" class="logo">cliq</a>
+
+              <a href="#" class="mobileicon" onclick="toggleCart()">
+                <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
+              </a>
+              <a class="mobileicon" id="menutoggle">
+                <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
+              </a>
+            </div>
+
+            <div class="" id="menu">
+              <div class="burger">
+                  <a href="product-list.html" class="navlink">shop</a>
+                  <a href="build-guides.html" class="navlink">guides</a>
+                  <a href="citations.html" class="navlink">citations</a>
+                  <a href="patternlibraryhome.html" class="navlink">patterns</a>
+              </div>
+              <div class="mobile-searchbar">
+                <input type="text" name="text-input" placeholder="search" class="searchbar">
+              </div>
+            </div>
+          </div> <!-- end of mobile nav menu -->
+
+
+          <!-- main desktop nav -->
           <div class="mainnav">
-            <a href="index.html" class="logo">cliq</a>
-
-            <a href="#" class="mobilenav">
-              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" class="mobileicon">
-            </a>
-            <a href="#" class="mobilenav"><img src="img/icons/mobilemenu.png" alt="hamburger menu button" class="mobileicon"></a>
-
-
-            <a href="#" class="shophighlight">shop</a>
-            <a href="#" class="guidehighlight">guides</a>
-            <a href="citations.html" class="citehighlight">citations</a>
-            <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
-
+              <a href="index.html" class="logo">cliq</a>
+              <a href="product-list.html" class="navlink">shop</a>
+              <a href="build-guides.html" class="navlink">guides</a>
+              <a href="citations.html" class="navlink">citations</a>
+              <a href="patternlibraryhome.html" class="navlink">patterns</a>
           </div>
 
           <div class="searchcart">
-            <input type="text" name="search" value="search" class="searchbar">
-            <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
+            <input type="text" name="text-input" placeholder="search" class="searchbar">
+            <a href="#" onclick="toggleCart()">
+              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+              <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+            </a>
           </div>
-
+          <!-- end of main desktop displayed nav -->
         </nav>
 
       </header>

@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap">
 
     <title>CLIQ - Pattern Library</title>
 
@@ -110,7 +110,6 @@
           <li><a href="#inlinelinks">Inline links</a></li>
           <li><a href="#navigation">Navigation</a></li>
           <li><a href="#productcard">Product card</a></li>
-          <li><a href="#product-detail">Product detail</a></li>
           <li><a href="#checkout">Shopping Cart</a></li>
           <li><a href="#footer">Footer</a></li>
         </ul>
@@ -181,12 +180,14 @@
           <p>Sample code:</p>
           <pre>
             <code>
-              &lt;h1&gt;INTRO TITLE H1 EXAMPLE&lt;/h2&gt;
+              &lt;h1&gt;INTRO TITLE H1 EXAMPLE&lt;/h1&gt;
+              &lt;p class=&quot;big-title&quot;&gt;INTRO TITLE h1 EXAMPLE&lt;/h1&gt;
               h1 {
-                font-family: "Moon", "Oxygen", sans-serif;
+                font-family: moonFont;
                 font-weight: 300;
                 color: #3E3E3E;
-                letter-spacing: 3px;
+                font-size: 3rem;
+                letter-spacing: .075em;
               }
             </code>
           </pre>
@@ -197,9 +198,10 @@
             <code>
               &lt;h2&gt;PRODUCT NAME H2&lt;/h2&gt;
               h2 {
-                font-family: "Moon", "Oxygen", sans-serif;
+                font-family: moonFont;
                 font-weight: 300;
                 color: #3E3E3E;
+
                 letter-spacing: 3px;
               }
             </code>
@@ -210,7 +212,7 @@
             <code>
               &lt;h3&gt;BESTSELLERS SECTION TITLES&lt;/h3&gt;
               h3 {
-                font-family: "Moon", "Oxygen", sans-serif;
+                font-family: moonFont;
                 font-weight: 300;
                 color: #3E3E3E;
                 letter-spacing: 3px;
@@ -224,11 +226,10 @@
             <code>
               &lt;p&gt;Product Description body text&lt;/p&gt;
               p {
-                font-family: "Muli", "Mulish", sans-serif;
                 font-weight: 400;
+                font-family: "Mulish", "Roboto", sans-serif;
                 color: #3E3E3E;
                 line-height: 140%;
-                max-width: 75%;
               }
             </code>
           </pre>
@@ -249,7 +250,6 @@
               &lt;li&gt;&lt;p&gt;Item info 2&lt;/p&gt;&lt;/li&gt;
               &lt;li&gt;&lt;p&gt;Item info spec 3&lt;/p&gt;&lt;/li&gt;
             &lt;ul&gt;
-
           </code>
         </pre>
 
@@ -342,9 +342,9 @@
         <p>Code sample:</p>
         <pre>
         <code>
-          &lt;a href="#linktosection" class="primary-btn default-btn"&gt;learn more&lt;/a&gt;
+          &lt;a href=&quot;#linktosection&quot; class=&quot;primary-btn default-btn&quot;&gt;learn more&lt;/a&gt;
           .ctabuttons {
-            font-family: "Muli", "Mulish", sans-serif;
+            font-family: &quot;Muli&quot;, &quot;Mulish&quot;, sans-serif;
             font-weight: 600;
             font-size: 0.9em;
             color: #3E3E3E;
@@ -378,9 +378,9 @@
       <p>Code sample:</p>
       <pre>
       <code>
-        &lt;a href="#linktosection" class="secondary-btn default-btn"&gt;learn more&lt;/a&gt;
+        &lt;a href=&quot;#linktosection&quot; class=&quot;secondary-btn default-btn&quot;&gt;learn more&lt;/a&gt;
         .secondary-btn {
-          font-family: "Muli", "Mulish", sans-serif;
+          font-family: &quot;Muli&quot;, &quot;Mulish&quot;, sans-serif;
           font-weight: 600;
           color: #FFFFFF;
           background-color: #F56F54;
@@ -394,7 +394,6 @@
           box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0), inset 9px 9px 13px #D05E47, inset -9px -9px 12px #FF8061;
         }
       </code>
-
       </pre>
 
       <p>Author: Team</p>
@@ -414,7 +413,7 @@
         <pre>
           <code>
             &#x3C;p class=&#x22;input-label&#x22;&#x3E;Label&#x3C;/p&#x3E;
-            &lt;input type="text" name="search" placeholder="search" class="searchbar"&gt;
+            &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;search&quot; class=&quot;searchbar&quot;&gt;
             .searchbar {
               margin-right: 2em;
               padding: 0.5em 0 0.5em 2em;
@@ -437,7 +436,6 @@
       <section id="checkbox">
         <h2>checkbox</h2>
         <p>Used on the checkout pages</p>
-        <p>STYLES TO BE ADDED</p>
 
         <input type="checkbox" name="same-adress" id="same-adress" class="checkbox">
         <label for="same-adress"> My billing address is the same as my shipping address</label>
@@ -463,7 +461,7 @@
         <p>Code sample:</p>
         <pre>
           <code>
-            &lt;a class=&#x22;inlinelink&#x22; href="#pageorsection""&gt;building your own&lt;/a&gt;
+            &lt;a class=&#x22;inlinelink&#x22; href=&quot;#pageorsection&quot;&gt;building your own&lt;/a&gt;
             a.inlinelink {
               color: #F56F54;
             }
@@ -479,9 +477,10 @@
         <h2 class="section-header">Navigation</h2>
         <p>Name: Main nav.</p>
         <p>Description: Main navigation module for every page.</p>
-        <p>Responsive example:</p>
+        <p>Condensed example (see top of page for the legitimate one):</p>
 
         <!-- live (condensed) nav bar example -->
+
         <nav class="mininav">
           <div class="mainnav">
             <a href="index.html" class="navlink logo">cliq</a>
@@ -498,21 +497,67 @@
 
         </nav>
 
-        <p>Code sample:</p>
+        <p>Code sample (the legitimate one):</p>
         <pre>
           <code>
-            &lt;nav&gt;
-              &lt;div class="mainnav"&gt;
-                &lt;a href="index.html" class="navlink" class="logo"&gt;cliq&lt;/a&gt;
-                &lt;a href="#page" class="navlink"&gt;shop&lt;/a&gt;
-                &lt;a href="#page" class="navlink"&gt;guides&lt;/a&gt;
-                &lt;a href="#page" class="navlink"&gt;citations&lt;/a&gt;
-                &lt;a href="#page" class="navlink"&gt;patterns&lt;/a&gt;
-              &lt;/div&gt;
-              &lt;div class="searchcart"&gt;
-                &lt;input type="text" placeholder="search" class="searchbar"&gt;
-                &lt;a href="#page"&lt;img src="img/bagicon.png"&gt;patterns&lt;/a&gt;
-            &lt;/nav&gt;
+            &lt;div class=&quot;header-wrapper&quot;&gt;
+              &lt;header class=&quot;grid-container homepage-header&quot;&gt;
+
+                &lt;!-- entire nav menu wrapper --&gt;
+                &lt;nav class=&quot;col-12&quot;&gt;
+
+                  &lt;!-- mobile nav menu container --&gt;
+                  &lt;div class=&quot;mainnav-mobile&quot;&gt;
+
+                    &lt;div class=&quot;logo-shoppingcart-menu&quot;&gt;
+                      &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;cliq&lt;/a&gt;
+
+                      &lt;a href=&quot;#&quot; class=&quot;mobileicon&quot; onclick=&quot;toggleCart()&quot;&gt;
+                        &lt;img src=&quot;img/icons/shopping-bagCliq2.png&quot; alt=&quot;shopping bag icon&quot;&gt;
+                      &lt;/a&gt;
+                      &lt;a class=&quot;mobileicon&quot; id=&quot;menutoggle&quot;&gt;
+                        &lt;img src=&quot;img/icons/mobilemenu.png&quot; alt=&quot;mobile burger menu icon&quot;&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;&quot; id=&quot;menu&quot;&gt;
+                      &lt;div class=&quot;burger&quot;&gt;
+                          &lt;a href=&quot;product-list.html&quot; class=&quot;navlink&quot;&gt;shop&lt;/a&gt;
+                          &lt;a href=&quot;build-guides.html&quot; class=&quot;navlink&quot;&gt;guides&lt;/a&gt;
+                          &lt;a href=&quot;citations.html&quot; class=&quot;navlink current-page&quot;&gt;citations&lt;/a&gt;
+                          &lt;a href=&quot;patternlibraryhome.html&quot; class=&quot;navlink&quot;&gt;patterns&lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;mobile-searchbar&quot;&gt;
+                        &lt;input type=&quot;text&quot; name=&quot;text-input&quot; placeholder=&quot;search&quot; class=&quot;searchbar&quot;&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt; &lt;!-- end of mobile nav menu --&gt;
+
+
+                  &lt;!-- main desktop nav --&gt;
+                  &lt;div class=&quot;mainnav&quot;&gt;
+                      &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;cliq&lt;/a&gt;
+                      &lt;a href=&quot;product-list.html&quot; class=&quot;navlink&quot;&gt;shop&lt;/a&gt;
+                      &lt;a href=&quot;build-guides.html&quot; class=&quot;navlink&quot;&gt;guides&lt;/a&gt;
+                      &lt;a href=&quot;citations.html&quot; class=&quot;navlink current-page&quot;&gt;citations&lt;/a&gt;
+                      &lt;a href=&quot;patternlibraryhome.html&quot; class=&quot;navlink&quot;&gt;patterns&lt;/a&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class=&quot;searchcart&quot;&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;text-input&quot; placeholder=&quot;search&quot; class=&quot;searchbar&quot;&gt;
+                    &lt;a href=&quot;#&quot; onclick=&quot;toggleCart()&quot;&gt;
+                      &lt;img src=&quot;img/icons/shopping-bagCliq2.png&quot; alt=&quot;shopping bag icon&quot; id=&quot;shoppingbagimg&quot;&gt;
+                      &lt;span id=&quot;bag-item-count-desktop&quot; class=&quot;orange-pricetag hide&quot;&gt;0&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;!-- end of main desktop displayed nav --&gt;
+                &lt;/nav&gt;
+
+              &lt;/header&gt;
+            &lt;/div&gt;
+
+            &lt;!-- extra space for the content on the top of the page --&gt;
+            &lt;div class=&quot;beginning-of-page-gap&quot;&gt;&lt;/div&gt;
 
             nav {
               display: flex;
@@ -661,71 +706,6 @@
       </section> <!-- end of product card component -->
 
 
-      <!-- product detail sample component -->
-      <section id="product-detail">
-        <h2 class="section-header">Product detail</h2>
-        <p>Name: Product detail component</p>
-        <p>Description: Top part of product detail page that displays image of product, add to cart button, and description.</p>
-        <p>Responsive example:</p>
-
-        <!-- responsive example -->
-        <div class="sample-product-header">
-          <div class="hero-product-container">
-            <img src="img/products/lindesign-hero.jpg" alt="keycap banner image">
-          </div>
-
-          <div class="product-content-container">
-
-
-            <div class="black-box">
-              <div>
-                <h3>Clear Resin Keycap Set</h3>
-                <h4>$35</h4>
-                <p>Product info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p>Code sample:</p>
-        <pre>
-          <code>
-            &lt;img src="img/source.png"&gt;
-            &lt;a href="#linktosection" class="ctabuttons"&gt;add to cart&lt;/a&gt;
-            &lt;div class="black-box"&gt;
-              &lt;section&gt;
-                &lt;p&gt;Product name - Clear Resin Keycap Set&lt;/p&gt;
-                &lt;p&gt;Product info lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
-              &lt;/section&gt;
-            &lt;/div&gt;
-
-            .sample-product-header .black-box {
-              background-color: #312E37;
-              padding: 0 2em 2em 2em;
-            }
-
-            .sample-product-header .black-box h3{
-              color: white;
-              font-size: 1.75em;
-
-            }
-            .sample-product-header .black-box h4{
-              font-family: moonFont;
-              color: white;
-            }
-            .sample-product-header .black-box p{
-              color: white;
-              font-size: 0.8em;
-              max-width: 80%;
-
-            }
-          </code>
-        </pre>
-        <p>Author: Daniel</p>
-
-      </section>
-
       <!-- shopping cart checkout module -->
       <section id="checkout">
         <h2 class="section-header">Shopping Cart</h2>
@@ -734,7 +714,7 @@
         <p>Responsive example:</p>
 
         <!-- live example -->
-        <div class="shopping-cart">
+        <div class="shopping-cart  neu-extrusion">
           <div class="flex-row space-between">
             <h3>Your Cart</h3>
             <a class="flat-button" href="">
@@ -911,7 +891,7 @@
         <h2 class="section-header">Footer</h2>
         <p>Name: Footer component.</p>
         <p>Description: Main footer module included on every page.</p>
-        <p>Responsive example:</p>
+        <p>Condensed example (see bottom of page for the legitimate one):</p>
 
         <!-- live footer sample -->
         <footer>
@@ -985,77 +965,70 @@
         <p>Code sample:</p>
         <pre>
           <code>
-
-            <!-- sample code -->
             &lt;footer&gt;
-              &lt;div class="footer-row&gt;
-                &lt;div class="mailing-list"&gt;
-                &lt;p&gt;JOIN OUR MAILING LIST&lt;/p&gt;
-                &lt;p&gt;Info about upcoming releases, new arrivals and more!&lt;/p&gt;
-                &lt;input class="text-input-dark" placeholder="INPUT TEXT" type="text" id="" name="text-input"&gt;
+              &lt;div class=&quot;grid-container&quot;&gt;
+                &lt;div class=&quot;footer-row col-12&quot;&gt;
+        
+                  &lt;div class=&quot;mailing-list&quot;&gt;
+                      &lt;p class=&quot;footer-heading&quot;&gt;JOIN OUR MAILING LIST&lt;/p&gt;
+                      &lt;p&gt;Info about upcoming releases, new arrivals and more!&lt;/p&gt;
+        
+                      &lt;input class=&quot;text-input-dark&quot; placeholder=&quot;email address&quot; type=&quot;text&quot; name=&quot;text-input&quot;&gt;
+                      &lt;a href=&quot;#&quot; id=&quot;mail-arrow&quot;&gt;&lt;img src=&quot;img/icons/cliqchevron-right-white.svg&quot; alt=&quot;white right arrow icon&quot;&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;company-info-wrapper&quot;&gt;
+                      &lt;div class=&quot;company-contact company-list-info&quot;&gt;
+                          &lt;p class=&quot;footer-heading&quot;&gt;CLIQ&lt;/p&gt;
+                          &lt;ul&gt;
+                              &lt;li&gt;
+                                  &lt;a class=&quot;default-link&quot; href=&quot;index.html#about&quot;&gt;about us&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a class=&quot;default-link&quot; href=&quot;patternlibraryhome.html&quot;&gt;styleguide&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a class=&quot;default-link&quot; href=&quot;https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a class=&quot;default-link&quot; href=&quot;citations.html&quot;&gt;citation&lt;/a&gt;
+                              &lt;/li&gt;
+                          &lt;/ul&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;faq-help company-list-info&quot;&gt;
+                          &lt;p class=&quot;footer-heading&quot;&gt;HELP&lt;/p&gt;
+                          &lt;ul&gt;
+                              &lt;li&gt;
+                                  &lt;a class=&quot;default-link&quot; href=&quot;#&quot;&gt;shipping&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a class=&quot;default-link&quot; href=&quot;#&quot;&gt;returns&lt;/a&gt;
+                              &lt;/li&gt;
+                          &lt;/ul&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;social-media-links&quot;&gt;
+                          &lt;ul&gt;
+                              &lt;li&gt;
+                                  &lt;a href=&quot;https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;img/icons/githubwhite.svg&quot; alt=&quot;github white icon&quot;&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/icons/twitchwhite2.svg&quot; alt=&quot;white twitch logo icon&quot;&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/icons/twitterwhite2.svg&quot; alt=&quot;twitter icon&quot;&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                  &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/icons/instagramwhite.svg&quot; alt=&quot;instagram white logo icon&quot;&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                          &lt;/ul&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
               &lt;/div&gt;
-              &lt;div class="company-info-wrapper"&gt;
-                &lt;div class="company-contact company-list-info"&gt;
-                  &lt;li&gt;
-                    &lt;a href=""&gt;about us&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;
-                    &lt;a href=""&gt;contact us&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;
-                    &lt;a href=""&gt;citation&lt;/a&gt;
-                  &lt;/li&gt;
-
-                &lt;div class="faq-help company-list-info"&gt;
-                  &lt;p&gt;CLIQ&lt;/p&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;
-                      &lt;a href=""&gt;shipping&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li&gt;
-                      &lt;a href=""&gt;returns&lt;/a&gt;
-                    &lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-
-                &lt;div class="social-media-links"&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;
-                      &lt;a href=""&gt;
-                        &lt;img src="images/icons/instagram.png" alt="instagram icon"&gt;
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-
-                    &lt;li&gt;
-                      &lt;a href=""&gt;
-                        &lt;img src="images/icons/twitter.png" alt="twitter icon"&gt;
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-
-                    &lt;li&gt;
-                      &lt;a href=""&gt;
-                        &lt;img src="images/icons/twitch.png" alt="twitch icon"&gt;
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-
-                    &lt;li&gt;
-                      &lt;a href=""&gt;
-                        &lt;img src="images/icons/youtube.png" alt="youtube icon"&gt;
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-
-                    &lt;li&gt;
-                      &lt;a href=""&gt;returns&lt;/a&gt;
-                    &lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
+              &lt;div class=&quot;footer-row col-12&quot;&gt;
+                  &lt;div class=&quot;logo-dark&quot;&gt;
+                      &lt;a href=&quot;index.html&quot;&gt;cliq&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;secondary-textcopyright&quot;&gt;&amp;#169; 2021 CLIQ All Rights Reserved.&lt;/p&gt;
               &lt;/div&gt;
-
-              &lt;div class="footer-row"&gt;
-                &lt;div class="logo-dark"&gt;
-                  &lt;a href=""&gt;CLIQ&lt;/a&gt;
-                &lt;/div&gt;
-                &lt;p class="secondary-textcopyright"&gt;&#169; 2021 CLIQ All Rights Reserved.&lt;/p&gt;
               &lt;/div&gt;
             &lt;/footer&gt;
 
