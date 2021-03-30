@@ -1643,7 +1643,7 @@ article h4{
   box-sizing: border-box;
 }
 
-.flex-cell-25:before, .flex-cell-33:before, .flex-cell-50:before, {
+.flex-cell-25:before, .flex-cell-33:before, .flex-cell-50:before {
   content: '';
   display: table;
   padding-top: 100%;
