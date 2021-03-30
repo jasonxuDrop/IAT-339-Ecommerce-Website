@@ -456,6 +456,8 @@ pre {
   background-color: #312E37;
   color: white;
   max-width: 100%;
+  max-height: 50vh;
+  overflow-y: auto;
   overflow-x: scroll;
 }
 
