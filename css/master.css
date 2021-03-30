@@ -437,8 +437,10 @@ header {
 
 .mobile-add-to-cart{
   text-align: center;
+  border-style: none;
   display: none;
-  margin: 2rem auto;
+  margin: 2rem auto;    
+  width: fit-content;
 }
 
 /* end of mobile-add-to-cart-btn */
