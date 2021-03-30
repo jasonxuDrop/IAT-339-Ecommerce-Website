@@ -106,51 +106,54 @@
     </div>
     <!-- end of shopping cart -->
 
-    <header class="grid-container">
+    <div class="header-wrapper"> 
+        <header class="grid-container">
 
-        <nav class="col-12">
-    
-            <div class="mainnav-mobile">
-                <div class="logo-shoppingcart-menu">
-                <a href="index.html" class="logo">cliq</a>
+            <nav class="col-12">
         
-                <a onclick="toggleCart()" class="mobileicon">
-                    <img src="img/icons/shopping-bagCliq2.png" alt="" >
-                </a>
-                <a href="#" class="mobileicon">
-                    <img src="img/icons/mobilemenu.png" alt="">
-                </a>
+                <div class="mainnav-mobile">
+                    <div class="logo-shoppingcart-menu">
+                    <a href="index.html" class="logo">cliq</a>
+            
+                    <a onclick="toggleCart()" class="mobileicon">
+                        <img src="img/icons/shopping-bagCliq2.png" alt="" >
+                    </a>
+                    <a href="#" class="mobileicon">
+                        <img src="img/icons/mobilemenu.png" alt="">
+                    </a>
+                    </div>
+                    <div class="burger">
+                        <a href="product-list.html" class="navlink">shop</a>
+                        <a href="build-guides.html" class="navlink current-page">guides</a>
+                        <a href="citations.html" class="navlink">citations</a>
+                        <a href="patternlibraryhome.html" class="navlink">patterns</a>
+                    </div>
+                    <div class="mobile-searchbar">
+                    <input type="text" name="search" placeholder="search" class="searchbar">
+                    </div>
                 </div>
-                <div class="burger">
+            
+            
+                <div class="mainnav">
+                    <a href="index.html" class="logo">cliq</a>
                     <a href="product-list.html" class="navlink">shop</a>
                     <a href="build-guides.html" class="navlink current-page">guides</a>
                     <a href="citations.html" class="navlink">citations</a>
                     <a href="patternlibraryhome.html" class="navlink">patterns</a>
                 </div>
-                <div class="mobile-searchbar">
-                <input type="text" name="search" placeholder="search" class="searchbar">
+            
+                <div class="searchcart">
+                    <input type="text" name="search" placeholder="search" class="searchbar">
+                    <a href="#" onclick="toggleCart()">
+                        <img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg">
+                        <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+                    </a>
                 </div>
-            </div>
-        
-        
-            <div class="mainnav">
-                <a href="index.html" class="logo">cliq</a>
-                <a href="product-list.html" class="navlink">shop</a>
-                <a href="build-guides.html" class="navlink current-page">guides</a>
-                <a href="citations.html" class="navlink">citations</a>
-                <a href="patternlibraryhome.html" class="navlink">patterns</a>
-            </div>
-        
-            <div class="searchcart">
-                <input type="text" name="search" placeholder="search" class="searchbar">
-                <a href="#" onclick="toggleCart()">
-                    <img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg">
-                    <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
-                </a>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    </div>
     
+    <div class="beginning-of-page-gap"></div>
 
     <div class="full-grid-container guide-page-content">
         <div class="subnav start-col-2 col-3" id="guide-nav">
@@ -472,6 +475,8 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/guides-sidenav.js"></script>
     <script src="js/cart-overlay.js"></script>
     <script src="js/mobilenav.js"></script>

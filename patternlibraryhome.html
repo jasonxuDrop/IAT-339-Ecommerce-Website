@@ -19,58 +19,53 @@
 
   <body onload="patternPageFunctionTest()">
 
+    <div class="header-wrapper">
+      <header class="grid-container">
 
-    <header class="grid-container">
+        <nav class="col-12">
 
+          <div class="mainnav-mobile">
+            <div class="logo-shoppingcart-menu">
+              <a href="index.html" class="logo">cliq</a>
 
-      <!-- TODO: mar -> add nav indent when active -->
-      <nav class="col-12">
-
-        <div class="mainnav-mobile">
-          <div class="logo-shoppingcart-menu">
-            <a href="index.html" class="logo">cliq</a>
-
-            <a href="#" class="mobileicon">
-              <img src="img/icons/shopping-bagCliq2.png" alt="" >
-            </a>
-            <a href="#" class="mobileicon">
-              <img src="img/icons/mobilemenu.png" alt="">
-            </a>
+              <a href="#" class="mobileicon">
+                <img src="img/icons/shopping-bagCliq2.png" alt="" >
+              </a>
+              <a href="#" class="mobileicon">
+                <img src="img/icons/mobilemenu.png" alt="">
+              </a>
+            </div>
+            <div class="burger">
+                <a href="product-list.html" class="navlink">shop</a>
+                <a href="build-guides.html" class="navlink">guides</a>
+                <a href="citations.html" class="navlink">citations</a>
+                <a href="patternlibraryhome.html" class="navlink">patterns</a>
+            </div>
+            <div class="mobile-searchbar">
+              <input type="text" name="" placeholder="search" class="searchbar">
+            </div>
           </div>
-          <div class="burger">
+
+
+          <div class="mainnav">
+              <a href="index.html" class="logo">cliq</a>
               <a href="product-list.html" class="navlink">shop</a>
               <a href="build-guides.html" class="navlink">guides</a>
               <a href="citations.html" class="navlink">citations</a>
-              <a href="patternlibraryhome.html" class="navlink">patterns</a>
+              <a href="patternlibraryhome.html" class="navlink current-page">patterns</a>
           </div>
-          <div class="mobile-searchbar">
+
+          <div class="searchcart">
             <input type="text" name="" placeholder="search" class="searchbar">
+            <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
           </div>
-        </div>
+        </nav>
 
+      </header>
+    </div>
+      
+    <div class="beginning-of-page-gap"></div>
 
-        <div class="mainnav">
-            <a href="index.html" class="logo">cliq</a>
-            <a href="product-list.html" class="navlink">shop</a>
-            <a href="build-guides.html" class="navlink">guides</a>
-            <a href="citations.html" class="navlink">citations</a>
-            <a href="patternlibraryhome.html" class="navlink current-page">patterns</a>
-        </div>
-
-        <div class="searchcart">
-          <input type="text" name="" placeholder="search" class="searchbar">
-          <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
-        </div>
-      </nav>
-
-    </header>
-
-    <!-- <div class="grid-container margin-top-100px">
-      <div class="col-12">
-        <h1>PATTERN LIBRARY</h1>
-        <p>Pattern library and styleguide for CLIQ. Below is a side navigation bar with inline links to designated sections for categorized pattern library elements.</p>
-      </div>
-    </div> -->
     <div class="grid-container">
       <div class="col-6 margin-top-100px mobile-col-12">
         <h1>PATTERN LIBRARY</h1>
@@ -1218,6 +1213,8 @@
 
 
     <!-- link to the js file -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/tabhighlighting.js"></script>
     <script src="js/mobilenav.js"></script>
 

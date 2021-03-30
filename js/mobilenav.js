@@ -28,7 +28,9 @@ menuBtn.addEventListener('click',
     console.log('menu ham button aka menuBtn has been clicked');
 
     // if the main menu has the 'hidden' class appended to it
+    // show the hamburger menu
     if(menu.classList.contains('hidden')){
+      menuBtn.classList.add('active');
 
       console.log('menu is hidden, but showing the menu now'); // debugging purposes
 
@@ -41,6 +43,8 @@ menuBtn.addEventListener('click',
 
     // otherwise if user clicks the menu button again, hide the menu
     }else{
+      menuBtn.classList.remove('active');
+
       menu.classList.add('hidden');
       menu.setAttribute('aria-hidden', 'true');
       menu.setAttribute('aria-expanded', 'false');

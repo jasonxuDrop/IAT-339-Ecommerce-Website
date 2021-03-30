@@ -114,60 +114,63 @@
 
 
 
+    <div class="header-wrapper">
+      <header class="grid-container homepage-header">
 
-    <header class="grid-container homepage-header">
+        <!-- entire nav menu wrapper -->
+        <nav class="col-12">
 
-      <!-- entire nav menu wrapper -->
-      <nav class="col-12">
+          <!-- mobile nav menu container -->
+          <div class="mainnav-mobile">
 
-        <!-- mobile nav menu container -->
-        <div class="mainnav-mobile">
+            <div class="logo-shoppingcart-menu">
+              <a href="index.html" class="logo">cliq</a>
 
-          <div class="logo-shoppingcart-menu">
-            <a href="index.html" class="logo">cliq</a>
+              <a href="#" class="mobileicon" onclick="toggleCart()">
+                <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
+              </a>
+              <a href="#" class="mobileicon" id="menutoggle">
+                <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
+              </a>
+            </div>
 
-            <a href="#" class="mobileicon" onclick="toggleCart()">
-              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
-            </a>
-            <a href="#" class="mobileicon" id="menutoggle">
-              <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
-            </a>
+            <div class="" id="menu">
+              <div class="burger">
+                  <a href="product-list.html" class="navlink">shop</a>
+                  <a href="build-guides.html" class="navlink">guides</a>
+                  <a href="citations.html" class="navlink">citations</a>
+                  <a href="patternlibraryhome.html" class="navlink">patterns</a>
+              </div>
+              <div class="mobile-searchbar">
+                <input type="text" name="text-input" placeholder="search" class="searchbar">
+              </div>
+            </div>
+          </div> <!-- end of mobile nav menu -->
+
+
+          <!-- main desktop nav -->
+          <div class="mainnav">
+              <a href="index.html" class="logo">cliq</a>
+              <a href="product-list.html" class="navlink">shop</a>
+              <a href="build-guides.html" class="navlink">guides</a>
+              <a href="citations.html" class="navlink">citations</a>
+              <a href="patternlibraryhome.html" class="navlink">patterns</a>
           </div>
 
-          <div class="" id="menu">
-            <div class="burger">
-                <a href="product-list.html" class="navlink">shop</a>
-                <a href="build-guides.html" class="navlink">guides</a>
-                <a href="citations.html" class="navlink">citations</a>
-                <a href="patternlibraryhome.html" class="navlink">patterns</a>
-            </div>
-            <div class="mobile-searchbar">
-              <input type="text" name="text-input" placeholder="search" class="searchbar">
-            </div>
+          <div class="searchcart">
+            <input type="text" name="text-input" placeholder="search" class="searchbar">
+            <a href="#" onclick="toggleCart()">
+              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+              <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+            </a>
           </div>
-        </div> <!-- end of mobile nav menu -->
+          <!-- end of main desktop displayed nav -->
+        </nav>
 
+      </header>
+    </div>
 
-        <!-- main desktop nav -->
-        <div class="mainnav">
-            <a href="index.html" class="logo">cliq</a>
-            <a href="product-list.html" class="navlink">shop</a>
-            <a href="build-guides.html" class="navlink">guides</a>
-            <a href="citations.html" class="navlink">citations</a>
-            <a href="patternlibraryhome.html" class="navlink">patterns</a>
-        </div>
-
-        <div class="searchcart">
-          <input type="text" name="text-input" placeholder="search" class="searchbar">
-          <a href="#" onclick="toggleCart()">
-            <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
-            <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
-          </a>
-        </div>
-        <!-- end of main desktop displayed nav -->
-      </nav>
-
-    </header>
+    <div class="beginning-of-page-gap"></div>
 
     <!-- hero section with image, h1, blurb, etc -->
     <div class="hero-container grid-container home-page">
@@ -421,12 +424,11 @@
 
   <!-- link to js files -->
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="js/animate.js"></script>
   <script src="js/tabhighlighting.js"></script>
   <script src="js/mobilenav.js"></script>
   <script src="js/cart-overlay.js"></script>
-  <script src="../js/animate.js"></script>
 
 
   </body>
-
 </html>

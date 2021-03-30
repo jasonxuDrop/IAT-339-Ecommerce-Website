@@ -108,61 +108,65 @@
     </div>
     <!-- end of shopping cart -->
 
-  <header class="grid-container">
+    <div class="header-wrapper">
+        <header class="grid-container">
 
-    <!-- entire nav menu wrapper -->
-    <nav class="col-12">
+            <!-- entire nav menu wrapper -->
+            <nav class="col-12">
 
-      <!-- mobile nav menu container -->
-      <div class="mainnav-mobile">
+            <!-- mobile nav menu container -->
+            <div class="mainnav-mobile">
 
-        <div class="logo-shoppingcart-menu">
-          <a href="index.html" class="logo">cliq</a>
+                <div class="logo-shoppingcart-menu">
+                <a href="index.html" class="logo">cliq</a>
 
-          <a href="#" class="mobileicon" onclick="toggleCart()">
-            <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
-          </a>
-          <a href="#" class="mobileicon" id="menutoggle">
-            <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
-          </a>
-        </div>
+                <a href="#" class="mobileicon" onclick="toggleCart()">
+                    <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
+                </a>
+                <a href="#" class="mobileicon" id="menutoggle">
+                    <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
+                </a>
+                </div>
 
-        <div class="" id="menu">
-          <div class="burger">
-              <a href="product-list.html" class="navlink current-page">shop</a>
-              <a href="build-guides.html" class="navlink">guides</a>
-              <a href="citations.html" class="navlink">citations</a>
-              <a href="patternlibraryhome.html" class="navlink">patterns</a>
-          </div>
-          <div class="mobile-searchbar">
-            <input type="text" name="text-input" placeholder="search" class="searchbar">
-          </div>
-        </div>
-      </div> <!-- end of mobile nav menu -->
+                <div class="" id="menu">
+                <div class="burger">
+                    <a href="product-list.html" class="navlink current-page">shop</a>
+                    <a href="build-guides.html" class="navlink">guides</a>
+                    <a href="citations.html" class="navlink">citations</a>
+                    <a href="patternlibraryhome.html" class="navlink">patterns</a>
+                </div>
+                <div class="mobile-searchbar">
+                    <input type="text" name="text-input" placeholder="search" class="searchbar">
+                </div>
+                </div>
+            </div> <!-- end of mobile nav menu -->
 
 
-      <!-- main desktop nav -->
-      <div class="mainnav">
-          <a href="index.html" class="logo">cliq</a>
-          <a href="product-list.html" class="navlink current-page">shop</a>
-          <a href="build-guides.html" class="navlink">guides</a>
-          <a href="citations.html" class="navlink">citations</a>
-          <a href="patternlibraryhome.html" class="navlink">patterns</a>
-      </div>
+            <!-- main desktop nav -->
+            <div class="mainnav">
+                <a href="index.html" class="logo">cliq</a>
+                <a href="product-list.html" class="navlink current-page">shop</a>
+                <a href="build-guides.html" class="navlink">guides</a>
+                <a href="citations.html" class="navlink">citations</a>
+                <a href="patternlibraryhome.html" class="navlink">patterns</a>
+            </div>
 
-      <div class="searchcart">
-        <input type="text" name="text-input" placeholder="search" class="searchbar">
-        <a href="#" onclick="toggleCart()">
-            <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
-            <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
-        </a>
-      </div>
-      <!-- end of main desktop displayed nav -->
-    </nav>
+            <div class="searchcart">
+                <input type="text" name="text-input" placeholder="search" class="searchbar">
+                <a href="#" onclick="toggleCart()">
+                    <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+                    <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+                </a>
+            </div>
+            <!-- end of main desktop displayed nav -->
+            </nav>
 
-  </header>
+        </header>
+    </div>
 
-  <!-- product list banner -->
+    <div class="beginning-of-page-gap"></div>
+
+    <!-- product list banner -->
     <div class="hide-overflow-x">
         <div class="grid-container banner-container-product-list">
             <div class="col-4 mobile-col-12 hero-text">
@@ -215,33 +219,44 @@
               </a>
               <p>Plates</p>
             </div>
-
         </div>
 
+        <!-- mobile filter -->
         <div class="filter-mobile mobile-start-col-1 mobile-col-12">
           <h2>Shop By</h2>
 
             <div class="mobile-guide-nav col-12" id="filterContainer-mobile">
-                <a class="primary-btn default-btn" href="#m-switch">switch</a>
-                <a class="primary-btn default-btn" href="#m-keycap">keycaps</a>
-                <a class="primary-btn default-btn" href="#m-plate">plates</a>
+                <a class="primary-btn default-btn" onclick="filterSelection('keyboards')" href="#m-switch">keyboards</a>
+                <a class="primary-btn default-btn" onclick="filterSelection('keycaps')" href="#m-keycap">keycaps</a>
+                <a class="primary-btn default-btn" onclick="filterSelection('plates')" href="#m-plate">plates</a>
             </div>
         </div>
+        <!-- end of filtering -->
+
+        <!--
+
+        product-detail.html
+        product-detail-prod2.html
+        product-detail-prod3.html
+        product-detail-prod4.html
+
+
+        -->
 
         <!-- product list CONTAINER -->
         <div class="product-container col-9 start-col-4 mobile-start-col-1 mobile-col-12" id="productlistcontainer">
 
             <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product1">
-                <img src="img/products/cliqproduct1.png" alt="keycap banner image">
+                <img src="img/products/lindesignWhiteProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>BOX 75</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$150</p>
-                </div>
+                  <div class="">
+                      <p>BOX 75</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$635</p>
+                  </div>
                 </div>
             </a>
 
@@ -249,41 +264,41 @@
                 <img src="img/products/cliqproduct2.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>CHERRY PASTEL</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$42</p>
-                </div>
+                  <div class="">
+                      <p>CHERRY PASTEL</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$42</p>
+                  </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product3">
+            <a href="product-pages/product-detail-prod4.html" class="filterCard keycaps sampleproductcard fade-in" id="product3">
                 <img src="img/products/cliqproduct3.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>CLEAR RESIN</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$35</p>
-                </div>
+                    <div class="">
+                        <p>CLEAR RESIN</p>
+                        <p class="light-color-text">In Stock</p>
+                    </div>
+                    <div class="">
+                        <p class="orange-pricetag">$35</p>
+                    </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product4">
-                <img src="img/products/cyrillic-beige-card-image.png" alt="keycap banner image">
+            <a href="product-pages/product-detail-prod3.html" class="filterCard keyboards sampleproductcard fade-in" id="product4">
+                <img src="img/products/cliqFundamentalProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>CYRILLIC BEIGE</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$80</p>
-                </div>
+                  <div class="">
+                      <p>FRUSTA FUNDAMENTAL</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$215</p>
+                  </div>
                 </div>
             </a>
 
@@ -291,89 +306,90 @@
                 <img src="img/products/cliqproduct5.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>ORANGE CREAMSICLE</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$65</p>
-                </div>
+                  <div class="">
+                      <p>ORANGE CREAMSICLE</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$65</p>
+                  </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product6">
+            <a href="product-pages/product-detail-prod4.html" class="filterCard keyboards sampleproductcard fade-in" id="product6">
                 <img src="img/products/blueIcebergKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>ICEBERG</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$38</p>
-                </div>
+                  <div class="">
+                      <p>ICEBERG PARAGON 75</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$455</p>
+                  </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product7">
+            <a href="product-pages/product-detail-prod3.html" class="filterCard keycaps sampleproductcard fade-in" id="product7">
                 <img src="img/products/canvasKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>CANVAS KEYCAPS</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$35</p>
-                </div>
+                  <div class="">
+                      <p>CANVAS KEYCAPS</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$35</p>
+                  </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product8">
+            <a href="product-pages/product-detail-prod4.html" class="filterCard keycaps sampleproductcard fade-in" id="product8">
                 <img src="img/products/backlitKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>WHITE BACKLIT</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$60</p>
-                </div>
+                  <div class="">
+                      <p>WHITE BACKLIT</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$60</p>
+                  </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keycaps sampleproductcard fade-in" id="product9">
+            <a href="product-pages/product-detail-prod2.html" class="filterCard keycaps sampleproductcard fade-in" id="product9">
                 <img src="img/products/whiteFogKeycapsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>WHITE FOG</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$30</p>
-                </div>
+                  <div class="">
+                      <p>WHITE FOG</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$80</p>
+                  </div>
                 </div>
             </a>
 
-            <a href="product-pages/product-detail.html" class="filterCard keyboards sampleproductcard fade-in" id="product10">
+            <a href="product-pages/product-detail-prod2.html" class="filterCard keyboards sampleproductcard fade-in" id="product10">
                 <img src="img/products/dotsProductCard.png" alt="keycap banner image">
 
                 <div class="product-info">
-                <div class="">
-                    <p>GMK DOTS DARK</p>
-                    <p class="light-color-text">In Stock</p>
-                </div>
-                <div class="">
-                    <p class="orange-pricetag">$240</p>
-                </div>
+                  <div class="">
+                      <p>BOOP 65 DOTS DARK</p>
+                      <p class="light-color-text">In Stock</p>
+                  </div>
+                  <div class="">
+                      <p class="orange-pricetag">$339</p>
+                  </div>
                 </div>
             </a>
 
 
         </div>
 
+        <!-- page navigation at bottom of page -->
         <div class="start-col-4 col-9 mobile-start-col-1 mobile-col-12 page-navigation">
             <a href="#" class="default-btn primary-btn" id="leftarrow"><img src="img/icons/cliqchevron-left.svg" alt=""></a>
             <a href="#" class="default-btn primary-btn active">1</a>
@@ -382,8 +398,6 @@
             <a href="#" class="default-btn primary-btn" id="rightarrow"><img src="img/icons/cliqchevron-right.svg" alt=""></a>
         </div>
     </div>
-
-
 
 
     <footer>
@@ -454,6 +468,8 @@
     </footer>
 
     <!-- link to the js file -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/filtering.js"></script>
     <script src="js/mobilenav.js"></script>
     <script src="js/cart-overlay.js"></script>
