@@ -265,6 +265,7 @@ h3{
     background-image: url(../img/banner/keycapTest.jpg);
     /*background-color: pink;*/
     height: 110vh;
+    min-height: 36em;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -331,5 +332,10 @@ h3{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+  }
+}
+@media screen and (max-height: 28em) {
+  .hero-container.home-page{
+    margin-top: -6em;
   }
 }
