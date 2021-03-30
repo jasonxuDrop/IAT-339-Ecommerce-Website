@@ -2,8 +2,8 @@
     margin-top: 130px;
     margin-bottom: 130px;
 }
-.banner-image-product-list {
-
+.hero-img {
+  z-index: -5;
 }
 
 .product-container {

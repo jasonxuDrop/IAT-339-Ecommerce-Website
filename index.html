@@ -34,7 +34,7 @@
             </div>
             <img src="img/icons/orangeline.svg" alt="">
             <div class="cart-product-wrapper">
-                <div class="product">
+                <div class="product hide">
                     <img src="img/products/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
                     <div class="description">
                         <div>
@@ -98,7 +98,7 @@
             <img src="img/icons/greyline.svg" alt="">
             <div class="subtotal">
                 <h4>Subtotal</h4>
-                <h4>$35.00</h4>
+                <h4>$0.00</h4>
             </div>
             <div class="flex-row justify-content-center">
                 <a href="checkout/checkout-customer.html" class="secondary-btn default-btn">proceed to checkout</a>
@@ -126,7 +126,7 @@
           <div class="logo-shoppingcart-menu">
             <a href="index.html" class="logo">cliq</a>
 
-            <a href="#" class="mobileicon">
+            <a href="#" class="mobileicon" onclick="toggleCart()">
               <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
             </a>
             <a href="#" class="mobileicon" id="menutoggle">
@@ -159,7 +159,10 @@
 
         <div class="searchcart">
           <input type="text" name="text-input" placeholder="search" class="searchbar">
-          <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
+          <a href="#" onclick="toggleCart()">
+            <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+            <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+          </a>
         </div>
         <!-- end of main desktop displayed nav -->
       </nav>
