@@ -53,10 +53,6 @@ header {
   opacity: 0;
 }
 
-.header-wrapper.sticky .navlink{
-  color: #000;
-}
-
 .header-wrapper {
   width: 100%;
 }
