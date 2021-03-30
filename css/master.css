@@ -667,6 +667,12 @@ a.sampleproductcard:hover{
 }
 
 
+.citation-flex{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
 
 .product .description{
   display: flex;
@@ -1312,11 +1318,6 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .citation-flex{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-  }
 
   .subnav {
     list-style-type: none;
