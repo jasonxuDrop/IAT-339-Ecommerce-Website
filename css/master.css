@@ -33,6 +33,30 @@ header h1 {
 
 header {
   padding: 2.5rem 0;
+
+  /* !testing sticky nav */
+  transition: all ease .3s;
+  z-index: 1;
+  position: fixed;
+}
+
+
+header.sticky{
+  /* padding: 5px 100px; */
+  background: #EFEFEF;
+  opacity: 1;
+}
+
+header.hide-nav{
+  opacity: 0;
+}
+
+header.sticky .navlink{
+  color: #000;
+}
+
+.sticky{
+
 }
 
 
@@ -687,6 +711,10 @@ a.sampleproductcard:hover{
 
 .black-box .content{
   padding: 3em 2em 2em 3em;
+}
+
+#product-detail{
+  padding-top: 5rem;
 }
 
 #product-detail .sample-product-header {
