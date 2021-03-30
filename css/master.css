@@ -75,9 +75,6 @@ h3 {
   width: 8em;
 }
 
-.hidden{
-	display: none;
-}
 
 
 /* table */
@@ -1146,6 +1143,17 @@ footer p {
   display: none;
 }
 
+#menu {
+  transition: max-height 0.3s ease;
+  max-height: 130px;
+  overflow: hidden;
+}
+#menu.hidden {
+  max-height: 0px;
+}
+/* .hidden{
+	display: none;
+} */
 
 .mainnav-mobile{
   display: none;

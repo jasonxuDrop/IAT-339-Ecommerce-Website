@@ -38,16 +38,16 @@ menuBtn.addEventListener('click',
       menu.classList.remove('hidden');
 
       // and set hidden to false to show the menu aka set expanded to true
-      menu.setAttribute('aria-hidden', 'false');
-      menu.setAttribute('aria-expanded', 'true');
+      // menu.setAttribute('aria-hidden', 'false');
+      // menu.setAttribute('aria-expanded', 'true');
 
     // otherwise if user clicks the menu button again, hide the menu
     }else{
       menuBtn.classList.remove('active');
 
       menu.classList.add('hidden');
-      menu.setAttribute('aria-hidden', 'true');
-      menu.setAttribute('aria-expanded', 'false');
+      // menu.setAttribute('aria-hidden', 'true');
+      // menu.setAttribute('aria-expanded', 'false');
     }
   }
 

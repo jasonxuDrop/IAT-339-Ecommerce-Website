@@ -23,46 +23,58 @@
 
 
     <div class="header-wrapper">
-        <header class="grid-container">
+      <header class="grid-container homepage-header">
 
-          <nav class="col-12">
+        <!-- entire nav menu wrapper -->
+        <nav class="col-12">
 
-              <div class="mainnav-mobile">
-                  <div class="logo-shoppingcart-menu">
-                  <a href="index.html" class="logo">cliq</a>
+          <!-- mobile nav menu container -->
+          <div class="mainnav-mobile">
 
-                  <a href="#" class="mobileicon">
-                      <img src="img/icons/shopping-bagCliq2.png" alt="" >
-                  </a>
-                  <a href="#" class="mobileicon">
-                      <img src="img/icons/mobilemenu.png" alt="">
-                  </a>
-                  </div>
-                  <div class="burger">
-                      <a href="product-list.html" class="navlink">shop</a>
-                      <a href="build-guides.html" class="navlink">guides</a>
-                      <a href="citations.html" class="navlink current-page">citations</a>
-                      <a href="patternlibraryhome.html" class="navlink">patterns</a>
-                  </div>
-                  <div class="mobile-searchbar">
-                  <input type="text" name="" placeholder="search" class="searchbar">
-                  </div>
-              </div>
+            <div class="logo-shoppingcart-menu">
+              <a href="index.html" class="logo">cliq</a>
 
+              <a href="#" class="mobileicon" onclick="toggleCart()">
+                <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
+              </a>
+              <a href="#" class="mobileicon" id="menutoggle">
+                <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
+              </a>
+            </div>
 
-              <div class="mainnav">
-                  <a href="index.html" class="logo">cliq</a>
+            <div class="" id="menu">
+              <div class="burger">
                   <a href="product-list.html" class="navlink">shop</a>
                   <a href="build-guides.html" class="navlink">guides</a>
                   <a href="citations.html" class="navlink current-page">citations</a>
                   <a href="patternlibraryhome.html" class="navlink">patterns</a>
               </div>
-
-              <div class="searchcart">
-                  <input type="text" name="" placeholder="search" class="searchbar">
-                  <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+              <div class="mobile-searchbar">
+                <input type="text" name="text-input" placeholder="search" class="searchbar">
               </div>
-          </nav>
+            </div>
+          </div> <!-- end of mobile nav menu -->
+
+
+          <!-- main desktop nav -->
+          <div class="mainnav">
+              <a href="index.html" class="logo">cliq</a>
+              <a href="product-list.html" class="navlink">shop</a>
+              <a href="build-guides.html" class="navlink">guides</a>
+              <a href="citations.html" class="navlink current-page">citations</a>
+              <a href="patternlibraryhome.html" class="navlink">patterns</a>
+          </div>
+
+          <div class="searchcart">
+            <input type="text" name="text-input" placeholder="search" class="searchbar">
+            <a href="#" onclick="toggleCart()">
+              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+              <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+            </a>
+          </div>
+          <!-- end of main desktop displayed nav -->
+        </nav>
+
       </header>
     </div>
 
