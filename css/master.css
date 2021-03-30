@@ -1146,6 +1146,7 @@ footer p {
   display: none;
 }
 
+
 .mainnav-mobile{
   display: none;
 }
@@ -1255,6 +1256,13 @@ footer p {
     inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
   }
 
+}
+
+/* mobile nav but landscape displays */
+@media screen and (max-height: 28em) {
+  header {
+    padding: 1rem 0;
+  }
 }
 
 /* dealing with the product cards*/
