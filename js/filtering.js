@@ -4,6 +4,8 @@
 
 'use strict';
 
+// variable for tracking the product container
+var productContainer = document.querySelector(".product-container");
 
 filterSelection("all")
 
@@ -16,7 +18,7 @@ function filterSelection(str) {
   if (str == "all") {
     str = "";
   }
-
+  
   // for all in the array populated with filterDiv class elements
   for (j = 0; j < div.length; j++) {
     // remove display
@@ -26,6 +28,9 @@ function filterSelection(str) {
       setAttribute(div[j], "show");
     }
   }
+  
+  productContainer.classList.remove("refresh");
+  setTimeout(function(){ productContainer.classList.add("refresh"); }, 30);
 }
 
 
