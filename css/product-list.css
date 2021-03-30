@@ -13,6 +13,7 @@
   margin-bottom: 4em;
   opacity: 0;
 }
+
 .product-container.refresh {
   opacity: 1;
   transition: opacity 0.8s ease-in;
@@ -36,13 +37,10 @@
   vertical-align: middle;
 }
 
-.page-navigation a{
-
-}
-
 .page-navigation .active{
   color: #F56F54;
 }
+
 
 #rightarrow{
   padding-right: 1em;
@@ -52,20 +50,20 @@
 }
 
 
-
-
-
-
-
+/* left desktop filter subnav */
 .filter h2{
   font-size: 1.5em;
+}
+
+.filter-element-wrapper{
+  margin: 1em 0 1em 0;
 }
 
 .filter div {
   color: #312E37;
   display: flex;
   flex-direction: row;
-  padding: 1em 0 1em 0;
+  /*padding: 1em 0 1em 0;*/
 }
 
 .filter div p{
@@ -78,25 +76,44 @@
   justify-content: center;
 }
 
+
+/* filter toggle buttons */
 .filter div .box{
   /*border: 2px solid red;*/
   padding: 10px;
   border-radius: 5px;
-  /*box-shadow: 5px 5px 10px #CBCBCB, -5px -5px 10px #FFFFFF;*/
   transition: 0.3s;
   box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF, inset 0 0 0 rgba(203, 203, 203, 0), inset 0 0 0 rgba(255, 255, 255, 0);
   cursor: pointer;
 
 }
 
+/* style filter button on click */
 .filter div .box:active{
   box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
   inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
 }
 
+.filter div .box .dot{
+  width: 18px;
+  height: 18px;
+  border: 2px solid #F56F54;
+  border-radius: 30px;
+  transition: 0.3s;
+}
 
+.filterbtn.active .dot{
+  /*background-color: aqua;*/
+  background-color: #F56F54;
+}
 
+.sampleproductcard.show {
+  display: flex;
+}
 
+.filterCard {
+  display: none;
+}
 
 #filterContainer-mobile{
   display: none;
@@ -108,37 +125,9 @@
   display: none;
 }
 
-.filter div .box .dot{
-  width: 20px;
-  height: 20px;
-  border: 2px solid #F56F54;
-  border-radius: 30px;
-}
-
-.filterbtn.active .dot{
-  background-color: aqua;
-}
-
-.sampleproductcard.show {
-  display: flex;
-}
-.filterCard {
-  display: none;  /* Hidden by default */
-}
-
-/* .fade-in{
-  animation: fadein 0.8s ease-in forwards;
-
-}
-
-@keyframes fadein {
-
-  from{}
-    to{}
-
-} */
 
 
+/* breakpoints */
 /* flex product to 2 cards per row */
 @media screen and (max-width: 90em) {
     .sampleproductcard {
