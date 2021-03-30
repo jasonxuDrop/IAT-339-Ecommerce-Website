@@ -205,7 +205,7 @@ nav .searchcart a.active {
   cursor: default;
 }
 
-#shoppingbagimg {
+#shoppingbagimg, #shoppingbagimg-demo {
   width: 20px;
   height: auto;
   vertical-align: middle;
