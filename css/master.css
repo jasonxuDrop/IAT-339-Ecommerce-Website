@@ -1434,6 +1434,34 @@ footer p {
   box-shadow: 15px 15px 30px #CBCBCB, -15px -15px 30px #FFFFFF;
 }
 
+.neu-regular-size{
+  width: 7rem;
+}
+
+article .neu-regular-size{
+  margin-right: 2rem;
+}
+
+.guide-img-wrapper img{
+  width: 100%;
+  z-index: 0;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+.switch-article-description-wrapper{
+  display: flex;
+  margin: 2rem 0;
+}
+
+.switch-article-description-wrapper p{
+  margin: 0 2rem;
+}
+
+article h4{
+  margin-bottom: 0;
+}
+
 .section-divider .neu-extrusion{
   margin: 1rem;
 }
