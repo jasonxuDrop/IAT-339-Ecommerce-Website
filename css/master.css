@@ -542,9 +542,11 @@ a.sampleproductcard:hover{
 
 .orange-pricetag {
   color: #F56F54;
+  transition: color 0.3s ease, margin-left 0.3s ease 0.1s;
 }
 .orange-pricetag.hide {
-  display: none;
+  color: #F56F5400;
+  margin-left: -15px;
 }
 
 
