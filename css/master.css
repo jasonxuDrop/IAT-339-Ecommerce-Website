@@ -433,6 +433,16 @@ header {
 }
 /* end of disabled-btn */
 
+/* mobile-add-to-cart-btn */
+
+.mobile-add-to-cart{
+  text-align: center;
+  display: none;
+  margin: 2rem auto;
+}
+
+/* end of mobile-add-to-cart-btn */
+
 /* flat button II */
 /* * please don't delete again T^T * */
 .flat-button{
@@ -567,7 +577,7 @@ a.sampleproductcard:hover{
   box-shadow: 5px 5px 15px #BEBEBE, -5px -5px 15px #FFFFFF;
 }
 
-/* ! START OF SHOPPING CART */
+/* START OF SHOPPING CART */
 .overlay{
   position: fixed;
   width: 100%;
@@ -1097,7 +1107,7 @@ footer p {
     display: none;
   }
 
-  #keyswitch-mobile-sect, #keycap-mobile-sect{
+  #keyswitch-mobile-sect, #keycap-mobile-sect, .mobile-add-to-cart{
     display: block;
   }
 
