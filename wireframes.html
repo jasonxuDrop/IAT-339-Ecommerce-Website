@@ -21,39 +21,38 @@
 
   <body onload="patternpageFuntion()">
 
-    <header class="grid-container">
+    <div class="header-wrapper"> 
+      <header class="grid-container">
 
-      
+        <nav class="col-12">
+          <div class="mainnav">
+            <a href="index.html" class="logo">cliq</a>
 
-    <!-- <h1>Iteration2 Pattern Library Activity</h1> -->
-    <!-- <p>(html only - excuse the ugly)</p> -->
-
-    <nav class="col-12">
-      <div class="mainnav">
-        <a href="index.html" class="logo">cliq</a>
-
-        <a href="#" class="mobilenav">
-          <img src="img/icons/shopping-bagCliq2.png" alt="" class="mobileicon">
-        </a>
-        <a href="#" class="mobilenav"><img src="img/icons/mobilemenu.png" alt="" class="mobileicon"></a>
+            <a href="#" class="mobilenav">
+              <img src="img/icons/shopping-bagCliq2.png" alt="" class="mobileicon">
+            </a>
+            <a href="#" class="mobilenav"><img src="img/icons/mobilemenu.png" alt="" class="mobileicon"></a>
 
 
-        <a href="#" class="shophighlight">shop</a>
-        <a href="#" class="guidehighlight">guides</a>
-        <a href="citations.html" class="citehighlight">citations</a>
-        <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
+            <a href="#" class="shophighlight">shop</a>
+            <a href="#" class="guidehighlight">guides</a>
+            <a href="citations.html" class="citehighlight">citations</a>
+            <a href="index.html" class="patternhighlight" id="nav-pattern">patterns</a>
 
-      </div>
+          </div>
 
-      <div class="searchcart">
-        <input type="text" name="" value="search" class="searchbar">
-        <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
-      </div>
+          <div class="searchcart">
+            <input type="text" name="" value="search" class="searchbar">
+            <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+          </div>
 
-    </nav>
+        </nav>
 
-    </header>
+      </header>
+    </div>
 
+    <div class="beginning-of-page-gap"></div>
+    
     <div class="herocontainer">
       <div class="content">
         <h1>PATTERN LIBRARY - WIREFRAMES</h1>
@@ -202,6 +201,8 @@
     </footer>
 
     <!-- link to the js file -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/tabhighlighting.js"></script>
     <script src="js/mobilenav.js"></script>
 

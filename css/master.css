@@ -27,39 +27,6 @@ section {
     padding: 2.5rem 0 2.5rem 0;
 }
 
-header h1 {
-  text-align: center;
-}
-
-header {
-  padding: 2.5rem 0;
-}
-
-/* !testing sticky nav */
-.header-wrapper {
-  transition: opacity ease .3s;
-  z-index: 1;
-  position: fixed;
-  background: #EFEFEF;
-}
-
-
-.header-wrapper.sticky{
-  /* padding: 5px 100px; */
-  opacity: 1;
-}
-
-.header-wrapper.hide-nav{
-  opacity: 0;
-}
-
-.header-wrapper {
-  width: 100%;
-}
-
-.sticky{
-
-}
 
 
 p {
@@ -126,6 +93,9 @@ tr , th , td  {
 
 
 
+
+/* Beginning of Nav */
+
 nav {
   display: flex;
   flex-direction: row;
@@ -133,9 +103,6 @@ nav {
 
   font-family: "Mulish", sans-serif;
 }
-
-/* Beginning of Nav */
-
 
 .logo-dark a{
 
@@ -272,6 +239,42 @@ nav .searchcart a.active {
 
 .subnav a:hover {
   color: #F56F54;
+}
+
+
+header h1 {
+  text-align: center;
+}
+
+header {
+  padding: 2.5rem 0;
+}
+
+.header-wrapper {
+  transition: opacity ease .3s;
+  z-index: 1;
+  position: fixed;
+  background: #EFEFEF;
+}
+
+
+.header-wrapper.sticky{
+  /* padding: 5px 100px; */
+  opacity: 1;
+}
+
+.header-wrapper.hide-nav{
+  opacity: 0;
+}
+
+.header-wrapper {
+  width: 100%;
+}
+
+.beginning-of-page-gap {
+  height: 7em;
+  width: 100%;
+  opacity: 0;
 }
 
 /* End of Nav */
