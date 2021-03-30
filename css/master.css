@@ -1264,6 +1264,9 @@ footer p {
     inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
   }
 
+  .beginning-of-page-gap {
+    height: 8.75em;
+  }
 }
 
 /* mobile nav but landscape displays */

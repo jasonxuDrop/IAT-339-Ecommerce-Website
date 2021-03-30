@@ -165,6 +165,9 @@
 .mobile-guide-page-content > article > * {
     grid-column: span 2;
 }
+.mobile-guide-page-content > article > img {
+    width: 100%;
+}
 .guide-section > article > .col-1 ,
 .mobile-guide-page-content > article > .col-1 {
     grid-column: span 1;
