@@ -1604,6 +1604,7 @@ article h4{
   align-items: stretch;
   padding: 0.5rem;
   box-sizing: border-box;
+  margin-bottom: 7rem;
 }
 
 .flex-33-contain{
