@@ -1307,6 +1307,21 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .citation-flex{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .citation-flex > div{
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
   .subnav {
     list-style-type: none;
     margin: 0;
