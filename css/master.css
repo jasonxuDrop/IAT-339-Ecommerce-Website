@@ -1670,9 +1670,10 @@ article h4{
   flex-direction: column;
 }
 
-.flex-citation-item img{
+.flex-citation-item img{    
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  height: 11rem;
 }
 
 .keycap-section .flex-item img{
