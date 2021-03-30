@@ -90,21 +90,21 @@
       <!-- pattern library in page nav menu -->
       <div class="subnav col-3 mobile-col-12">
 
+        <h2>BASIC STYLES</h2>
         <ul>
-          <h2>BASIC STYLES</h2>
           <li><a href="#colour-palette">Colour Palette</a></li>
           <li><a href="#type">Typography</a></li>
           <li><a href="#grids">Grid System</a></li>
         </ul>
 
+        <h2>CODE STRUCTURE</h2>
         <ul>
-          <h2>CODE STRUCTURE</h2>
           <li><a href="#namingconventions">Naming Conventions</a></li>
           <li><a href="#filestructure">File Structure</a></li>
         </ul>
 
+        <h2>COMPONENTS</h2>
         <ul>
-          <h2>COMPONENTS</h2>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#inputfields">Input Fields</a></li>
           <li><a href="#inlinelinks">Inline links</a></li>
@@ -115,15 +115,10 @@
           <li><a href="#footer">Footer</a></li>
         </ul>
 
-        <ul>
-          <h2><a href="wireframes.html">WIREFRAMES</a></h2>
-        </ul>
-
-        <ul>
-          <h2><a href="mockups.html">MOCKUPS</a></h2>
-        </ul>
-
-
+        <h2><a href="wireframes.html">WIREFRAMES</a></h2>
+      
+        <h2><a href="mockups.html">MOCKUPS</a></h2>
+        
       </div>
       <!-- - End of - Pattern Library Nav Menu -->
 
@@ -181,7 +176,8 @@
       <section id="type">
         <h2 class="section-header">Typography</h2>
         <p>HEADINGS</p>
-          <h1>Heading 1</h1>
+        <!-- class="big-title" is practically the same style as h1 -->
+          <p class="big-title">Heading 1</p>
           <p>Sample code:</p>
           <pre>
             <code>
@@ -413,12 +409,12 @@
         <p>Description: User input fields for search fields and email entry.</p>
         <p>Responsive example (of the actual code being executed):</p>
         <p class="input-label">Label</p>
-        <input type="text" name="" placeholder="search" class="searchbar">
+        <input type="text" name="search" placeholder="search" class="searchbar">
         <p>Code sample:</p>
         <pre>
           <code>
             &#x3C;p class=&#x22;input-label&#x22;&#x3E;Label&#x3C;/p&#x3E;
-            &lt;input type="text" placeholder="search" class="searchbar"&gt;
+            &lt;input type="text" name="search" placeholder="search" class="searchbar"&gt;
             .searchbar {
               margin-right: 2em;
               padding: 0.5em 0 0.5em 2em;
@@ -488,7 +484,7 @@
         <!-- live (condensed) nav bar example -->
         <nav class="mininav">
           <div class="mainnav">
-            <a href="index.html" class="navlink" class="logo">cliq</a>
+            <a href="index.html" class="navlink logo">cliq</a>
             <a href="#" class="shophighlight">shop</a>
             <a href="#" class="guidehighlight">guides</a>
             <a href="citations.html" class="citehighlight">citations</a>
@@ -496,8 +492,8 @@
           </div>
 
           <div class="searchcart">
-            <input type="text" name="" placeholder="search" class="searchbar">
-            <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg"></a>
+            <input type="text" name="search" placeholder="search" class="searchbar">
+            <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg-demo"></a>
           </div>
 
         </nav>
@@ -676,9 +672,6 @@
         <div class="sample-product-header">
           <div class="hero-product-container">
             <img src="img/products/lindesign-hero.jpg" alt="keycap banner image">
-            <div class="real-button-example">
-                <a href="#product-detail" class="default-btn primary-btn">add to cart</a>
-            </div>
           </div>
 
           <div class="product-content-container">
@@ -930,7 +923,7 @@
                   <p>Info about upcoming releases, new arrivals and more!</p>
   
                   <input class="text-input-dark" placeholder="email address" type="text" name="text-input">
-                  <a href="#" id="mail-arrow"><img src="img/icons/cliqchevron-right-white.svg" alt="white right arrow icon"></a>
+                  <a href="#" id="mail-arrow-demo"><img src="img/icons/cliqchevron-right-white.svg" alt="white right arrow icon"></a>
               </div>
               <div class="company-info-wrapper">
                   <div class="company-contact company-list-info">
