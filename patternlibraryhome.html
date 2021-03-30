@@ -20,33 +20,40 @@
   <body onload="patternPageFunctionTest()">
 
     <div class="header-wrapper">
-      <header class="grid-container">
+      <header class="grid-container homepage-header">
 
+        <!-- entire nav menu wrapper -->
         <nav class="col-12">
 
+          <!-- mobile nav menu container -->
           <div class="mainnav-mobile">
+
             <div class="logo-shoppingcart-menu">
               <a href="index.html" class="logo">cliq</a>
 
-              <a href="#" class="mobileicon">
-                <img src="img/icons/shopping-bagCliq2.png" alt="" >
+              <a href="#" class="mobileicon" onclick="toggleCart()">
+                <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon">
               </a>
-              <a href="#" class="mobileicon">
-                <img src="img/icons/mobilemenu.png" alt="">
+              <a class="mobileicon" id="menutoggle">
+                <img src="img/icons/mobilemenu.png" alt="mobile burger menu icon">
               </a>
             </div>
-            <div class="burger">
-                <a href="product-list.html" class="navlink">shop</a>
-                <a href="build-guides.html" class="navlink">guides</a>
-                <a href="citations.html" class="navlink">citations</a>
-                <a href="patternlibraryhome.html" class="navlink">patterns</a>
+
+            <div class="" id="menu">
+              <div class="burger">
+                  <a href="product-list.html" class="navlink">shop</a>
+                  <a href="build-guides.html" class="navlink">guides</a>
+                  <a href="citations.html" class="navlink">citations</a>
+                  <a href="patternlibraryhome.html" class="navlink current-page">patterns</a>
+              </div>
+              <div class="mobile-searchbar">
+                <input type="text" name="text-input" placeholder="search" class="searchbar">
+              </div>
             </div>
-            <div class="mobile-searchbar">
-              <input type="text" name="" placeholder="search" class="searchbar">
-            </div>
-          </div>
+          </div> <!-- end of mobile nav menu -->
 
 
+          <!-- main desktop nav -->
           <div class="mainnav">
               <a href="index.html" class="logo">cliq</a>
               <a href="product-list.html" class="navlink">shop</a>
@@ -56,14 +63,18 @@
           </div>
 
           <div class="searchcart">
-            <input type="text" name="" placeholder="search" class="searchbar">
-            <a href="#"><img src="img/icons/shopping-bagCliq2.png" alt="" id="shoppingbagimg"></a>
+            <input type="text" name="text-input" placeholder="search" class="searchbar">
+            <a href="#" onclick="toggleCart()">
+              <img src="img/icons/shopping-bagCliq2.png" alt="shopping bag icon" id="shoppingbagimg">
+              <span id="bag-item-count-desktop" class="orange-pricetag hide">0</span>
+            </a>
           </div>
+          <!-- end of main desktop displayed nav -->
         </nav>
 
       </header>
     </div>
-      
+
     <div class="beginning-of-page-gap"></div>
 
     <div class="grid-container">
@@ -740,7 +751,7 @@
           <img src="img/icons/orangeline.svg" alt="">
           <div class="cart-product-wrapper">
             <div class="product">
-              <img src="img/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
+              <img src="img/products/cartkeycapthumbnail.png" alt="" class="product-thumbnail">
               <div class="description">
 
                   <div>
@@ -1141,25 +1152,22 @@
 
 
   <footer>
-    <div class="grid-container">
-      <div class="footer-row col-12">
+      <div class="grid-container">
+        <div class="footer-row col-12">
+
           <div class="mailing-list">
               <p class="footer-heading">JOIN OUR MAILING LIST</p>
               <p>Info about upcoming releases, new arrivals and more!</p>
 
-
-              <input class="text-input-dark" placeholder="email address" type="text" id="" name="text-input">
-
+              <input class="text-input-dark" placeholder="email address" type="text" name="text-input">
+              <a href="#" id="mail-arrow"><img src="img/icons/cliqchevron-right-white.svg" alt="white right arrow icon"></a>
           </div>
           <div class="company-info-wrapper">
               <div class="company-contact company-list-info">
                   <p class="footer-heading">CLIQ</p>
                   <ul>
                       <li>
-                          <a class="default-link" href="#">about us</a>
-                      </li>
-                      <li>
-                          <a class="default-link" href="#">contact us</a>
+                          <a class="default-link" href="index.html#about">about us</a>
                       </li>
                       <li>
                           <a class="default-link" href="patternlibraryhome.html">styleguide</a>
@@ -1186,17 +1194,16 @@
               <div class="social-media-links">
                   <ul>
                       <li>
-                          <!-- <a href=""><img src="img/icons/instagram.png" alt=""></a> -->
-                          <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/icons/githubwhite.svg" alt=""></a>
+                          <a href="https://github.com/jasonxuDrop/IAT-339-Ecommerce-Website" target="_blank"><img src="img/icons/githubwhite.svg" alt="github white icon"></a>
                       </li>
                       <li>
-                          <a href="#"><img src="img/icons/twitchwhite2.svg" alt=""></a>
+                          <a href="#"><img src="img/icons/twitchwhite2.svg" alt="white twitch logo icon"></a>
                       </li>
                       <li>
-                          <a href="#"><img src="img/icons/twitterwhite2.svg" alt=""></a>
+                          <a href="#"><img src="img/icons/twitterwhite2.svg" alt="twitter icon"></a>
                       </li>
                       <li>
-                          <a href="#"><img src="img/icons/instagramwhite.svg" alt=""></a>
+                          <a href="#"><img src="img/icons/instagramwhite.svg" alt="instagram white logo icon"></a>
                       </li>
                   </ul>
               </div>
@@ -1208,7 +1215,7 @@
           </div>
           <p class="secondary-textcopyright">&#169; 2021 CLIQ All Rights Reserved.</p>
       </div>
-    </div>
+      </div>
   </footer>
 
 

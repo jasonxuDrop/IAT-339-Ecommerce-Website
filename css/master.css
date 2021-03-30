@@ -75,9 +75,6 @@ h3 {
   width: 8em;
 }
 
-.hidden{
-	display: none;
-}
 
 
 /* table */
@@ -1146,6 +1143,17 @@ footer p {
   display: none;
 }
 
+#menu {
+  transition: max-height 0.3s ease;
+  max-height: 130px;
+  overflow: hidden;
+}
+#menu.hidden {
+  max-height: 0px;
+}
+/* .hidden{
+	display: none;
+} */
 
 .mainnav-mobile{
   display: none;
@@ -1250,12 +1258,19 @@ footer p {
     border-radius: 5px;
     box-shadow: 5px 5px 10px #CBCBCB, -5px -5px 10px #FFFFFF;
     transition: 0.3s;
+    cursor: pointer;
   }
   .mobileicon img:active, .mobileicon.active img{
     box-shadow: 0 0 0 rgba(203, 203, 203, 0), 0 0 0 rgba(255, 255, 255, 0),
     inset 5px 5px 10px #CBCBCB, inset -5px -5px 10px #FFFFFF;
   }
+  .mobileicon.cursor-default{
+    cursor: default;
+  }
 
+  .beginning-of-page-gap {
+    height: 8.75em;
+  }
 }
 
 /* mobile nav but landscape displays */
