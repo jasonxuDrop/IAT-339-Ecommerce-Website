@@ -4,7 +4,7 @@ $(document).ready(function(){
     var lastScrollTop = 0;
 
     var scrollableElement = document.body; //document.getElementById('scrollableElement');
-    var header = document.querySelector("header");
+    var header = document.querySelector(".header-wrapper");
 
     scrollableElement.addEventListener('wheel', checkScrollDirection);
 

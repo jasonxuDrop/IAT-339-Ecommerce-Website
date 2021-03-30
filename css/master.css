@@ -33,26 +33,32 @@ header h1 {
 
 header {
   padding: 2.5rem 0;
+}
 
-  /* !testing sticky nav */
-  transition: all ease .3s;
+/* !testing sticky nav */
+.header-wrapper {
+  transition: opacity ease .3s;
   z-index: 1;
   position: fixed;
+  background: #EFEFEF;
 }
 
 
-header.sticky{
+.header-wrapper.sticky{
   /* padding: 5px 100px; */
-  background: #EFEFEF;
   opacity: 1;
 }
 
-header.hide-nav{
+.header-wrapper.hide-nav{
   opacity: 0;
 }
 
-header.sticky .navlink{
+.header-wrapper.sticky .navlink{
   color: #000;
+}
+
+.header-wrapper {
+  width: 100%;
 }
 
 .sticky{
@@ -181,7 +187,7 @@ nav .logo {
 
   border-radius: 25px;
   background: #EFEFEF;
-  box-shadow: 15px 15px 30px #CBCBCB, -15px -15px 30px #FFFFFF;
+  box-shadow: 8px 8px 16px #CBCBCB, -8px -8px 16px #FFFFFF;
 
   font-family: "Comfortaa";
   font-weight: 400;
