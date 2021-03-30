@@ -1263,6 +1263,9 @@ footer p {
   header {
     padding: 1rem 0;
   }
+  .beginning-of-page-gap {
+    height: 5em;
+  }
 }
 
 /* dealing with the product cards*/
